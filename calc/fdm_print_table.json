@@ -1,0 +1,148 @@
+{
+ "files": {
+  "base_bottom_plate_PETG": {
+   "hours": 2.3741666666666665,
+   "grams": 93.22,
+   "type": "PETG"
+  },
+  "base_bottom_plate_PLA": {
+   "hours": 2.328333333333333,
+   "grams": 92.65,
+   "type": "PLA"
+  },
+  "base_shell_PETG": {
+   "hours": 8.065,
+   "grams": 294.63,
+   "type": "PETG"
+  },
+  "base_shell_PLA-fitcheck": {
+   "hours": 6.7625,
+   "grams": 208.33,
+   "type": "PLA"
+  },
+  "base_shell_f_PETG": {
+   "hours": 8.13888888888889,
+   "grams": 295.2,
+   "type": "PETG"
+  },
+  "coupon_base_footprints_PETG": {
+   "hours": 0.6177777777777778,
+   "grams": 14.85,
+   "type": "PETG"
+  },
+  "rotor_bottom_cap_f_PETG": {
+   "hours": 2.126388888888889,
+   "grams": 56.06,
+   "type": "PETG"
+  },
+  "rotor_bottom_cap_f_PLA-fitcheck": {
+   "hours": 1.9519444444444445,
+   "grams": 50.36,
+   "type": "PLA"
+  },
+  "rotor_bottom_cap_hub_PET-CF": {
+   "hours": 2.6033333333333335,
+   "grams": 63.76,
+   "type": "PET-CF"
+  },
+  "rotor_bottom_cap_hub_PLA-fitcheck": {
+   "hours": 2.1175,
+   "grams": 54.62,
+   "type": "PLA"
+  },
+  "rotor_hub_core_PET-CF": {
+   "hours": 0.6588888888888889,
+   "grams": 11.6,
+   "type": "PET-CF"
+  },
+  "rotor_hub_core_PLA-fitcheck": {
+   "hours": 0.38861111111111113,
+   "grams": 6.89,
+   "type": "PLA"
+  },
+  "rotor_sled_PET-CF": {
+   "hours": 2.0972222222222223,
+   "grams": 44.87,
+   "type": "PET-CF"
+  },
+  "rotor_sled_PLA-fitcheck": {
+   "hours": 1.7027777777777777,
+   "grams": 37.73,
+   "type": "PLA"
+  },
+  "rotor_sled_f_PETG": {
+   "hours": 2.1141666666666667,
+   "grams": 39.55,
+   "type": "PETG"
+  },
+  "rotor_sled_f_PLA-fitcheck": {
+   "hours": 1.7583333333333333,
+   "grams": 36.05,
+   "type": "PLA"
+  },
+  "rotor_top_cap_PETG": {
+   "hours": 1.918611111111111,
+   "grams": 66.17,
+   "type": "PETG"
+  },
+  "rotor_top_cap_PLA-fitcheck": {
+   "hours": 1.761388888888889,
+   "grams": 60.35,
+   "type": "PLA"
+  },
+  "rotor_tube_PETG-0.28": {
+   "hours": 14.205277777777777,
+   "grams": 275.3,
+   "type": "PETG"
+  },
+  "rotor_tube_PETG": {
+   "hours": 15.295833333333333,
+   "grams": 280.96,
+   "type": "PETG"
+  },
+  "rotor_tube_PLA": {
+   "hours": 13.904444444444444,
+   "grams": 279.26,
+   "type": "PLA"
+  },
+  "tube_end_rings_PLA-fitcheck": {
+   "hours": 2.525,
+   "grams": 42.39,
+   "type": "PLA"
+  }
+ },
+ "sets": {
+  "rev e production (hub + sled PET-CF, tube/top cap/base PETG, plate PLA)": {
+   "hours": 32.30833333333333,
+   "grams_by_type": {
+    "PETG": 641.76,
+    "PLA": 92.65,
+    "PET-CF": 108.63
+   },
+   "missing": []
+  },
+  "rev f production (core PET-CF, everything else PETG)": {
+   "hours": 32.62694444444445,
+   "grams_by_type": {
+    "PETG": 831.1599999999999,
+    "PET-CF": 11.6
+   },
+   "missing": []
+  },
+  "rev f production with the 0.28 mm tube": {
+   "hours": 31.53638888888889,
+   "grams_by_type": {
+    "PETG": 825.5,
+    "PET-CF": 11.6
+   },
+   "missing": []
+  },
+  "rev f PLA fit-checks (new)": {
+   "hours": 4.098888888888889,
+   "grams_by_type": {
+    "PLA": 93.3
+   },
+   "missing": []
+  }
+ }
+}

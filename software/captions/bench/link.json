@@ -1,0 +1,1 @@
+{"what": "probe_link.py the desktop PC (Wi-Fi 6 PCIe) -> Pi 5 (wlan0) running mock_column.py, 2026-11-02, 180 samples", "ping_med_ms": 7.8, "ping_p90_ms": 17.3, "ping_max_ms": 680.1, "ack_med_ms": 27.9, "ack_p90_ms": 48.1, "ack_max_ms": 641.7}

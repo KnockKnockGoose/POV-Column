@@ -1,0 +1,186 @@
+== mode: asbuilt
+== sweep 1: rotating (rotor + the hub group: hub, mast, contact head, slip-ring boss and rotor leads) vs stationary (B*), >= 1.5; pairs closer than 12 mm
+   R21 drive hub / B19 rev m hardware (drive_hub / flange_screw_1)                   1.858  >= 1.50     ok 
+   R03 hall sensor / B14 magnet riser (hall_A3144 / magnet_3_asbuilt)                2.000  >= 1.50     ok 
+   R17 rotor ring / B11 bearing collar (rotor_ring / bearing_collar)                 2.000  >= 1.50     ok 
+   R17 rotor ring / B14 magnet riser (rotor_ring / magnet_riser)                     2.000  >= 1.50     ok 
+   R21 drive hub / B22 hub bearing cup (drive_hub / bearing_cup)                     2.100  >= 1.50     ok 
+   R14 tie rods / B11 bearing collar (nut_ring_2 / bearing_collar)                   2.313  >= 1.50     ok 
+   R21 drive hub / B01 base shell (drive_hub / base_shell)                           2.814  >= 1.50     ok 
+   R02 bottom cap / B14 magnet riser (bottom_cap / magnet_3_asbuilt)                 3.000  >= 1.50     ok 
+   R17 rotor ring / B06 hall magnet (rotor_ring / magnets_6x3_x2)                    3.606  >= 1.50     ok 
+   R17 rotor ring / B01 base shell (rotor_ring / base_shell)                         4.500  >= 1.50     ok 
+   R18 hex keys / B11 bearing collar (hex_key_0 / bearing_collar)                    4.669  >= 1.50     ok 
+   R16 rotor harness / B14 magnet riser (hall_lead_OUT_28awg / magnet_3_asbuilt)     6.803  >= 1.50     ok 
+   R02 bottom cap / B11 bearing collar (bottom_cap / bearing_collar)                 7.000  >= 1.50     ok 
+   R13 screws / B22 hub bearing cup (screw_coupling_0 / bearing_cup)                 7.201  >= 1.50     ok 
+   R13 screws / B19 rev m hardware (screw_coupling_0 / flange_screw_0)               8.303  >= 1.50     ok 
+   R17 rotor ring / B16 motor hanger (rotor_ring / motor_hanger)                     8.500  >= 1.50     ok 
+   R17 rotor ring / B19 rev m hardware (rotor_ring / gearbox_screw_2)                8.800  >= 1.50     ok 
+   R21 drive hub / B16 motor hanger (drive_hub / motor_hanger)                       9.183  >= 1.50     ok 
+   R17 rotor ring / B13 rev k hardware (rotor_ring / collar_bolt_3)                  9.626  >= 1.50     ok 
+   R15 chain wiring / B14 magnet riser (feed_06_GND_26awg / magnet_3_asbuilt)       10.023  >= 1.50     ok 
+   R04 sled / B14 magnet riser (sled / magnet_3_asbuilt)                            11.000  >= 1.50     ok 
+   R15 chain wiring / B11 bearing collar (start_00_CLK_28awg / bearing_collar)      11.400  >= 1.50     ok 
+   R13 screws / B01 base shell (screw_coupling_0 / base_shell)                      11.500  >= 1.50     ok 
+   R09 tube / B11 bearing collar (tube / bearing_collar)                            12.092  >= 1.50     ok 
+   R14 tie rods / B14 magnet riser (nut_ring_1 / magnet_riser)                      13.511  >= 1.50     ok 
+   R17 rotor ring / B03 gearmotor JGB37-520 (rotor_ring / shaft_boss)               13.711  >= 1.50     ok 
+   R24 rev m rotor wiring / B22 hub bearing cup (xh_header / bearing_cup)           14.321  >= 1.50     ok 
+   R24 rev m rotor wiring / B19 rev m hardware (xh_header / flange_screw_1)         15.240  >= 1.50     ok 
+   R21 drive hub / B03 gearmotor JGB37-520 (drive_hub / shaft_boss)                 15.317  >= 1.50     ok 
+   R10 LED strips / B11 bearing collar (strip_00_pcb_A / bearing_collar)            17.175  >= 1.50     ok 
+   R13 screws / B11 bearing collar (screw_sled_1 / bearing_collar)                  19.130  >= 1.50     ok 
+   R18 hex keys / B13 rev k hardware (hex_key_0 / collar_bolt_0)                    19.300  >= 1.50     ok 
+   R03 hall sensor / B11 bearing collar (hall_A3144 / bearing_collar)               20.202  >= 1.50     ok 
+   R16 rotor harness / B11 bearing collar (zip_tie_slot_L / bearing_collar)         22.903  >= 1.50     ok 
+   R17 rotor ring / B08 base wiring (rotor_ring / pot_cable_3w)                     24.169  >= 1.50     ok 
+   R17 rotor ring / B22 hub bearing cup (rotor_ring / bearing_cup)                  25.125  >= 1.50     ok 
+   R09 tube / B14 magnet riser (tube / magnet_3_asbuilt)                            34.761  >= 1.50     ok 
+   R24 rev m rotor wiring / B11 bearing collar (pigtail_neg_26awg / bearing_collar)   37.604  >= 1.50     ok 
+   R02b hub core / B11 bearing collar (hub_core / bearing_collar)                   41.207  >= 1.50     ok 
+   R21 drive hub / B11 bearing collar (drive_hub / bearing_collar)                  46.041  >= 1.50     ok 
+   R19 drive nut plate / B11 bearing collar (nut_plate / bearing_collar)            51.976  >= 1.50     ok 
+   R21 drive hub / B08 base wiring (drive_hub / pot_cable_3w)                       70.239  >= 1.50     ok 
+== sweep 2: motor-driven (pulley, belt, motor shaft) vs everything else, >= 1.5
+   B17 motor pulley 20T / B01 base shell (pulley_20T / base_shell)                   0.700  >= 0.50     ok AS BUILT: Brian lowered the 20T to grip the shaft; pulley hub dims ASSUMED (d16 x 7): look that it clears the deck
+   B18 GT2 belt 122 / R13 screws (belt_gt2_122 / screw_coupling_0)                   2.978  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B18 GT2 belt 122 (d_shaft_6mm / belt_gt2_122)           3.137  >= 1.50     ok 
+   B18 GT2 belt 122 / B03 gearmotor JGB37-520 (belt_gt2_122 / d_shaft_6mm)           3.137  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B16 motor hanger (d_shaft_6mm / motor_hanger)           3.225  >= 1.50     ok 
+   B18 GT2 belt 122 / B21 hub bearing 6802 (belt_gt2_122 / hb_outer_ring)            3.632  >= 1.50     ok 
+   B18 GT2 belt 122 / B19 rev m hardware (belt_gt2_122 / flange_screw_2)             3.700  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B01 base shell (d_shaft_6mm / base_shell)               4.025  >= 1.50     ok 
+   B18 GT2 belt 122 / B22 hub bearing cup (belt_gt2_122 / bearing_cup)               4.100  >= 1.50     ok 
+   B17 motor pulley 20T / B16 motor hanger (pulley_20T / motor_hanger)               4.700  >= 1.50     ok 
+   B17 motor pulley 20T / R02 bottom cap (pulley_20T / bottom_cap)                   4.800  >= 1.50     ok 
+   B17 motor pulley 20T / B03 gearmotor JGB37-520 (pulley_20T / shaft_boss)          4.810  >= 1.50     ok 
+   B17 motor pulley 20T / B22 hub bearing cup (pulley_20T / bearing_cup)             5.017  >= 1.50     ok 
+   B17 motor pulley 20T / B19 rev m hardware (pulley_20T / flange_washer_2)          6.017  >= 1.50     ok 
+   B18 GT2 belt 122 / R02 bottom cap (belt_gt2_122 / bottom_cap)                     6.300  >= 1.50     ok 
+   B18 GT2 belt 122 / R02b hub core (belt_gt2_122 / hub_core)                        6.300  >= 1.50     ok 
+   B18 GT2 belt 122 / R19 drive nut plate (belt_gt2_122 / nut_plate)                 6.449  >= 1.50     ok 
+   B17 motor pulley 20T / R02b hub core (pulley_20T / hub_core)                      6.800  >= 1.50     ok 
+   B17 motor pulley 20T / R15 chain wiring (pulley_20T / feed_09_GND_26awg)          7.250  >= 1.50     ok 
+   B18 GT2 belt 122 / R24 rev m rotor wiring (belt_gt2_122 / xh_header)              7.976  >= 1.50     ok 
+   B17 motor pulley 20T / R21 drive hub (pulley_20T / drive_hub)                     8.330  >= 1.50     ok 
+   B17 motor pulley 20T / R17 rotor ring (pulley_20T / rotor_ring)                   8.670  >= 1.50     ok 
+   B18 GT2 belt 122 / R15 chain wiring (belt_gt2_122 / feed_09_GND_26awg)            8.750  >= 1.50     ok 
+   B17 motor pulley 20T / R16 rotor harness (pulley_20T / hall_lead_OUT_28awg)       8.976  >= 1.50     ok 
+   B18 GT2 belt 122 / B01 base shell (belt_gt2_122 / base_shell)                     9.200  >= 1.50     ok 
+   B18 GT2 belt 122 / R17 rotor ring (belt_gt2_122 / rotor_ring)                     9.928  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B22 hub bearing cup (d_shaft_6mm / bearing_cup)        10.052  >= 1.50     ok 
+   B17 motor pulley 20T / B21 hub bearing 6802 (pulley_20T / hb_outer_ring)         10.330  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R02 bottom cap (d_shaft_6mm / bottom_cap)              10.440  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B19 rev m hardware (d_shaft_6mm / gearbox_screw_0)     10.828  >= 1.50     ok 
+   B18 GT2 belt 122 / R16 rotor harness (belt_gt2_122 / hall_lead_OUT_28awg)        10.907  >= 1.50     ok 
+   B17 motor pulley 20T / B12 bearing 6820ZZ (pulley_20T / brg_inner_ring)          11.670  >= 1.50     ok 
+   B17 motor pulley 20T / R13 screws (pulley_20T / screw_core_3)                    11.747  >= 1.50     ok 
+   B17 motor pulley 20T / R19 drive nut plate (pulley_20T / nut_plate)              12.213  >= 1.50     ok 
+   B18 GT2 belt 122 / B12 bearing 6820ZZ (belt_gt2_122 / brg_inner_ring)            12.928  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R02b hub core (d_shaft_6mm / hub_core)                 13.552  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R17 rotor ring (d_shaft_6mm / rotor_ring)              13.695  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B12 bearing 6820ZZ (d_shaft_6mm / brg_inner_ring)      16.695  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R13 screws (d_shaft_6mm / screw_core_2)                18.893  >= 1.50     ok 
+   B17 motor pulley 20T / B11 bearing collar (pulley_20T / bearing_collar)          21.470  >= 1.50     ok 
+   B18 GT2 belt 122 / B11 bearing collar (belt_gt2_122 / bearing_collar)            23.695  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B11 bearing collar (d_shaft_6mm / bearing_collar)      26.495  >= 1.50     ok 
+   B17 motor pulley 20T / R09 tube (pulley_20T / tube)                              40.643  >= 1.50     ok 
+   B18 GT2 belt 122 / R09 tube (belt_gt2_122 / tube)                                42.153  >= 1.50     ok 
+   B17 motor pulley 20T / B08 base wiring (pulley_20T / pot_cable_3w)               48.824  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B08 base wiring (d_shaft_6mm / pot_cable_3w)           50.282  >= 1.50     ok 
+== named rows
+   drive hub (flange / shoulder) to the bearing cup                                  2.100  >= 1.50     ok (drive_hub / bearing_cup)
+   drive hub to the 6802's stationary outer ring                                     1.600  >= 1.50     ok (drive_hub / hb_outer_ring)
+   turning inner ring above the deck (as built: 0.6 seat ledge, no clamp ring)       0.602  0.50..0.70  ok (hb_inner_ring / base_shell)
+   turning inner ring to the cup's seat ledge (radial)                               1.800  >= 1.50     ok (hb_inner_ring / bearing_cup)
+   drive hub to the cup screw heads                                                  1.858  >= 1.50     ok (drive_hub / flange_screw_1)
+   drive hub (journal end) to the deck                                               2.814  >= 1.50     ok (drive_hub / base_shell)
+   hub on / in the 6802's inner ring (CA'd as built; 0 = contact)                    0.000  0.00..0.00  ok (drive_hub / hb_inner_ring)
+   6802 outer ring on the cup's seat ledge / in the bore (0 = contact)               0.000  0.00..0.00  ok (hb_outer_ring / bearing_cup)
+   bearing cup on the deck (0 = contact)                                             0.000  0.00..0.00  ok (bearing_cup / base_shell)
+   cup screw tips above the motor hanger (the 300 deg screw is over the hanger)      0.500  >= 0.30     ok (flange_screw_2 / motor_hanger)
+   nut plate against the core pocket's ceiling (0 = contact)                         0.000  0.00..0.00  ok (nut_plate / hub_core)
+   captive nuts against the plate (0 = contact)                                      0.000  0.00..0.00  ok (nut_drive_2 / nut_plate)
+   pin screw heads on the core top (0 = contact)                                     0.000  0.00..0.00  ok (screw_coupling_0 / hub_core)
+   belt on the hub's teeth (0 = contact)                                             0.000  0.00..0.05  ok (drive_hub / belt_gt2_122)
+   belt on the motor pulley (0 = contact)                                            0.000  0.00..0.05  ok (pulley_20T / belt_gt2_122)
+   drive pins in the hub notches: play (0.50 each side / at the outer end)           0.500  0.45..0.60  ok (screw_coupling_2 / drive_hub)
+   axial gap, nut plate / cap plate to the hub crown (as built 4.3)                  4.300  4.00..4.60  ok (nut_plate / drive_hub)
+   axial gap, hub core's underside to the hub crown                                  4.300  4.00..4.60  ok (hub_core / drive_hub)
+   captive nuts to the hub                                                           4.500  >= 1.00     ok (nut_drive_0 / drive_hub)
+   motor pulley to the bearing cup                                                   5.017  >= 1.50     ok (pulley_20T / bearing_cup)
+   belt to the bearing cup                                                           4.100  >= 1.50     ok (belt_gt2_122 / bearing_cup)
+   motor pulley to the drive hub                                                     8.330  >= 1.50     ok (pulley_20T / drive_hub)
+   motor pulley to the cup screw heads                                               6.017  >= 1.50     ok (pulley_20T / flange_washer_2)
+   belt to the cup screw heads                                                       3.700  >= 1.50     ok (belt_gt2_122 / flange_screw_2)
+   motor pulley top flange to the rotor plate                                        4.800  >= 1.50     ok (pulley_20T / bottom_cap)
+   motor pulley to the rotor ring                                                    8.670  >= 1.50     ok (pulley_20T / rotor_ring)
+   belt to the rotor ring                                                            9.928  >= 1.50     ok (belt_gt2_122 / rotor_ring)
+   motor pulley to the magnet riser                                                 58.330  >= 1.50     ok (pulley_20T / magnet_riser)
+   motor pulley to the collar                                                       21.470  >= 1.50     ok (pulley_20T / bearing_collar)
+   bearing cup to the magnet riser                                                  17.735  >= 3.00     ok (bearing_cup / magnet_riser)
+   hanger against the deck underside (0 = contact)                                   0.000  0.00..0.00  ok (motor_hanger / base_shell)
+   hall sensor face to the 3-magnet stack (drawn; bench field says ~4.5 as built)    2.000  >= 1.50     ok (hall_A3144 / magnet_3_asbuilt)
+   rotor ring to the riser / magnets                                                 2.000  >= 1.50     ok (rotor_ring / magnet_riser)
+   sled wall arch to the pin screw heads                                             9.385  >= 1.00     ok (sled / screw_coupling_0)
+   XH header in the nut plate (as built; 0 = contact)                                0.000  0.00..0.00  ok (xh_header / nut_plate)
+   XH header to the hub (no plug: rotor on the battery)                              1.547  >= 1.00     ok (xh_header / drive_hub)
+   pigtail in the core's d7 hole                                                     1.520  >= 0.50     ok (pigtail_pos_26awg / hub_core)
+   hall face to the 2-magnet pocket stack (design 5.0)                               5.000  4.90..5.10  ok (hall_A3144 / magnets_6x3_x2_k)
+   drive pin tips above the notch floors (M3 x 20, as built)                         2.000  >= 1.00     ok 
+   drive pin engagement in the notches below the lead-in chamfer                     4.900  >= 3.50     ok 
+   cup screw flange_screw_0: thread in the deck insert (z -23.5..-27.5)              3.500  2.50..4.00  ok 
+   cup screw flange_screw_1: thread in the deck insert (z -23.5..-27.5)              3.500  2.50..4.00  ok 
+   cup screw flange_screw_2: thread in the deck insert (z -23.5..-27.5)              3.500  2.50..4.00  ok 
+== tension travel (hanger slots +-2): motor, hanger, pulley copies moved along y
+   travel -2.0 mm: pulley / motor to the drive hub                                  10.330  >= 1.50     ok 
+   travel -2.0 mm: pulley to the rotor ring                                          6.670  >= 1.50     ok 
+   travel -2.0 mm: pulley to the cup screws                                          7.775  >= 1.50     ok 
+   travel -2.0 mm: pulley to the bearing cup                                         6.775  >= 1.50     ok 
+   travel +0.5 mm: pulley / motor to the drive hub                                   7.830  >= 1.50     ok 
+   travel +0.5 mm: pulley to the rotor ring                                          9.170  >= 1.50     ok 
+   travel +0.5 mm: pulley to the cup screws                                          5.585  >= 1.50     ok 
+   travel +0.5 mm: pulley to the bearing cup                                         4.585  >= 1.50     ok 
+   travel +2.0 mm: pulley / motor to the drive hub                                   6.330  >= 1.50     ok 
+   travel +2.0 mm: pulley to the rotor ring                                         10.670  >= 1.50     ok 
+   travel +2.0 mm: pulley to the cup screws                                          4.316  >= 1.50     ok 
+   travel +2.0 mm: pulley to the bearing cup                                         3.316  >= 1.50     ok 
+== overlap volumes (must be 0)
+   overlap B16 motor hanger with the base shell (mm3)                               -0.000  >= 0.00     ok 
+   overlap B22 hub bearing cup with the base shell (mm3)                            -0.000  >= 0.00     ok 
+   overlap B11 bearing collar with the base shell (mm3)                             -0.000  >= 0.00     ok 
+   overlap B14 magnet riser with the base shell (mm3)                               -0.000  >= 0.00     ok 
+   overlap drive hub with the bearing cup (mm3)                                     -0.000  >= 0.00     ok 
+   overlap cup screws / washers with the bearing cup (mm3)                          -0.000  >= 0.00     ok 
+   overlap drive pins / nuts with the hub (mm3)                                     -0.000  >= 0.00     ok 
+   overlap nut plate with the hub core (mm3)                                        -0.000  >= 0.00     ok 
+== mass properties (rotor = what rides on the 6820; the hub group rides on the 6802)
+   rev n (v16): 882.8 g, U 51.6 g mm, rocking 41.4 Hz
+   ASBUILT:    883.5 g, CG (0.021, -0.055, 85.49), U 51.6 g mm = 22 % of G6.3 236 / 55 % of G2.5 94; rocking 41.4 Hz
+   rotor U (g mm) <= G6.3 at 225 rpm                                                51.642  -1000000000.00..236.24 ok 
+   rotor U (g mm) <= G2.5 at 225 rpm                                                51.642  -1000000000.00..93.75 ok 
+   hub group on the 6802 (R21 drive hub): 4.81 g, U 0.00 g mm
+   per component (rotor share, g):
+      B12 bearing 6820ZZ                     65.00  cg (  -0.00,   -0.00,  -14.5)
+      R02 bottom cap                         56.58  cg (  -0.00,   -0.02,   -0.1)
+      R02b hub core                          14.95  cg (  -0.00,    0.00,    4.0)
+      R03 hall sensor                         0.28  cg (   0.00,   41.77,   -2.0)
+      R04 sled                               31.75  cg (  -0.60,    1.12,   16.9)
+      R06 ESP32                               9.03  cg (  -0.00,   -6.22,   51.2)
+      R07 carrier board (level shifters)     42.86  cg (  -0.52,   -4.00,   54.1)
+      R09 tube                              278.67  cg (   0.00,   -0.00,  124.7)
+      R10 LED strips                         96.00  cg (   0.00,   -0.00,  125.0)
+      R11 top cap                            68.58  cg (   0.00,   -0.00,  250.4)
+      R13 screws                             15.93  cg (   0.36,    0.99,    5.4)
+      R14 tie rods                           64.02  cg (   0.00,   -0.00,  120.8)
+      R15 chain wiring                       15.01  cg (   2.77,   -7.40,   80.3)
+      R16 rotor harness                       1.14  cg ( -10.58,   -4.51,   48.7)
+      R17 rotor ring                         95.98  cg (   0.00,    0.00,   -5.4)
+      R18 hex keys                            0.79  cg (  -0.00,    0.00,   -1.9)
+      R19 drive nut plate                     1.43  cg (  -0.00,   -0.00,    0.2)
+      R23 buck 5V                            18.00  cg (   2.44,   12.66,   25.5)
+      R24 rev m rotor wiring                  1.34  cg ( -14.71,    4.34,   30.7)
+== BASE 936 g; device 1820 g
+== 153 rows, 0 FAIL
+wrote calc/revo_asbuilt_checks.json

@@ -1,0 +1,729 @@
+[
+ {
+  "engine": "whisper-small-t4-s1.0",
+  "preset": "whisper-small",
+  "kw": {
+   "threads": 4,
+   "step_s": 1.0
+  },
+  "desc": "faster-whisper small.en int8 + LocalAgreement-2",
+  "load_s": 1.59,
+  "rss_mb": 405,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.0,
+    "lat_med": 5.711378099741417,
+    "cpu": 4.38125,
+    "max_lag": 5.026950599974953
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.012195121951219513,
+    "lat_med": 6.468128400016576,
+    "cpu": 4.3796875,
+    "max_lag": 13.68414740008302
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.21951219512195122,
+    "lat_med": 5.664296399932356,
+    "cpu": 3.971484375,
+    "max_lag": 2.27669959992636
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0547945205479452,
+    "lat_med": 6.95998720003292,
+    "cpu": 4.400391458574021,
+    "max_lag": 12.775452099973336
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.041666666666666664,
+    "lat_med": 6.163548400092404,
+    "cpu": 4.218314580927092,
+    "max_lag": 4.183251100010239
+   }
+  ],
+  "words": 301,
+  "wer": 0.0532,
+  "sub": 1,
+  "dele": 13,
+  "ins": 2,
+  "lat_med": 6.116,
+  "lat_p90": 10.348,
+  "lat_mean": 7.143,
+  "lat_p10": 4.898,
+  "cpu_cores": 4.27,
+  "rtf": 1.029,
+  "max_lag": 13.68,
+  "late_ext": null,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:34"
+ },
+ {
+  "engine": "whisper-distil-t4-s1.0",
+  "preset": "whisper-distil",
+  "kw": {
+   "threads": 4,
+   "step_s": 1.0
+  },
+  "desc": "faster-whisper distil-small.en int8 + LocalAgreement-2",
+  "load_s": 1.35,
+  "rss_mb": 328,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.24561403508771928,
+    "lat_med": 5.915757900269236,
+    "cpu": 5.062890625,
+    "max_lag": 5.88642009999603
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.5609756097560976,
+    "lat_med": 4.9392263998230925,
+    "cpu": 4.41171875,
+    "max_lag": 3.561870099976659
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.14634146341463414,
+    "lat_med": 5.675082300165668,
+    "cpu": 3.031640625,
+    "max_lag": 3.4606639000121504
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.3835616438356164,
+    "lat_med": 7.9276248000888145,
+    "cpu": 4.587991414175366,
+    "max_lag": 7.1619196000974625
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.25,
+    "lat_med": 5.447493500092532,
+    "cpu": 4.716885292789168,
+    "max_lag": 12.7587394999573
+   }
+  ],
+  "words": 301,
+  "wer": 0.3522,
+  "sub": 23,
+  "dele": 70,
+  "ins": 13,
+  "lat_med": 5.744,
+  "lat_p90": 18.072,
+  "lat_mean": 7.878,
+  "lat_p10": 4.152,
+  "cpu_cores": 4.362,
+  "rtf": 1.039,
+  "max_lag": 12.76,
+  "late_ext": null,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:38"
+ },
+ {
+  "engine": "whisper-base-t2-s0.5",
+  "preset": "whisper-base",
+  "kw": {
+   "threads": 2,
+   "step_s": 0.5
+  },
+  "desc": "faster-whisper base.en int8 + LocalAgreement-2",
+  "load_s": 1.04,
+  "rss_mb": 233,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.05263157894736842,
+    "lat_med": 4.663033049937804,
+    "cpu": 2.1703125,
+    "max_lag": 10.544267399935052
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.0,
+    "lat_med": 2.979427100294269,
+    "cpu": 2.070703125,
+    "max_lag": 5.004161000018939
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.2926829268292683,
+    "lat_med": 2.770758299613373,
+    "cpu": 2.0765625,
+    "max_lag": 1.9185211999574676
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0821917808219178,
+    "lat_med": 3.3401951996423307,
+    "cpu": 2.0428853498504673,
+    "max_lag": 4.94431920000352
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.14583333333333334,
+    "lat_med": 3.0902277002064515,
+    "cpu": 1.7946201250646658,
+    "max_lag": 3.8189218000043184
+   }
+  ],
+  "words": 301,
+  "wer": 0.093,
+  "sub": 11,
+  "dele": 14,
+  "ins": 3,
+  "lat_med": 3.134,
+  "lat_p90": 6.871,
+  "lat_mean": 3.773,
+  "lat_p10": 2.281,
+  "cpu_cores": 2.031,
+  "rtf": 1.003,
+  "max_lag": 10.54,
+  "late_ext": null,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:43"
+ },
+ {
+  "engine": "whisper-base-t4-s1.0-trim8",
+  "preset": "whisper-base",
+  "kw": {
+   "threads": 4,
+   "step_s": 1.0,
+   "trim_s": 8.0
+  },
+  "desc": "faster-whisper base.en int8 + LocalAgreement-2",
+  "load_s": 0.99,
+  "rss_mb": 227,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.10526315789473684,
+    "lat_med": 2.857733100005426,
+    "cpu": 3.515234375,
+    "max_lag": 3.819417899940163
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.012195121951219513,
+    "lat_med": 3.4405959999887266,
+    "cpu": 3.38359375,
+    "max_lag": 7.135112100047991
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.2682926829268293,
+    "lat_med": 3.7170511999679725,
+    "cpu": 2.480859375,
+    "max_lag": 2.630513099953532
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0684931506849315,
+    "lat_med": 2.856771700077225,
+    "cpu": 3.3154383820129163,
+    "max_lag": 7.5502156999427825
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.14583333333333334,
+    "lat_med": 3.71647310002707,
+    "cpu": 3.4266968205567427,
+    "max_lag": 6.903443300048821
+   }
+  ],
+  "words": 301,
+  "wer": 0.0997,
+  "sub": 10,
+  "dele": 11,
+  "ins": 9,
+  "lat_med": 3.387,
+  "lat_p90": 9.031,
+  "lat_mean": 4.319,
+  "lat_p10": 2.03,
+  "cpu_cores": 3.224,
+  "rtf": 0.805,
+  "max_lag": 7.55,
+  "late_ext": null,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:45"
+ },
+ {
+  "engine": "kroko-t1",
+  "preset": "kroko",
+  "kw": {
+   "threads": 1
+  },
+  "desc": "sherpa-onnx streaming Zipformer EN (Banafo Kroko 2025-08-06), 70 MB, cased + punctuation",
+  "load_s": 3.8,
+  "rss_mb": 209,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.08771929824561403,
+    "lat_med": 1.580066400019116,
+    "cpu": 0.0328125,
+    "max_lag": 0.04992420005146414
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.07317073170731707,
+    "lat_med": 1.6790740500298806,
+    "cpu": 0.03046875,
+    "max_lag": 0.04297079995740205
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.2682926829268293,
+    "lat_med": 1.564826800003797,
+    "cpu": 0.03125,
+    "max_lag": 0.0485375999705866
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0821917808219178,
+    "lat_med": 1.7214390999358749,
+    "cpu": 0.03165749250772677,
+    "max_lag": 0.04518089990597218
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.16666666666666666,
+    "lat_med": 1.5700795500028029,
+    "cpu": 0.030476893044860426,
+    "max_lag": 0.045750899938866496
+   }
+  ],
+  "words": 301,
+  "wer": 0.1196,
+  "sub": 15,
+  "dele": 15,
+  "ins": 6,
+  "lat_med": 1.641,
+  "lat_p90": 2.399,
+  "lat_mean": 1.708,
+  "lat_p10": 1.042,
+  "cpu_cores": 0.031,
+  "rtf": 0.032,
+  "max_lag": 0.05,
+  "late_ext": 2,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:47"
+ },
+ {
+  "engine": "kroko-t1-hold0.25",
+  "preset": "kroko",
+  "kw": {
+   "threads": 1,
+   "tail_hold": 0.25
+  },
+  "desc": "sherpa-onnx streaming Zipformer EN (Banafo Kroko 2025-08-06), 70 MB, cased + punctuation",
+  "load_s": 3.45,
+  "rss_mb": 210,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.08771929824561403,
+    "lat_med": 1.5812379999762527,
+    "cpu": 0.03203125,
+    "max_lag": 0.05112720001488924
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.07317073170731707,
+    "lat_med": 1.6795837499527657,
+    "cpu": 0.033203125,
+    "max_lag": 0.05729790008626878
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.2682926829268293,
+    "lat_med": 1.5644103500341626,
+    "cpu": 0.03359375,
+    "max_lag": 0.05666859995108098
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0821917808219178,
+    "lat_med": 1.7282508999994626,
+    "cpu": 0.03634749139776037,
+    "max_lag": 0.057436399976722896
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.16666666666666666,
+    "lat_med": 1.5711366499611283,
+    "cpu": 0.033993457626959704,
+    "max_lag": 0.053653899929486215
+   }
+  ],
+  "words": 301,
+  "wer": 0.1196,
+  "sub": 15,
+  "dele": 15,
+  "ins": 6,
+  "lat_med": 1.65,
+  "lat_p90": 2.399,
+  "lat_mean": 1.711,
+  "lat_p10": 1.042,
+  "cpu_cores": 0.034,
+  "rtf": 0.034,
+  "max_lag": 0.06,
+  "late_ext": 2,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:48"
+ },
+ {
+  "engine": "fastconformer-t1",
+  "preset": "fastconformer",
+  "kw": {
+   "threads": 1
+  },
+  "desc": "sherpa-onnx NeMo FastConformer streaming transducer EN, 80 ms chunks, int8, lowercase",
+  "load_s": 1.54,
+  "rss_mb": 256,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.07017543859649122,
+    "lat_med": 0.7356394500123518,
+    "cpu": 0.225,
+    "max_lag": 0.04313250002451241
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.08536585365853659,
+    "lat_med": 0.6791154999380424,
+    "cpu": 0.23828125,
+    "max_lag": 0.05234699998982251
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.21951219512195122,
+    "lat_med": 0.8052990999328813,
+    "cpu": 0.246875,
+    "max_lag": 0.05150990001857281
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0821917808219178,
+    "lat_med": 0.8331920000025583,
+    "cpu": 0.22316578051743194,
+    "max_lag": 0.05545650003477931
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.4791666666666667,
+    "lat_med": 0.7386974000139332,
+    "cpu": 0.22896742723446423,
+    "max_lag": 0.047336199902929366
+   }
+  ],
+  "words": 301,
+  "wer": 0.1628,
+  "sub": 20,
+  "dele": 14,
+  "ins": 15,
+  "lat_med": 0.756,
+  "lat_p90": 1.096,
+  "lat_mean": 0.804,
+  "lat_p10": 0.554,
+  "cpu_cores": 0.232,
+  "rtf": 0.23,
+  "max_lag": 0.06,
+  "late_ext": 0,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:48"
+ },
+ {
+  "engine": "nemotron-t2",
+  "preset": "nemotron",
+  "kw": {
+   "threads": 2
+  },
+  "desc": "sherpa-onnx NVIDIA Nemotron-3.5 ASR streaming 0.6B, 160 ms chunks, int8, cased + punctuation",
+  "load_s": 2.13,
+  "rss_mb": 828,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.07017543859649122,
+    "lat_med": 0.8352979999547809,
+    "cpu": 1.745703125,
+    "max_lag": 0.1397761000553146
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.08536585365853659,
+    "lat_med": 0.781603399328878,
+    "cpu": 1.794140625,
+    "max_lag": 0.14604589994996786
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.21951219512195122,
+    "lat_med": 0.8695459506078599,
+    "cpu": 1.721484375,
+    "max_lag": 0.13270809990353882
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0958904109589041,
+    "lat_med": 0.8388847498153531,
+    "cpu": 1.775164579877716,
+    "max_lag": 0.1324039000319317
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.2708333333333333,
+    "lat_med": 0.7960613004258477,
+    "cpu": 1.7278053980047796,
+    "max_lag": 0.12823859998025
+   }
+  ],
+  "words": 301,
+  "wer": 0.1329,
+  "sub": 10,
+  "dele": 23,
+  "ins": 7,
+  "lat_med": 0.832,
+  "lat_p90": 1.179,
+  "lat_mean": 0.894,
+  "lat_p10": 0.633,
+  "cpu_cores": 1.753,
+  "rtf": 0.709,
+  "max_lag": 0.15,
+  "late_ext": 10,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:51"
+ },
+ {
+  "engine": "fastconformer-t1-hold0.25",
+  "preset": "fastconformer",
+  "kw": {
+   "threads": 1,
+   "tail_hold": 0.25
+  },
+  "desc": "sherpa-onnx NeMo FastConformer streaming transducer EN, 80 ms chunks, int8, lowercase",
+  "load_s": 1.65,
+  "rss_mb": 255,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.07017543859649122,
+    "lat_med": 0.7167767499993474,
+    "cpu": 0.2234375,
+    "max_lag": 0.04707039997447282
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.0975609756097561,
+    "lat_med": 0.6577502999617986,
+    "cpu": 0.224609375,
+    "max_lag": 0.04544080002233386
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.21951219512195122,
+    "lat_med": 0.7667604499918284,
+    "cpu": 0.228515625,
+    "max_lag": 0.04961159999947995
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0821917808219178,
+    "lat_med": 0.7756680999976666,
+    "cpu": 0.22433828023994035,
+    "max_lag": 0.04620420001447201
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.4791666666666667,
+    "lat_med": 0.6751806998951473,
+    "cpu": 0.22310648626429877,
+    "max_lag": 0.04727760003879666
+   }
+  ],
+  "words": 301,
+  "wer": 0.1661,
+  "sub": 21,
+  "dele": 14,
+  "ins": 15,
+  "lat_med": 0.716,
+  "lat_p90": 0.974,
+  "lat_mean": 0.76,
+  "lat_p10": 0.536,
+  "cpu_cores": 0.225,
+  "rtf": 0.222,
+  "max_lag": 0.05,
+  "late_ext": 1,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:52"
+ },
+ {
+  "engine": "fastconformer-t2",
+  "preset": "fastconformer",
+  "kw": {
+   "threads": 2
+  },
+  "desc": "sherpa-onnx NeMo FastConformer streaming transducer EN, 80 ms chunks, int8, lowercase",
+  "load_s": 1.59,
+  "rss_mb": 255,
+  "clips": [
+   {
+    "clip": "take1",
+    "dur": 40.0,
+    "ref_words": 57,
+    "wer": 0.07017543859649122,
+    "lat_med": 0.7126855499298426,
+    "cpu": 0.62890625,
+    "max_lag": 0.04721410002093762
+   },
+   {
+    "clip": "take2",
+    "dur": 40.0,
+    "ref_words": 82,
+    "wer": 0.0975609756097561,
+    "lat_med": 0.652181399990903,
+    "cpu": 0.688671875,
+    "max_lag": 0.037925199954770616
+   },
+   {
+    "clip": "take3",
+    "dur": 40.0,
+    "ref_words": 41,
+    "wer": 0.21951219512195122,
+    "lat_med": 0.7601174499912062,
+    "cpu": 0.61015625,
+    "max_lag": 0.03680800006259233
+   },
+   {
+    "clip": "desk1",
+    "dur": 39.9786875,
+    "ref_words": 73,
+    "wer": 0.0821917808219178,
+    "lat_med": 0.7720085000713439,
+    "cpu": 0.6562090113638673,
+    "max_lag": 0.04086229996755719
+   },
+   {
+    "clip": "desk2",
+    "dur": 39.9893125,
+    "ref_words": 48,
+    "wer": 0.4791666666666667,
+    "lat_med": 0.6705638000138165,
+    "cpu": 0.6376703775540028,
+    "max_lag": 0.03737100004218519
+   }
+  ],
+  "words": 301,
+  "wer": 0.1661,
+  "sub": 21,
+  "dele": 14,
+  "ins": 15,
+  "lat_med": 0.71,
+  "lat_p90": 0.969,
+  "lat_mean": 0.755,
+  "lat_p10": 0.533,
+  "cpu_cores": 0.644,
+  "rtf": 0.192,
+  "max_lag": 0.05,
+  "late_ext": 1,
+  "host": "the desktop PC",
+  "when": "2026-11-02 12:52"
+ }
+]

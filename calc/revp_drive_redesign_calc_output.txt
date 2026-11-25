@@ -1,0 +1,110 @@
+
+== A. Inputs
+  11-20    motor alone, belt off (PWM board, full)                   122 mA   rotor rpm -
+  11-20/21 base + belt + hub, no rotor                               124 mA   rotor rpm -
+  11-21    base + belt + hub after centring                          180 mA   rotor rpm -
+  11-19    bare rotor, old ring, fresh-grease 6820                   327 mA   rotor rpm -
+  11-19    + board + battery, old ring                               660 mA   rotor rpm 117.0
+  11-21    rotor + board + battery, rev o                            600 mA   rotor rpm 142.0
+  11-22    belt as tight as possible (no skips)                      650 mA   rotor rpm -
+  11-22    AFTER flush + oil: ring + plate, no tube, no battery      165 mA   rotor rpm -
+
+== B. JGB37-520 motor model (12 V; straight line through two measured points)
+  R = 11.2 ohm, k = 19.69 mV/rpm (Ke 0.188 V s/rad at the output), stall current 1.07 A
+  check, 11-14 rev j direct drive at 5.07 V: the line gives 188 rpm at no-load current (measured 188): the rev j load was ~0
+  check, 11-21: 0.600 A -> motor 268 rpm -> rotor 134 rpm (measured 130-155 by video)
+  torque per amp above I0: output 0.122-0.160 N m/A; at the rotor (2:1, 95 %) 0.232-0.304 N m/A
+  stall torque at 12 V: output 0.116-0.152 N m; at the rotor 0.22-0.29 N m
+  maximum mechanical output at 12 V (eta 0.75): 1.89 W at 270 motor rpm = 135 rotor rpm
+
+== C. Torque at the rotor, from the current above the base (kt 0.24-0.31 N m/A)
+  bare rotor, fresh grease (11-19)          327 mA ->    34 ..    62 mN m at the rotor
+  rotor + board + battery (11-21)           600 mA ->    98 ..   145 mN m at the rotor
+  belt as tight as possible (11-22)         650 mA ->   109 ..   160 mN m at the rotor
+  AFTER: ring + plate, oiled (11-22)        165 mA ->     0 ..    12 mN m at the rotor
+  Before: ~0.125 N m at ~142 rpm = 1.86 W at the rotor = 1.96 W out of the motor: its whole 1.9 W maximum. No gear ratio fixes a power shortfall.
+
+== D. SKF frictional moment (M = phi_ish phi_rs G_rr (nu n)^0.6 + G_sl mu_sl + M_seal), N mm = mN m
+  Axial load on the 6820: ring + plate 2.0 N, full rotor 8.7 N, + battery 10.6 N; Fr 1 N
+  6820 rolling + sliding (no seal), mN m:      150 rpm   188 rpm   225 rpm   250 rpm
+    run-in grease, nu 150 (full rotor)          34.7     38.9     42.3     44.4
+    run-in grease, nu 250 (full rotor)          44.7     49.3     52.9     55.0
+    light oil nu 15 (full rotor)                 9.6     10.9     12.1     12.8
+    light oil nu 30 (full rotor)                14.3     16.2     18.0     19.0
+    light oil nu 30 (+ battery)                 15.5     17.7     19.5     20.7
+    light oil nu 30 (ring + plate)               7.7      8.8      9.8     10.4
+  If the 6820 had contact seals (SKF RS1 row, D > 100: 0.018 x 106.6^2.25): M_seal = 657 mN m. Yours is ZZ: shields don't touch, and removing them changed nothing (11-22).
+  The hub's 6802-2RS (RS1 row, D <= 62: 0.023 x 17.9^2.25 + 2): M_seal = 17.2 mN m -- now the largest single drag in the drive
+  Fresh factory fill, measured by difference: 100-130 mN m at ~142 rpm, vs the model's run-in 37 mN m: x2.7-3.5 for churning a full, fresh fill.
+  After flush + light oil (nu ~25 at room temperature): 16.2 mN m at 225 rpm, full rotor -> 6-8x less
+  Check against 11-22 (ring + plate, oiled): model 8.8 mN m -> 33 mA over the base; measured 165 mA vs a 124-180 mA base
+  Small bearings instead of the 6820 (two on a spindle, full rotor on one, the other preloaded 10 N), grease nu 150, 225 rpm:
+    2 x 6002ZZ: 1.5 + 1.6 = 3.1 mN m (oiled: 1.3)
+    2 x 608ZZ: 0.6 + 0.7 = 1.3 mN m (oiled: 0.6)
+
+== E. Air drag of the column
+  188 rpm: Re 8400, skin ~0.36 mN m, rails + LED bumps ~1.71 mN m -> ~2.1 mN m
+  225 rpm: Re 10053, skin ~0.49 mN m, rails + LED bumps ~2.45 mN m -> ~2.9 mN m
+  Bench evidence: rev j turned 188 rpm on 5.07 V at no-load current (section B), so the air load is a few mN m,
+  not the 27 mN m the rev k / m budget carried.
+
+== F. Prediction for the full rotor after the flush (no battery; slip ring + pogo when fitted)
+  oil nu 15: 17 mN m at the rotor -> +62 mA -> 186-242 mA total, rotor 236-252 rpm at full knob
+  oil nu 30: 22 mN m at the rotor -> +84 mA -> 208-264 mA total, rotor 230-246 rpm at full knob
+
+== G. GT2 belt 20T / 40T, 122 mm, C 30.33
+  pitch radii 6.37 / 12.73 mm; free span 29.7 mm; wrap on the 20T 156 deg = 8.7 teeth in mesh
+  before (0.125 N m)                   effective tension   9.8 N -> slack side goes slack below T0 = 4.9 N per strand
+  after, hub incl. 6802 (0.040 N m)    effective tension   3.1 N -> slack side goes slack below T0 = 1.6 N per strand
+  T0  3 N: pluck  337 Hz, 1 N (~100 g) at mid-span deflects 2.47 mm, hub / 6802 side load 6 N
+  T0  5 N: pluck  435 Hz, 1 N (~100 g) at mid-span deflects 1.48 mm, hub / 6802 side load 10 N
+  T0  8 N: pluck  551 Hz, 1 N (~100 g) at mid-span deflects 0.93 mm, hub / 6802 side load 16 N
+  T0 12 N: pluck  674 Hz, 1 N (~100 g) at mid-span deflects 0.62 mm, hub / 6802 side load 24 N
+  T0 20 N: pluck  871 Hz, 1 N (~100 g) at mid-span deflects 0.37 mm, hub / 6802 side load 40 N
+  Finger tension (rev n diag step 3: ~3 mm under a light push) is T0 ~ 3-5 N: slack below Te 6-10 N. Before, Te was ~10 N:
+  the slack side went slack and the 20T's ~9 teeth ratcheted (the pops, 2-3 per turn, count set by the tension).
+  'As tight as possible' (T0 >~ 15 N) stopped the skips but put >30 N on a 5 mm-wide 6802 cantilevered 8-10 mm.
+
+== H. Drive pins (r 8 mm)
+  before: 15.6 N on the driving pin
+  after: 3.1 N on the driving pin
+  pin in a radial notch with an axis offset of 0.05 mm, STIFF drive (no belt), 188 rpm: forced torque ripple +-9 mN m
+  pin in a radial notch with an axis offset of 0.05 mm, STIFF drive (no belt), 225 rpm: forced torque ripple +-14 mN m
+  pin in a radial notch with an axis offset of 0.1 mm, STIFF drive (no belt), 188 rpm: forced torque ripple +-19 mN m
+  pin in a radial notch with an axis offset of 0.1 mm, STIFF drive (no belt), 225 rpm: forced torque ripple +-27 mN m
+  pin in a radial notch with an axis offset of 0.2 mm, STIFF drive (no belt), 188 rpm: forced torque ripple +-38 mN m
+  pin in a radial notch with an axis offset of 0.2 mm, STIFF drive (no belt), 225 rpm: forced torque ripple +-54 mN m
+  The belt and the light hub absorbed that ripple in rev o. A direct drive needs a constant-velocity coupling (Oldham).
+
+== I. Battery unbalance vs the 6820's gravity preload
+  U 2000 g mm at 150 rpm: 0.49 N rotating, moment 0.040 N m vs tipping limit W r_p / 2 = 0.30 N m (13 %)
+  U 2000 g mm at 188 rpm: 0.78 N rotating, moment 0.063 N m vs tipping limit W r_p / 2 = 0.30 N m (21 %)
+  U 2000 g mm at 225 rpm: 1.11 N rotating, moment 0.090 N m vs tipping limit W r_p / 2 = 0.30 N m (30 %)
+  U 5000 g mm at 150 rpm: 1.23 N rotating, moment 0.100 N m vs tipping limit W r_p / 2 = 0.30 N m (33 %)
+  U 5000 g mm at 188 rpm: 1.94 N rotating, moment 0.157 N m vs tipping limit W r_p / 2 = 0.30 N m (53 %)
+  U 5000 g mm at 225 rpm: 2.78 N rotating, moment 0.225 N m vs tipping limit W r_p / 2 = 0.30 N m (75 %)
+  G6.3 at 225 rpm for this rotor: ~240 g mm. The battery off-axis by 10-25 mm is 2,000-5,000 g mm.
+
+== J. Coast-down (maintenance reference)
+  fresh grease, full rotor     from 188 rpm at 100 mN m: stops in 0.8 s after 1.2 turns
+  oiled, full rotor            from 188 rpm at 19 mN m: stops in 4.0 s after 6.3 turns
+  oiled, ring + plate          from 188 rpm at 9 mN m: stops in 1.6 s after 2.5 turns
+  (oil drag falls with speed as n^0.6, so the real coast is a little longer than this constant-torque estimate)
+
+== K. Fallback drives
+  JGB37 direct (1:1) at 25 mN m: 439 rpm at 12 V; droop 4033 rpm per N m (+-5 mN m = +-20 rpm)
+  JGB37 direct (1:1) at 60 mN m: 298 rpm at 12 V; droop 4033 rpm per N m (+-5 mN m = +-20 rpm)
+  JGB37 direct (1:1) at 125 mN m: 36 rpm at 12 V; droop 4033 rpm per N m (+-5 mN m = +-20 rpm)
+  17HS13-1504H hollow (0.25 N m, 1.5 A): pull-out ~0.17 / 0.17 / 0.17 / 0.17 N m at 150 / 188 / 225 / 250 rpm; torsional mode with the rotor 9.0 Hz
+  17HS19-2004S1 (0.59 N m, 2.0 A): pull-out ~0.41 / 0.41 / 0.37 / 0.31 N m at 150 / 188 / 225 / 250 rpm; torsional mode with the rotor 13.8 Hz
+  idler on the spigot bore: motor at r 29, wheel r 18: motor 588 rpm for 225 (the JGB37 has 540 no-load)
+  idler on the spigot bore: motor at r 31, wheel r 16: motor 661 rpm for 225 (the JGB37 has 540 no-load)
+  idler on the spigot bore: motor at r 33, wheel r 14: motor 755 rpm for 225 (the JGB37 has 540 no-load)
+  pogo pin sliding on a ring at r 15 mm, 225 rpm: 1.3 km per hour, wear 0.0015-0.015 mm3/h (Archard k 1e-5..1e-4, 0.6 N); the 0.76 um gold is gone in minutes
+  pogo pin sliding on a ring at r 25 mm, 225 rpm: 2.1 km per hour, wear 0.0025-0.025 mm3/h (Archard k 1e-5..1e-4, 0.6 N); the 0.76 um gold is gone in minutes
+  Drag of 4 brushes at 1.5 N, mu 0.25, r 12 mm: 18 mN m
+
+== L. Oil in an open 6820
+  centrifugal acceleration at r 51 mm, 225 rpm: 28 m/s2 (2.9 g): oil on the turning inner ring moves out into the races
+  centrifugal acceleration at r 59 mm, 225 rpm: 33 m/s2 (3.3 g): oil on the turning inner ring moves out into the races
+  free volume between the ring lands ~14 cm3; 4-6 drops (0.2-0.3 cm3) is ~2 % of it: a film, not a fill

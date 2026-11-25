@@ -1,0 +1,612 @@
+{
+ "date": "2026-11-09",
+ "rev": "k",
+ "rows": [
+  {
+   "check": "rotor ring to the collar (spins / stands)",
+   "a": "R17 rotor ring",
+   "b": "B11 bearing collar",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true
+  },
+  {
+   "check": "rotor ring to the bearing's outer ring (stationary)",
+   "a": "R17 rotor ring",
+   "b": "B12 bearing 6820ZZ:brg_outer_ring",
+   "value_mm": 1.0,
+   "limit": ">= 0.80",
+   "ok": true
+  },
+  {
+   "check": "land edge to the shields / balls (shields recessed in the outer ring)",
+   "a": "R17 rotor ring",
+   "b": "B12 bearing 6820ZZ:brg_shields|brg_balls",
+   "value_mm": 0.552,
+   "limit": ">= 0.40",
+   "ok": true
+  },
+  {
+   "check": "rotor ring / trim flange to the collar bolt heads",
+   "a": "R17 rotor ring",
+   "b": "B13 rev k hardware:collar_bolt",
+   "value_mm": 9.626,
+   "limit": ">= 1.00",
+   "ok": true
+  },
+  {
+   "check": "spigot to the magnet riser + magnets",
+   "a": "R17 rotor ring",
+   "b": "B14 magnet riser",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true
+  },
+  {
+   "check": "rod ends + ring nuts above the bearing's outer ring",
+   "a": "R14 tie rods",
+   "b": "B12 bearing 6820ZZ:brg_outer_ring|brg_shields",
+   "value_mm": 1.2,
+   "limit": ">= 0.80",
+   "ok": true
+  },
+  {
+   "check": "tie rods / ring nuts to the collar",
+   "a": "R14 tie rods",
+   "b": "B11 bearing collar",
+   "value_mm": 2.313,
+   "limit": ">= 1.50",
+   "ok": true
+  },
+  {
+   "check": "bottom-cap plate to the collar",
+   "a": "R02 bottom cap",
+   "b": "B11 bearing collar",
+   "value_mm": 7.0,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "bottom-cap plate to the riser",
+   "a": "R02 bottom cap",
+   "b": "B14 magnet riser",
+   "value_mm": 6.0,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "hex keys to the collar",
+   "a": "R18 hex keys",
+   "b": "B11 bearing collar",
+   "value_mm": 4.669,
+   "limit": ">= 2.00",
+   "ok": true
+  },
+  {
+   "check": "tube to the collar",
+   "a": "R09 tube",
+   "b": "B11 bearing collar",
+   "value_mm": 12.092,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "LED strips to the collar",
+   "a": "R10 LED strips",
+   "b": "B11 bearing collar",
+   "value_mm": 17.175,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "chain wiring to the collar",
+   "a": "R15 chain wiring",
+   "b": "B11 bearing collar",
+   "value_mm": 11.4,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "rotor harness (hall lead) to the riser",
+   "a": "R16 rotor harness",
+   "b": "B14 magnet riser",
+   "value_mm": 9.535,
+   "limit": ">= 1.00",
+   "ok": true
+  },
+  {
+   "check": "hall sensor to the riser body",
+   "a": "R03 hall sensor",
+   "b": "B14 magnet riser:magnet_riser",
+   "value_mm": 9.5,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "HALL GAP: sensor face to the new magnets (3-6 works, 5.0 designed)",
+   "a": "R03 hall sensor",
+   "b": "B14 magnet riser:magnets_6x3_x2_k",
+   "value_mm": 5.0,
+   "limit": "4.50..5.50",
+   "ok": true
+  },
+  {
+   "check": "hall sensor to the old (buried) magnets",
+   "a": "R03 hall sensor",
+   "b": "B06 hall magnet",
+   "value_mm": 19.0,
+   "limit": ">= 15.00",
+   "ok": true
+  },
+  {
+   "check": "coupling screws / dog nuts to the lug screws",
+   "a": "R13 screws",
+   "b": "B13 rev k hardware",
+   "value_mm": 7.223,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "coupling screws / dog nuts to the flange coupling",
+   "a": "R13 screws",
+   "b": "R01 flange coupling",
+   "value_mm": 10.0,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "rotor dog (+ rib) to the lug heads (axial)",
+   "a": "R19 Oldham rotor dog",
+   "b": "B13 rev k hardware:oldham_lug",
+   "value_mm": 5.551,
+   "limit": ">= 1.20",
+   "ok": true
+  },
+  {
+   "check": "rotor dog to the flange coupling",
+   "a": "R19 Oldham rotor dog",
+   "b": "R01 flange coupling",
+   "value_mm": 7.5,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "rotor dog to the motor shaft tip",
+   "a": "R19 Oldham rotor dog",
+   "b": "B03 gearmotor JGB37-520:d_shaft",
+   "value_mm": 4.19,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "rotor ring to the Oldham disc",
+   "a": "R17 rotor ring",
+   "b": "R20 Oldham disc",
+   "value_mm": 34.0,
+   "limit": ">= 20.00",
+   "ok": true
+  },
+  {
+   "check": "disc to the flange top (axial gap 0.75)",
+   "a": "R20 Oldham disc",
+   "b": "R01 flange coupling",
+   "value_mm": 0.75,
+   "limit": "0.70..0.80",
+   "ok": true
+  },
+  {
+   "check": "lug heads in the disc's groove (0.2 per side)",
+   "a": "R20 Oldham disc",
+   "b": "B13 rev k hardware:oldham_lug",
+   "value_mm": 0.2,
+   "limit": "0.15..0.25",
+   "ok": true
+  },
+  {
+   "check": "dog rib in the disc's groove (0.2 per side)",
+   "a": "R20 Oldham disc",
+   "b": "R19 Oldham rotor dog",
+   "value_mm": 0.2,
+   "limit": "0.15..0.25",
+   "ok": true
+  },
+  {
+   "check": "disc's relief to the shaft tip",
+   "a": "R20 Oldham disc",
+   "b": "B03 gearmotor JGB37-520:d_shaft",
+   "value_mm": 0.94,
+   "limit": ">= 0.80",
+   "ok": true
+  },
+  {
+   "check": "disc to the deck",
+   "a": "R20 Oldham disc",
+   "b": "B01 base shell",
+   "value_mm": 12.25,
+   "limit": ">= 8.00",
+   "ok": true
+  },
+  {
+   "check": "collar on the deck (0 = contact)",
+   "a": "B11 bearing collar",
+   "b": "B01 base shell",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "outer ring on the shoulder / crush ribs (0 = contact)",
+   "a": "B12 bearing 6820ZZ:brg_outer_ring",
+   "b": "B11 bearing collar",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "collar to the base wiring",
+   "a": "B11 bearing collar",
+   "b": "B08 base wiring",
+   "value_mm": 7.0,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "collar bolts + deck inserts to the pot cable / leads",
+   "a": "B13 rev k hardware:collar_bolt|deck_insert",
+   "b": "B08 base wiring",
+   "value_mm": 9.841,
+   "limit": ">= 2.00",
+   "ok": true
+  },
+  {
+   "check": "collar bolts + inserts to the PWM board",
+   "a": "B13 rev k hardware:collar_bolt|deck_insert",
+   "b": "B04 PWM controller",
+   "value_mm": 30.58,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "collar bolts + inserts to the motor bracket",
+   "a": "B13 rev k hardware:collar_bolt|deck_insert",
+   "b": "B09 motor L-bracket",
+   "value_mm": 55.085,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "lug screws in the flange (0 = contact)",
+   "a": "B13 rev k hardware:oldham_lug",
+   "b": "R01 flange coupling",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "lug screw tails to the deck",
+   "a": "B13 rev k hardware:oldham_lug",
+   "b": "B01 base shell",
+   "value_mm": 5.5,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "lug screw tails to the motor boss / shaft",
+   "a": "B13 rev k hardware:oldham_lug",
+   "b": "B03 gearmotor JGB37-520",
+   "value_mm": 2.275,
+   "limit": ">= 0.50",
+   "ok": true
+  },
+  {
+   "check": "riser on the deck (0 = contact, glued)",
+   "a": "B14 magnet riser",
+   "b": "B01 base shell",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "riser recess over the old magnets",
+   "a": "B14 magnet riser:magnet_riser",
+   "b": "B06 hall magnet",
+   "value_mm": 0.3,
+   "limit": "0.10..0.50",
+   "ok": true
+  },
+  {
+   "check": "riser to the collar",
+   "a": "B14 magnet riser",
+   "b": "B11 bearing collar",
+   "value_mm": 11.873,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "riser to the flange coupling",
+   "a": "B14 magnet riser",
+   "b": "R01 flange coupling",
+   "value_mm": 26.015,
+   "limit": ">= 5.00",
+   "ok": true
+  },
+  {
+   "check": "rotor ring clamped to the plate (0 = contact)",
+   "a": "R17 rotor ring",
+   "b": "R02 bottom cap",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "land on the inner ring / spigot ribs in its bore (0 = contact)",
+   "a": "R17 rotor ring",
+   "b": "B12 bearing 6820ZZ:brg_inner_ring",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "hex keys in the plate's trim pockets",
+   "a": "R18 hex keys",
+   "b": "R02 bottom cap",
+   "value_mm": 0.075,
+   "limit": "0.00..0.15",
+   "ok": true
+  },
+  {
+   "check": "hex keys in the ring's pockets",
+   "a": "R18 hex keys",
+   "b": "R17 rotor ring",
+   "value_mm": 0.075,
+   "limit": "0.00..0.15",
+   "ok": true
+  },
+  {
+   "check": "ring nuts in their pockets (0 = contact)",
+   "a": "R14 tie rods:nut_ring",
+   "b": "R17 rotor ring",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "rotor dog in the core's pocket (0 = contact)",
+   "a": "R19 Oldham rotor dog",
+   "b": "R02b hub core",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true
+  },
+  {
+   "check": "rotor dog to the plate",
+   "a": "R19 Oldham rotor dog",
+   "b": "R02 bottom cap",
+   "value_mm": 3.1,
+   "limit": ">= 2.50",
+   "ok": true
+  },
+  {
+   "check": "rotor ring to the hall sensor",
+   "a": "R17 rotor ring",
+   "b": "R03 hall sensor",
+   "value_mm": 3.402,
+   "limit": ">= 3.00",
+   "ok": true
+  },
+  {
+   "check": "rotor ring to the rotor harness",
+   "a": "R17 rotor ring",
+   "b": "R16 rotor harness",
+   "value_mm": 5.191,
+   "limit": ">= 0.50",
+   "ok": true
+  },
+  {
+   "check": "rotor ring to the chain wiring",
+   "a": "R17 rotor ring",
+   "b": "R15 chain wiring",
+   "value_mm": 4.4,
+   "limit": ">= 1.00",
+   "ok": true
+  },
+  {
+   "check": "trim hardware envelope to the collar / bolts",
+   "value_mm": 2.512,
+   "limit": ">= 2.00",
+   "ok": true
+  },
+  {
+   "check": "collar-bolt hex key path past the trim flange (radial)",
+   "value_mm": 2.25,
+   "limit": ">= 1.00",
+   "ok": true
+  },
+  {
+   "check": "collar bore clearance to the bearing OD (radial)",
+   "value_mm": 0.2,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "collar crush ribs: interference on the OD (radial, nominal)",
+   "value_mm": 0.075,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "spigot clearance in the bearing bore (radial)",
+   "value_mm": 0.2,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "spigot crush ribs: interference in the bore (radial, nominal)",
+   "value_mm": 0.05,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "land contact width on the inner ring (after the 0.6 chamfer)",
+   "value_mm": 2.2,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "collar shoulder width under the outer ring (inside the chamfer)",
+   "value_mm": 2.1,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "hex key in a 6.0 AF pocket (per flat)",
+   "value_mm": 0.075,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "rotor dog in the core's d22.4 pocket (radial)",
+   "value_mm": 0.1,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham lug engagement in the disc groove",
+   "value_mm": 2.25,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham dog-rib engagement in the disc groove",
+   "value_mm": 1.75,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham groove floor clearance (lug side / rib side)",
+   "value_mm": 1.25,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham parallel offset capacity (shaft relief, radial)",
+   "value_mm": 2.525,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham angular capacity (deg) before a face touches",
+   "value_mm": 3.306,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham axial capacity: rotor lower (faces touch)",
+   "value_mm": 1.5,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "Oldham axial capacity: rotor higher (keeps >= 0.75 engaged)",
+   "value_mm": 1.0,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "tie rod: end above the rotor ring's underside",
+   "value_mm": 0.2,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "tie rod: engagement in the ring nut",
+   "value_mm": 2.4,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "tie rod: end above the bearing top",
+   "value_mm": 1.2,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "bottom-cap plate rises above the base by (K_DROP)",
+   "value_mm": 14.0,
+   "limit": "info",
+   "ok": true
+  },
+  {
+   "check": "geometric unbalance U (g mm) <= G6.3",
+   "value_mm": 42.5,
+   "limit": "<= 293",
+   "ok": true
+  }
+ ],
+ "n_rows": 73,
+ "n_fail": 0,
+ "stack_z_mm": {
+  "deck top (printed shell, unchanged)": -23.5,
+  "collar shoulder = bearing bottom": -21.0,
+  "bearing top = rotor-ring land": -8.0,
+  "collar boss rim": -9.0,
+  "rotor ring underside": -7.0,
+  "plate underside / rotor ring top": -2.0,
+  "spigot bottom": -19.0,
+  "flange coupling top (on the motor shaft)": -12.0,
+  "lug heads top": -9.0,
+  "Oldham disc": -11.25,
+  "Oldham disc top": -2.75,
+  "rotor dog face": -2.0,
+  "motor shaft tip": -8.69,
+  "hall sensor face": -3.0,
+  "new magnets top": -8.0,
+  "old magnets top": -22.0,
+  "tie rod bottom end": -6.8
+ },
+ "rotor": {
+  "mass_g": 1097.2,
+  "cg_mm": [
+   0.004,
+   -0.039,
+   83.17
+  ],
+  "U_gmm": 42.5,
+  "U_G63_gmm": 293.4,
+  "Izz_kgm2": 0.004014699032580086,
+  "It_cg_kgm2": 0.009667624477007888,
+  "It_bearing_kgm2": 0.02013335825015421,
+  "pivot_z_mm": -14.5
+ },
+ "rev_j_rotor": {
+  "mass_g": 929.0,
+  "U_gmm": 42.5,
+  "cg_z_mm": 99.83,
+  "It_cg_kgm2": 0.007673561754545211,
+  "It_pivot_kgm2": 0.02008284874982629,
+  "pivot_z_mm": -15.75
+ },
+ "base_mass_g": 933.4,
+ "per_component_rotor_g": {
+  "R10 LED strips": 96.0,
+  "R03 hall sensor": 0.3,
+  "R16 rotor harness": 2.3,
+  "R11 top cap": 68.6,
+  "R05 power bank": 199.0,
+  "R08 USB pigtail": 17.6,
+  "R09 tube": 278.7,
+  "R15 chain wiring": 14.4,
+  "R02 bottom cap": 56.6,
+  "R02b hub core": 15.0,
+  "R07 carrier board (level shifters)": 42.9,
+  "R06 ESP32": 9.0,
+  "R04 sled": 46.5,
+  "B12 bearing 6820ZZ": 65.0,
+  "R17 rotor ring": 96.0,
+  "R18 hex keys": 0.8,
+  "R19 Oldham rotor dog": 1.9,
+  "R20 Oldham disc": 4.6,
+  "R13 screws": 12.1,
+  "R14 tie rods": 64.0
+ }
+}

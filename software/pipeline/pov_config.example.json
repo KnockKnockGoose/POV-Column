@@ -1,0 +1,12 @@
+{
+  "_comment": "Copy to pov_config.json (gitignored). token = shared secret the ESP32 expects in X-POV-Token on POST requests; set the same value in the firmware's NVS/secrets.",
+  "target": "http://pov.local",
+  "token": "FILL_IN",
+  "model": "claude-opus-5-5",
+  "home_dir": "C:\\Users\\<you>\\AppData\\Local\\POVColumn\\home",
+  "recording_flag": "C:\\Users\\<you>\\AppData\\Local\\ClaudePanel\\recording.json",
+  "claude": "claude",
+  "timeout_llm_s": 240,
+  "timeout_render_s": 20,
+  "max_repairs": 1
+}

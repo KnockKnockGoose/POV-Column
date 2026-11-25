@@ -1,0 +1,68 @@
+id,step,net,type,gauge / material,colour,from (printed label),to (printed label),"from (c,r)","to (c,r)","route (holes as label (c,r); fractional (c,r) = lane between holes)",path mm,cut mm,strip each end mm,note
+W01,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J1.2 D28,GND bus C28,"(3,27)","(2,27)","D28 (3,27) → C28 (2,27)",2.5,,-,
+W02,C7a,GND,insulated,26 AWG silicone,black,C1- F6,J3.2 E3,"(5,5)","(4,2)","F6 (5,5) → (4.6,4.6) → (4.6,2.4) → E3 (4,2)",8.9,20,3 / 3,
+W03,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,C4.top J28,TP3 / on GND bus J29,"(9,27)","(9,28)","J28 (9,27) → J29 (9,28)",2.5,,-,
+W04,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,C5.bottom O1,GND bus O2,"(14,0)","(14,1)","O1 (14,0) → O2 (14,1)",2.5,,-,
+W05,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J3.2 E3,GND bus E2,"(4,2)","(4,1)","E3 (4,2) → E2 (4,1)",2.5,,-,
+W06,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J3.4 G3,GND bus G2,"(6,2)","(6,1)","G3 (6,2) → G2 (6,1)",2.5,,-,
+W07,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J3.6 I3,GND bus I2,"(8,2)","(8,1)","I3 (8,2) → I2 (8,1)",2.5,,-,
+W08,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J5.2 L3,GND bus L2,"(11,2)","(11,1)","L3 (11,2) → L2 (11,1)",2.5,,-,
+W09,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J4.2 T3,GND bus T2,"(19,2)","(19,1)","T3 (19,2) → T2 (19,1)",2.5,,-,
+W10,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J4.4 V3,GND bus V2,"(21,2)","(21,1)","V3 (21,2) → V2 (21,1)",2.5,,-,
+W11,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J9.2 W6,GND bus X6,"(22,5)","(23,5)","W6 (22,5) → X6 (23,5)",2.5,,-,
+W12,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J10.2 W9,GND bus X9,"(22,8)","(23,8)","W9 (22,8) → X9 (23,8)",2.5,,-,
+W13,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J11.2 W12,GND bus X12,"(22,11)","(23,11)","W12 (22,11) → X12 (23,11)",2.5,,-,
+W14,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J6.2 W15,GND bus X15,"(22,14)","(23,14)","W15 (22,14) → X15 (23,14)",2.5,,-,
+W15,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J7.2 W18,GND bus X18,"(22,17)","(23,17)","W18 (22,17) → X18 (23,17)",2.5,,-,
+W16,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J8.2 W21,GND bus X21,"(22,20)","(23,20)","W21 (22,20) → X21 (23,20)",2.5,,-,
+W17,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J12.2 W28,GND bus X28,"(22,27)","(23,27)","W28 (22,27) → X28 (23,27)",2.5,,-,
+W18,C7a,GND,insulated,26 AWG silicone,black,ESP GND I21,GND bus I29,"(8,20)","(8,28)","I21 (8,20) → (8.6,20.4) → (8.6,27.6) → I29 (8,28)",22.0,35,3 / 3,"ESP32 end I21 (8,20): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W19,C7a,GND,insulated,26 AWG silicone,black,ESP GND S21,GND bus X22,"(18,20)","(23,21)","S21 (18,20) → (18.4,20.6) → (22.6,20.6) → X22 (23,21)",13.9,25,3 / 3,"ESP32 end S21 (18,20): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W20,C7a,GND,insulated,26 AWG silicone,black,U1.7 GND D15,GND bus D2,"(3,14)","(3,1)","D15 (3,14) → (2.5,13.6) → (2.5,1.4) → D2 (3,1)",34.2,45,3 / 3,
+W21,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,U1.1 1OE D21,GND bus C21,"(3,20)","(2,20)","D21 (3,20) → C21 (2,20)",2.5,,-,
+W22,C7a,GND,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,U1.4 2OE D18,GND bus C18,"(3,17)","(2,17)","D18 (3,17) → C18 (2,17)",2.5,,-,
+W23,C7a,GND,insulated,26 AWG silicone,black,U1.10 3OE G17,J3.6 I3,"(6,16)","(8,2)","G17 (6,16) → (7,15.6) → (7,3.4) → (7.6,2.4) → I3 (8,2)",38.1,50,3 / 3,
+W24,C7a,GND,insulated,26 AWG silicone,black,U1.13 4OE G20,GND bus C23,"(6,19)","(2,22)","G20 (6,19) → (6.4,19) → (6.4,21.6) → (2.4,21.6) → C23 (2,22)",19.2,30,3 / 3,
+W25,C7a,GND,insulated,26 AWG silicone,black,C3.2 E23,GND bus C23,"(4,22)","(2,22)","E23 (4,22) → C23 (2,22)",5.1,15,3 / 3,
+W26,C7b,5V_A,insulated,22 AWG silicone,red,J1.1 D26,bus A E24,"(3,25)","(4,23)","D26 (3,25) → (3.2,24.2) → (3.7,23.4) → E24 (4,23)",5.8,15,3 / 3,
+W27,C7b,5V_A,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J6.1 W14,bus A V14,"(22,13)","(21,13)","W14 (22,13) → V14 (21,13)",2.5,,-,
+W28,C7b,5V_A,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J7.1 W17,bus A V17,"(22,16)","(21,16)","W17 (22,16) → V17 (21,16)",2.5,,-,
+W29,C7b,5V_A,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J8.1 W20,bus A V20,"(22,19)","(21,19)","W20 (22,19) → V20 (21,19)",2.5,,-,
+W30,C7b,5V_A,insulated,22 AWG silicone,red,ESP VIN S22,bus A S24,"(18,21)","(18,23)","S22 (18,21) → S24 (18,23)",5.1,15,3 / 3,"ESP32 end S22 (18,21): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W31,C7b,5V_A,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,TP1 G25,bus A G24,"(6,24)","(6,23)","G25 (6,24) → G24 (6,23)",2.5,,-,
+W32,C7b,5V_A,insulated,22 AWG silicone,red,U1.14 VCC G21,C3.1 G23,"(6,20)","(6,22)","G21 (6,20) → G23 (6,22)",5.1,15,3 / 3,
+W33,C7b,5V_A,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,C3.1 G23,bus A G24,"(6,22)","(6,23)","G23 (6,22) → G24 (6,23)",2.5,,-,
+W34,C7b,5V_A,insulated,22 AWG silicone,red,bus A E24,C1+ F8,"(4,23)","(5,7)","E24 (4,23) → (4.5,22.6) → (4.5,7.4) → F8 (5,7)",41.9,55,3 / 3,
+W35,C7b,5V_A,insulated,22 AWG silicone,red,C1+ F8,J3.1 D3,"(5,7)","(3,2)","F8 (5,7) → (3.4,6.6) → (3.4,2.4) → D3 (3,2)",16.3,30,3 / 3,
+W36,C7b,5V_A,insulated,22 AWG silicone,red,bus A N24,J5.3 M3,"(13,23)","(12,2)","N24 (13,23) → (12.4,22.6) → (12.4,2.4) → M3 (12,2)",54.6,65,3 / 3,
+W37,C7b,5V_A,insulated,22 AWG silicone,red,J5.3 M3,C5.top O3,"(12,2)","(14,2)","M3 (12,2) → O3 (14,2)",5.1,15,3 / 3,
+W38,C7b,LK1,insulated,22 AWG silicone,yellow,bus B V11,bus A V13,"(21,10)","(21,12)","V11 (21,10) → (20.6,10.5) → (20.6,11.5) → V13 (21,12)",5.8,15,3 / 3,"LK1: the one wire to snip for the two-pigtail option; leave V12 (21,11) empty"
+W39,C7b,5V_B,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J9.1 W5,bus B V5,"(22,4)","(21,4)","W5 (22,4) → V5 (21,4)",2.5,,-,
+W40,C7b,5V_B,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J10.1 W8,bus B V8,"(22,7)","(21,7)","W8 (22,7) → V8 (21,7)",2.5,,-,
+W41,C7b,5V_B,bare link (one-hole hop),bare tinned wire offcut (22 AWG solid or a resistor lead),bare,J11.1 W11,bus B V11,"(22,10)","(21,10)","W11 (22,10) → V11 (21,10)",2.5,,-,
+W42,C7b,5V_B,insulated,22 AWG silicone,red,bus B V4,J4.1 S3,"(21,3)","(18,2)","V4 (21,3) → (21,2.6) → (18.4,2.6) → S3 (18,2)",9.5,20,3 / 3,
+W43,C7b,5V_B,insulated,22 AWG silicone,red,bus B V9,TP2 U25,"(21,8)","(20,24)","V9 (21,8) → (19.8,8.6) → (19.8,23.6) → U25 (20,24)",42.6,55,3 / 3,
+W44,C7b,5V_B,insulated,22 AWG silicone,red,TP2 U25,C2+ S27,"(20,24)","(18,26)","U25 (20,24) → (18.4,24.4) → (18.4,25.6) → S27 (18,26)",8.7,20,3 / 3,
+W45,C7b,5V_B,insulated,22 AWG silicone,red,TP2 U25,J12.1 W26,"(20,24)","(22,25)","U25 (20,24) → (22,24.4) → W26 (22,25)",6.7,20,3 / 3,
+W46,C7c,IO18,insulated,28 AWG (one conductor peeled from the rainbow ribbon),yellow,ESP IO18 I14,U1.2 1A D20,"(8,13)","(3,19)","I14 (8,13) → (7.5,13.4) → (2.8,13.4) → (2.8,19) → D20 (3,19)",28.3,40,3 / 3,"ESP32 end I14 (8,13): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W47,C7c,IO23,insulated,28 AWG (one conductor peeled from the rainbow ribbon),orange,ESP IO23 I8,U1.5 2A D17,"(8,7)","(3,16)","I8 (8,7) → (7.6,7.2) → (7.6,12.8) → (2.4,12.8) → (2.4,16) → D17 (3,16)",38.2,50,3 / 3,"ESP32 end I8 (8,7): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W48,C7c,IO14,insulated,28 AWG (one conductor peeled from the rainbow ribbon),yellow,ESP IO14 S18,U1.9 3A G16,"(18,17)","(6,15)","S18 (18,17) → (17.5,17) → (17.5,12.4) → (6.6,12.4) → (6.6,15) → G16 (6,15)",48.8,60,3 / 3,"ESP32 end S18 (18,17): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W49,C7c,IO13,insulated,28 AWG (one conductor peeled from the rainbow ribbon),orange,ESP IO13 S20,U1.12 4A G19,"(18,19)","(6,18)","S20 (18,19) → (17.3,19) → (17.3,12.2) → (6.8,12.2) → (6.8,18) → G19 (6,18)",62.5,75,3 / 3,"ESP32 end S20 (18,19): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W50,C7c,Y1,insulated,28 AWG (one conductor peeled from the rainbow ribbon),yellow,U1.3 1Y D19,R1.top D12,"(3,18)","(3,11)","D19 (3,18) → (3.5,17.6) → (3.5,11.4) → D12 (3,11)",19.0,30,3 / 3,
+W51,C7c,Y2,insulated,28 AWG (one conductor peeled from the rainbow ribbon),orange,U1.6 2Y D16,R2.top E12,"(3,15)","(4,11)","D16 (3,15) → (4,14.6) → (4,11.4) → E12 (4,11)",11.9,25,3 / 3,
+W52,C7c,Y3,insulated,28 AWG (one conductor peeled from the rainbow ribbon),yellow,U1.8 3Y G15,R3.top F12,"(6,14)","(5,11)","G15 (6,14) → (5,13.6) → F12 (5,11)",9.3,20,3 / 3,
+W53,C7c,Y4,insulated,28 AWG (one conductor peeled from the rainbow ribbon),orange,U1.11 4Y G18,R4.top G12,"(6,17)","(6,11)","G18 (6,17) → (5.5,16.6) → (5.5,11.4) → G12 (6,11)",16.5,30,3 / 3,
+W54,C7c,CLK0,insulated,28 AWG (one conductor peeled from the rainbow ribbon),yellow,R1.bottom D10,J3.3 F3,"(3,9)","(5,2)","D10 (3,9) → (3,8.6) → (5.6,8.6) → (5.6,2.6) → F3 (5,2)",25.0,35,3 / 3,
+W55,C7c,DATA0,insulated,28 AWG (one conductor peeled from the rainbow ribbon),orange,R2.bottom E10,J3.5 H3,"(4,9)","(7,2)","E10 (4,9) → (4,8.2) → (6.4,8.2) → (6.4,2.6) → H3 (7,2)",24.5,35,3 / 3,
+W56,C7c,CLK1,insulated,28 AWG (one conductor peeled from the rainbow ribbon),yellow,R3.bottom F10,J4.3 U3,"(5,9)","(20,2)","F10 (5,9) → (5,7.8) → (8.6,7.8) → (8.6,0.7) → (20,0.7) → U3 (20,2)",62.5,75,3 / 3,
+W57,C7c,DATA1,insulated,28 AWG (one conductor peeled from the rainbow ribbon),orange,R4.bottom G10,J4.5 W3,"(6,9)","(22,2)","G10 (6,9) → (6,7.4) → (9.4,7.4) → (9.4,0.2) → (22,0.2) → W3 (22,2)",67.6,80,3 / 3,
+W58,C7d,HALL,insulated,28 AWG (one conductor peeled from the rainbow ribbon),white,J5.1 K3,R9.bottom H26,"(10,2)","(7,25)","K3 (10,2) → (10.4,2.4) → (10.4,24.6) → (7.4,24.6) → H26 (7,25)",66.9,80,3 / 3,
+W59,C7d,HALL,insulated,28 AWG (one conductor peeled from the rainbow ribbon),white,R9.bottom H26,C4.bottom J26,"(7,25)","(9,25)","H26 (7,25) → J26 (9,25)",5.1,15,3 / 3,
+W60,C7d,HALL,insulated,28 AWG (one conductor peeled from the rainbow ribbon),white,C4.bottom J26,ESP IO27 S17,"(9,25)","(18,16)","J26 (9,25) → (9.4,25.4) → (16.6,25.4) → (16.6,16.4) → S17 (18,16)",46.3,60,3 / 3,"ESP32 end S17 (18,16): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+W61,C7d,3V3,insulated,28 AWG (one conductor peeled from the rainbow ribbon),violet,ESP 3V3 I22,R9.top H28,"(8,21)","(7,27)","I22 (8,21) → (7.6,21.4) → (7.6,26.6) → H28 (7,27)",16.5,30,3 / 3,"ESP32 end I22 (8,21): leave free (tinned) until the DevKit is soldered in (step C9), then lap it onto the pin stub"
+BUS-GND,C3,GND,bare bus,"22 AWG solid (TUOFENG), stripped bare, tinned",bare,D2,X2,"(3,1)","(23,1)","D2 (3,1) → X2 (23,1)",50.8,65,-,lay tangent to the pads; tack at both ends and at every tap hole
+BUS-GND,C3,GND,bare bus,"22 AWG solid (TUOFENG), stripped bare, tinned",bare,X2,X29,"(23,1)","(23,28)","X2 (23,1) → X29 (23,28)",68.6,80,-,lay tangent to the pads; tack at both ends and at every tap hole
+BUS-GND,C3,GND,bare bus,"22 AWG solid (TUOFENG), stripped bare, tinned",bare,X29,C29,"(23,28)","(2,28)","X29 (23,28) → C29 (2,28)",53.3,65,-,lay tangent to the pads; tack at both ends and at every tap hole
+BUS-GND,C3,GND,bare bus,"22 AWG solid (TUOFENG), stripped bare, tinned",bare,C29,C17,"(2,28)","(2,16)","C29 (2,28) → C17 (2,16)",30.5,45,-,lay tangent to the pads; tack at both ends and at every tap hole
+BUS-5V_A,C3,5V_A,bare bus,"22 AWG solid (TUOFENG), stripped bare, tinned",bare,V13,E24,"(21,12)","(4,23)","V13 (21,12) → V24 (21,23) → E24 (4,23)",71.1,85,-,lay tangent to the pads; tack at both ends and at every tap hole
+BUS-5V_B,C3,5V_B,bare bus,"22 AWG solid (TUOFENG), stripped bare, tinned",bare,V4,V11,"(21,3)","(21,10)","V4 (21,3) → V11 (21,10)",17.8,30,-,lay tangent to the pads; tack at both ends and at every tap hole

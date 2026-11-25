@@ -1,0 +1,29 @@
+group,item,spec,qty,unit_price_usd_nov_2026,status,notes
+rotor electronics,LED strip,"SK9822 (APA102-compatible), 60 LEDs/m, 5050, black PCB, 12.0 mm wide, 16.67 mm pitch; cut into 14-LED pieces",24 pieces (5.6 m),43.99 per 5 m reel,fitted,odd strips mounted upside down
+rotor electronics,microcontroller,"ESP32 DOIT DevKit V1, 30-pin, ESP-WROOM-32",1,owned,fitted,soldered to the carrier
+rotor electronics,level shifter,"SN74AHCT125N, DIP-14",1,7.99 per 10,fitted,3.3 V to 5 V on 2 clock + 2 data lines
+rotor electronics,carrier board,"perfboard 70 x 90 mm, 26 x 31 holes",1,owned,fitted,
+rotor electronics,screw terminals,"2.54 mm pitch: 2 x 6-pin, 1 x 3-pin, 6 x 2-pin; 5 mm pitch: 2 x 2-pin",11,kit,fitted,
+rotor electronics,capacitors,"1000 uF electrolytic x 2; 100 nF ceramic x 3; 1 nF x 1",6,kit,fitted,
+rotor electronics,resistors,"68 ohm x 4; 10 k x 5",9,kit,fitted,
+rotor electronics,fuse,"5 x 20 mm fast-blow in an inline holder; 3 A fitted, 4 A in the design",1,,fitted,in the 5 V lead
+rotor electronics,power bank,"10,000 mAh, USB-A port rated 5 V 3 A, about 199 g",1,22.99,fitted,rides on the rotor
+rotor electronics,USB pigtail,"USB-A to bare leads, 22 AWG",1,7.99 per 2,fitted,
+rotor electronics,hall sensor,"A3144, TO-92",1,6.99 per 20,fitted,GPIO 26
+rotor electronics,wire,"22 AWG silicone; 26 AWG; 28 AWG ribbon",,,fitted,see docs/img/wiring_cut_list.csv
+drive and base,motor kit,"JGB37-520 12 V gearmotor sold as 600 rpm (540 rpm measured, no load) + PWM controller + knob",1,19.99,fitted,
+drive and base,12 V supply,"bench supply or 12 V adapter, 2 A or more",1,owned,fitted,0.23 A at speed
+drive and base,motor pulley,"GT2 20 teeth, 6 mm bore",1,5 to 10,fitted,
+drive and base,belt,"GT2 closed loop, 6 mm wide, 122 mm (61 teeth)",1,8 to 12,fitted,
+drive and base,rotor bearing,"6820ZZ, 100 x 125 x 13 mm",1,about 22,fitted,flush the grease and oil it first
+drive and base,hub bearing,"6802-2RS, 15 x 24 x 5 mm",1,about 6 per 10,fitted,
+drive and base,magnets,"neodymium disc 6 x 3 mm",2,7.49 per 80,fitted,stacked on the base riser
+fasteners,tie rods,"M3 stainless threaded rod, about 261 mm",4,5.79 per 5,fitted,
+fasteners,tie-rod nuts,"M3 nyloc x 8; M3 plain x 4",12,kit,fitted,
+fasteners,drive pins,"M3 threaded rod, about 12 mm proud, nut-locked",4,,fitted,
+fasteners,heat-set inserts,"M3 x 4 and M3 x 6, brass",about 29,kit,fitted,seat flush or below
+fasteners,screws,"M3 x 6, x 8, x 10, pan head and countersunk",about 30,kit,fitted,
+option D,slip ring,"12.5 mm capsule, 6 wires at 2 A, to 300 rpm",2,about 10,bought not fitted,
+option D,pogo pins,"Mill-Max 0908 series",3,about 1,bought not fitted,
+option D,buck converter,"12 V to 5 V, 5 A or more",1,8 to 12,bought not fitted,
+planned,fuse and diode,"2 A fuse + Schottky diode on the 12 V slip-ring feed; 4 A fuse for the 5 V lead",,,planned,

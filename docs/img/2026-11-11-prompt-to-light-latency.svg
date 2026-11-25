@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#898781"/></marker><marker id="arrowInk" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#52514e"/></marker></defs>
+<rect x="0" y="0" width="1920" height="1080" fill="#fcfcfb"/>
+<text x="72.0" y="54.0" font-family="Segoe UI, sans-serif" font-size="34" font-weight="700" fill="#0b0b0b" text-anchor="start" >Where the time goes: from letting go of F9 to the dog on the LEDs</text>
+<text x="72.0" y="90.0" font-family="Segoe UI, sans-serif" font-size="18" font-weight="400" fill="#52514e" text-anchor="start" >Request “a dog on a jet ski”.  Solid bars: measured on the desktop PC, 11 Nov 2026.  Pale bars: estimates (the column has not run this path yet).  t = 0 at F9 release.</text>
+<text x="72.0" y="140.0" font-family="Segoe UI, sans-serif" font-size="21" font-weight="600" fill="#0b0b0b" text-anchor="start" >As the code stands today</text>
+<text x="72.0" y="166.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#52514e" text-anchor="start" >Main runs pov_request.py with its defaults: the placeholder upload and the preview both sit on the critical path; the PC looks up pov.local by mDNS.</text>
+<line x1="640.0" y1="218.0" x2="640.0" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="715.4" y1="218.0" x2="715.4" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="790.8" y1="218.0" x2="790.8" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="866.1" y1="218.0" x2="866.1" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="941.5" y1="218.0" x2="941.5" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1016.9" y1="218.0" x2="1016.9" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1092.2" y1="218.0" x2="1092.2" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1167.6" y1="218.0" x2="1167.6" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1243.0" y1="218.0" x2="1243.0" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1318.4" y1="218.0" x2="1318.4" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1393.8" y1="218.0" x2="1393.8" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1469.1" y1="218.0" x2="1469.1" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1544.5" y1="218.0" x2="1544.5" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1619.9" y1="218.0" x2="1619.9" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1695.2" y1="218.0" x2="1695.2" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1770.6" y1="218.0" x2="1770.6" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1846.0" y1="218.0" x2="1846.0" y2="558.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="640.0" y1="558.0" x2="1846.0" y2="558.0" stroke="#c3c2b7" stroke-width="1.2" stroke-linecap="round" />
+<text x="640.0" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >0 s</text>
+<text x="790.8" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >4 s</text>
+<text x="941.5" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >8 s</text>
+<text x="1092.2" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >12 s</text>
+<text x="1243.0" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >16 s</text>
+<text x="1393.8" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >20 s</text>
+<text x="1544.5" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >24 s</text>
+<text x="1695.2" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >28 s</text>
+<text x="1846.0" y="578.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >32 s</text>
+<line x1="1152.5" y1="182.0" x2="1152.5" y2="558.0" stroke="#0b0b0b" stroke-width="1.4" stroke-linecap="round" />
+<path d="M1152.5,174 l6,6 l-6,6 l-6,-6 z" fill="#0b0b0b"/>
+<text x="1164.5" y="185.0" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="start" >placeholder on the LEDs ≈ 13.6 s</text>
+<line x1="1781.9" y1="206.0" x2="1781.9" y2="558.0" stroke="#0b0b0b" stroke-width="1.4" stroke-linecap="round" />
+<path d="M1781.9,198 l6,6 l-6,6 l-6,-6 z" fill="#0b0b0b"/>
+<text x="1769.9" y="209.0" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="end" >the dog ≈ 30 s</text>
+<text x="624.0" y="246.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Whisper transcribes the clip</text>
+<rect x="640.0" y="231.5" width="90.5" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="738.5" y="246.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">2.4 s</text>
+<text x="624.0" y="279.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Router claims the file, types into Main</text>
+<rect x="730.5" y="264.5" width="18.8" height="18.0" rx="4" fill="#accaed" stroke="none" stroke-width="0" />
+<text x="757.3" y="279.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.5 s  est.</text>
+<text x="624.0" y="312.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Main's turn: reads it, runs the script</text>
+<rect x="749.3" y="297.5" width="226.1" height="18.0" rx="4" fill="#f6c4af" stroke="none" stroke-width="0" />
+<text x="983.4" y="312.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">4–8 s  est.</text>
+<text x="624.0" y="345.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Python start, scope, cache check</text>
+<rect x="975.4" y="330.5" width="7.5" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="991.0" y="345.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">0.2 s</text>
+<text x="624.0" y="378.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Placeholder: render, then upload (pov.local lookup)</text>
+<rect x="983.0" y="363.5" width="162.1" height="18.0" rx="4" fill="#a6dfca" stroke="none" stroke-width="0" />
+<text x="1153.0" y="378.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">0.08 s + ~4.2 s  est.</text>
+<text x="624.0" y="411.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Claude writes the scene (Sonnet, low effort)</text>
+<rect x="1145.0" y="396.5" width="143.2" height="18.0" rx="4" fill="#eb6834" stroke="none" stroke-width="0" />
+<text x="1296.2" y="411.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">3.8 s</text>
+<text x="624.0" y="444.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Sandbox render, validate, pack</text>
+<rect x="1288.2" y="429.5" width="22.6" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="1318.8" y="444.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">0.6 s</text>
+<text x="624.0" y="477.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Preview render (blocks the upload)</text>
+<rect x="1310.8" y="462.5" width="437.2" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="1756.0" y="477.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">11.6 s</text>
+<text x="624.0" y="510.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Upload + play</text>
+<rect x="1748.0" y="495.5" width="22.6" height="18.0" rx="4" fill="#a6dfca" stroke="none" stroke-width="0" />
+<text x="1778.6" y="510.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.6 s  est.</text>
+<text x="624.0" y="543.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >ESP32 load, power cap, first 1/8-turn tick</text>
+<rect x="1770.6" y="528.5" width="9.4" height="18.0" rx="4" fill="#a6dfca" stroke="none" stroke-width="0" />
+<text x="1788.0" y="543.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.25 s  est.</text>
+<text x="72.0" y="628.0" font-family="Segoe UI, sans-serif" font-size="21" font-weight="600" fill="#0b0b0b" text-anchor="start" >After four small fixes (projected)</text>
+<text x="72.0" y="654.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#52514e" text-anchor="start" >Router → warm daemon, placeholder upload in the background, upload before the preview, the column's IP address instead of pov.local.</text>
+<line x1="640.0" y1="706.0" x2="640.0" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="715.4" y1="706.0" x2="715.4" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="790.8" y1="706.0" x2="790.8" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="866.1" y1="706.0" x2="866.1" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="941.5" y1="706.0" x2="941.5" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1016.9" y1="706.0" x2="1016.9" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1092.2" y1="706.0" x2="1092.2" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1167.6" y1="706.0" x2="1167.6" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1243.0" y1="706.0" x2="1243.0" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1318.4" y1="706.0" x2="1318.4" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1393.8" y1="706.0" x2="1393.8" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1469.1" y1="706.0" x2="1469.1" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1544.5" y1="706.0" x2="1544.5" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1619.9" y1="706.0" x2="1619.9" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1695.2" y1="706.0" x2="1695.2" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1770.6" y1="706.0" x2="1770.6" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="1846.0" y1="706.0" x2="1846.0" y2="947.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round" />
+<line x1="640.0" y1="947.0" x2="1846.0" y2="947.0" stroke="#c3c2b7" stroke-width="1.2" stroke-linecap="round" />
+<text x="640.0" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >0 s</text>
+<text x="790.8" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >4 s</text>
+<text x="941.5" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >8 s</text>
+<text x="1092.2" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >12 s</text>
+<text x="1243.0" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >16 s</text>
+<text x="1393.8" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >20 s</text>
+<text x="1544.5" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >24 s</text>
+<text x="1695.2" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >28 s</text>
+<text x="1846.0" y="967.0" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#898781" text-anchor="middle" >32 s</text>
+<line x1="783.2" y1="670.0" x2="783.2" y2="947.0" stroke="#0b0b0b" stroke-width="1.4" stroke-linecap="round" />
+<path d="M783.2,662 l6,6 l-6,6 l-6,-6 z" fill="#0b0b0b"/>
+<text x="795.2" y="673.0" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="start" >placeholder ≈ 3.8 s</text>
+<line x1="922.7" y1="694.0" x2="922.7" y2="947.0" stroke="#0b0b0b" stroke-width="1.4" stroke-linecap="round" />
+<path d="M922.7,686 l6,6 l-6,6 l-6,-6 z" fill="#0b0b0b"/>
+<text x="934.7" y="697.0" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#0b0b0b" text-anchor="start" >the dog ≈ 7.5 s</text>
+<text x="624.0" y="734.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Whisper transcribes the clip</text>
+<rect x="640.0" y="719.5" width="90.5" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="738.5" y="734.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">2.4 s</text>
+<text x="624.0" y="767.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Router posts the line to pov_serve.py</text>
+<rect x="730.5" y="752.5" width="18.8" height="18.0" rx="4" fill="#accaed" stroke="none" stroke-width="0" />
+<text x="757.3" y="767.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.5 s  est.</text>
+<text x="624.0" y="800.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Placeholder: render + upload in the background</text>
+<rect x="749.3" y="785.5" width="26.4" height="18.0" rx="4" fill="#a6dfca" stroke="none" stroke-width="0" />
+<text x="783.7" y="800.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.7 s  est.</text>
+<text x="624.0" y="833.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Warm daemon: Claude + render + validate + pack</text>
+<rect x="749.3" y="818.5" width="139.4" height="18.0" rx="4" fill="#eb6834" stroke="none" stroke-width="0" />
+<text x="896.7" y="833.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">3.7 s</text>
+<text x="624.0" y="866.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Upload + play (IP address, no lookup)</text>
+<rect x="888.7" y="851.5" width="22.6" height="18.0" rx="4" fill="#a6dfca" stroke="none" stroke-width="0" />
+<text x="919.3" y="866.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.6 s  est.</text>
+<text x="624.0" y="899.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >ESP32 load, power cap, first 1/8-turn tick</text>
+<rect x="911.4" y="884.5" width="9.4" height="18.0" rx="4" fill="#a6dfca" stroke="none" stroke-width="0" />
+<text x="928.8" y="899.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">~0.25 s  est.</text>
+<text x="624.0" y="932.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#0b0b0b" text-anchor="end" >Preview render, after the upload (off the critical path)</text>
+<rect x="888.7" y="917.5" width="437.2" height="18.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="1333.9" y="932.0" font-family="Segoe UI, sans-serif" font-size="14.5" font-weight="400" fill="#52514e" text-anchor="start" paint-order="stroke" stroke="#fcfcfb" stroke-width="6" stroke-linejoin="round">11.6 s</text>
+<rect x="72.0" y="1027.0" width="24.0" height="16.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="0" />
+<text x="104.0" y="1040.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#52514e" text-anchor="start" >your PC</text>
+<rect x="219.0" y="1027.0" width="24.0" height="16.0" rx="4" fill="#eb6834" stroke="none" stroke-width="0" />
+<text x="251.0" y="1040.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#52514e" text-anchor="start" >Claude (cloud)</text>
+<rect x="378.0" y="1027.0" width="24.0" height="16.0" rx="4" fill="#1baf7a" stroke="none" stroke-width="0" />
+<text x="410.0" y="1040.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#52514e" text-anchor="start" >ESP32 on the rotor</text>
+<rect x="566.0" y="1027.0" width="24.0" height="16.0" rx="4" fill="#accaed" stroke="none" stroke-width="0" />
+<text x="598.0" y="1040.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#52514e" text-anchor="start" >pale = estimate</text>
+<text x="1846.0" y="1040.0" font-family="Segoe UI, sans-serif" font-size="15.5" font-weight="400" fill="#898781" text-anchor="end" >--fastest through the warm daemon: ≈ 5.6 s to the dog (template art, after the same placeholder).</text>
+</svg>

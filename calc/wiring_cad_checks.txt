@@ -1,0 +1,371 @@
+# POV LED Column rev i checks (script 146, 2026-11-04): every rev h row (138) rerun on the counted 26 x 31 carrier (board + guides at x -1.27), plus the rev i rows
+== exact clearances (mm)
+   rotor cap underside to base deck (gap)                                                     7.50  (>= 5.00) ok
+   tie-rod bottom ends to base deck                                                           6.70  (>= 5.00) ok
+   hall sensor to deck face                                                                   6.53  (>= 4.00) ok
+   hall face to magnet top (sensing gap 3-6)                                                  5.00  (>= 3.00) ok
+   cap underside to the proud magnet                                                          6.00  (>= 4.00) ok
+   tube bottom to base deck                                                                   9.50  (>= 5.00) ok
+   spinning cap to the bracket / motor screw heads                                           10.29  (>= 5.00) ok
+   coupling hub (spins) to the d18 deck hole edge                                             4.07  (>= 2.50) ok
+   coupling bottom to the bracket leg / motor screw heads                                     3.10  (>= 3.00) ok
+   coupling seated on the boss face, shaft in the bore (0 = contact)                          0.00  (>= 0.00) ok
+   flange seated in the core's pocket (0 = contact)                                           0.00  (>= 0.00) ok
+   flange / coupling hub clear of the plate's d28.4 hole                                      3.22  (>= 2.00) ok
+   coupling screws threaded into the flange (0 = contact)                                     0.00  (>= 0.00) ok
+   d12 boss in the d18 deck hole (radial)                                                     3.00  (>= 2.50) ok
+   shaft stub in the core's d7 hole (radial)                                                  0.53  (>= 0.50) ok
+   shaft stub to the cap plate                                                               11.23  (>= 3.00) ok
+   shaft stub tip to the bank bottom (hub pocket clearance for the stub)                      8.69  (>= 4.50) ok
+   shaft stub to the coupling screw shanks                                                    3.52  (>= 1.00) ok
+   shaft stub to the sled plate                                                              17.41  (>= 3.00) ok
+   motor body (gearbox, can, terminals) to the shell: deck underside over the bracket, post, walls   2.25  (>= 2.00) ok
+   motor terminals to the bottom plate                                                       28.50  (>= 3.00) ok
+   motor to the PWM board / heat sink                                                        35.44  (>= 5.00) ok
+   motor to the pot body                                                                     62.19  (>= 5.00) ok
+   motor to the magnet boss                                                                  21.30  (>= 3.00) ok
+   motor screw heads inside the deck's head pockets (radial 1.0, ceiling 1.3)                 1.00  (>= 0.90) ok
+   post screw heads (inside the L) to the gearbox                                             7.30  (>= 3.00) ok
+   bracket on the post face (0 = bolted)                                                      0.00  (>= 0.00) ok
+   bracket to the PWM board                                                                  36.82  (>= 5.00) ok
+   bracket to the base leads                                                                 17.40  (>= 3.00) ok
+   bracket leg end to the bottom plate                                                       37.71  (>= 3.00) ok
+   bracket to the magnet boss                                                                19.51  (>= 3.00) ok
+   PWM heat sink / pot connector / capacitor to the shell                                     4.21  (>= 3.00) ok
+   PWM terminal blocks to the shell (the standoffs are behind the 1.6 mm board)               1.60  (>= 1.50) ok
+   pin tips to the back wall / standoffs (under-board clearance)                              4.20  (>= 3.00) ok
+   PWM to the magnet boss                                                                    18.52  (>= 5.00) ok
+   PWM to the spinning rotor                                                                 24.00  (>= 5.00) ok
+   PWM to the bottom plate                                                                   10.50  (>= 3.00) ok
+   PWM to the pot                                                                           133.40  (>= 5.00) ok
+   pot bushing / body / nut on the front flat (0 = clamped)                                   0.00  (>= 0.00) ok
+   knob clear of the outside of the flat                                                      3.50  (>= 1.00) ok
+   knob to spinning rotor                                                                    41.74  (>= 3.00) ok
+   pot to the bottom plate                                                                   33.85  (>= 3.00) ok
+   base leads along the walls / through the notch (lie on the wall)                           1.15  (>= 0.30) ok
+   supply pair under the plate's staple bar / above the plate                                 1.83  (>= 0.50) ok
+   zip tie round the staple bar (0 = touching)                                                0.85  (>= 0.00) ok
+        closest: zip_tie_supply_anchor <-> base_bottom_plate at (-28.0, 79.8, -82.3)
+   zip tie to the shell wall                                                                  5.90  (>= 1.00) ok
+   base leads into the PWM terminals / pot connector (0 = in the terminal)                    0.00  (>= 0.00) ok
+   motor leads on the tabs (0 = soldered)                                                     0.00  (>= 0.00) ok
+   base leads to the motor body (the tabs they end on excluded)                               3.39  (>= 1.00) ok
+   motor leads / pot cable to the bottom plate                                                6.11  (>= 3.00) ok
+   base wiring to the spinning cap                                                           14.51  (>= 5.00) ok
+   base wiring to the rod ends                                                               25.41  (>= 5.00) ok
+   base wiring to the magnet boss                                                            37.70  (>= 3.00) ok
+   pot cable from the pot terminals (0 = soldered)                                            0.00  (>= 0.00) ok
+   core on the plate's top face, spigot in the d28.4 hole (0 = seated)                        0.00  (>= 0.00) ok
+   coupling + core screws in the core (0 = contact)                                           0.00  (>= 0.00) ok
+   core body (d45, chamfered top edge) to the sled's d49 plate hole and 45 deg cone           2.00  (>= 2.00) ok
+   core top to the bank bottom                                                                6.00  (>= 3.00) ok
+   core to the under-plate wiring lanes                                                       1.42  (>= 1.00) ok
+   core to the hall lead                                                                      7.87  (>= 1.00) ok
+   core top to the carrier-foot glue bead (modelled straight along the foot: over the d49 hole it floats 0.4 above the core; glue where the slot floor exists, |x| > 15.5)   0.40  (>= 0.30) ok
+   core to the hall sensor                                                                   16.62  (>= 3.00) ok
+   core spigot bottom (flush with the cap underside) to the deck                              7.50  (>= 5.00) ok
+   core to the proud magnet                                                                  18.34  (>= 4.00) ok
+   core to the tie rods                                                                      34.42  (>= 3.00) ok
+   shaft inside the core's d7 hole, nothing else touches (>= 0)                               0.53  (>= 0.00) ok
+        closest: hub_core <-> d_shaft_6mm at (2.9, -2.0, 5.3)
+   flush countersunk core screws to the deck                                                  7.50  (>= 5.00) ok
+   core screws to the under-plate wiring                                                      6.28  (>= 1.00) ok
+   core screws to the hall lead                                                               2.82  (>= 1.00) ok
+   csk heads in the plate's countersinks (0 = seated)                                         0.07  (>= 0.00) ok
+        closest: screw_core_1 <-> bottom_cap at (-9.7, 12.7, -2.0)
+   core screws to the hall sensor                                                            25.74  (>= 3.00) ok
+   sled cone / floor opening to the coupling screw heads                                      8.31  (>= 3.00) ok
+   bank standing on the floor pads (0 = contact)                                              0.00  (>= 0.00) ok
+   tie rods to sled                                                                           7.84  (>= 3.00) ok
+   tie rods to power bank                                                                    25.35  (>= 3.00) ok
+   tie rods to carrier board + components                                                    23.32  (>= 3.00) ok
+   tie rods to ESP32                                                                         31.46  (>= 3.00) ok
+   tie rods to tube wall / mid ring                                                          13.90  (>= 3.00) ok
+   tie rods to hall sensor                                                                   13.78  (>= 3.00) ok
+   tie rods to screws                                                                        37.24  (>= 3.00) ok
+   LED bodies to bottom skirt                                                                 1.80  (>= 0.50) ok
+   LED bodies to top skirt                                                                    1.80  (>= 0.50) ok
+   ESP32 to tube wall                                                                        48.52  (>= 3.00) ok
+   ESP32 to sled / guides                                                                     7.10  (>= 3.00) ok
+   ESP32 to power bank                                                                        9.50  (>= 3.00) ok
+   74AHCT125 to sled guide posts                                                             10.75  (>= 3.00) ok
+   carrier solder side (wires, bumps) to the wider bank / cradle                              8.26  (>= 3.00) ok
+   carrier PCB standing on the guide-slot floor (0 = contact)                                 0.00  (>= 0.00) ok
+   carrier solder-side wires / parts to the sled guides and the wider cradle wall             5.56  (>= 0.50) ok
+   carrier components to tube wall                                                           34.06  (>= 3.00) ok
+   carrier (J1/J12/C2 at the top) to top cap                                                147.94  (>= 3.00) ok
+   coupling screw heads to bank bottom                                                        3.00  (>= 3.00) ok
+   plain top cap to the bank top (+0.3 mm)                                                  129.00  (>= 3.00) ok
+   power button (0.3 proud) under the cradle wall (0.4 clearance)                             4.10  (>= 0.05) ok
+   sled to tube wall                                                                         28.40  (>= 3.00) ok
+   sled to strips                                                                            30.00  (>= 3.00) ok
+   wider cradle wall to the carrier's tall parts                                              7.10  (>= 1.00) ok
+   jumpers / feeds / start leads to tie rods                                                  4.43  (>= 3.00) ok
+   hall lead / glue to tie rods                                                              17.65  (>= 3.00) ok
+   pigtail + fuse holder to tie rods                                                         14.35  (>= 3.00) ok
+   rotor wiring (R15) to base deck                                                            9.95  (>= 5.00) ok
+   rotor harness (R16) to base deck                                                           9.20  (>= 5.00) ok
+   pigtail to base                                                                           66.90  (>= 5.00) ok
+   under-plate wiring to the proud magnet                                                    12.83  (>= 4.00) ok
+   hall lead to the magnet                                                                    9.73  (>= 4.00) ok
+   carrier to base                                                                           20.50  (>= 5.00) ok
+   under-plate wiring to the sled plate (channel + slots)                                     0.35  (>= 0.30) ok
+   hall lead through the -x slot to the sled plate                                            1.04  (>= 0.30) ok
+   under-plate wiring / bottom ribbons to the bottom cap (plate, lip, bosses)                 0.42  (>= 0.20) ok
+   top ribbons to the top cap lip / bosses                                                    0.60  (>= 0.50) ok
+   R16 (hall lead, ties, glue) to the top cap                                                 1.23  (>= 0.50) ok
+   ribbons / feeds in the slots and on the wall (lie on the wall)                             0.10  (>= 0.05) ok
+   hall lead / glue to the bank                                                               8.61  (>= 2.00) ok
+   pigtail cable + fuse holder to the bank body (the plug sits in the port)                   6.05  (>= 2.00) ok
+   pigtail cable to the wider cradle (zip tie excluded: it passes through the window)        19.60  (>= 2.00) ok
+   pigtail / fuse holder to the tube wall                                                    32.26  (>= 3.00) ok
+   fuse holder to the top cap                                                                78.20  (>= 3.00) ok
+   under-plate lanes to the hall legs (lane blocked at theta 86-94)                           5.38  (>= 0.50) ok
+   under-plate wiring to the sled / coupling screws                                           3.42  (>= 1.00) ok
+   hall lead to the screws                                                                    2.82  (>= 1.00) ok
+   feeds / start leads into the screw terminals (0 = clamped)                                 0.00  (>= 0.00) ok
+   wire ends on the strip back pads (0 = soldered)                                            0.06  (>= 0.00) ok
+        closest: jumper_18_19_top_CLK_28rawg <-> strip_18_pcb_A at (-0.9, -79.9, 233.0)
+   DevKit PCB / USB / buttons to the carrier's tall parts (terminals, caps, resistors, test points)   1.16  (>= 1.00) ok
+   DevKit PCB edge to the 2.54 mm screw terminals                                             1.80  (>= 1.00) ok
+   WROOM module (its antenna tip overhangs the PCB edge by 1 mm) to the bottom-row terminals   0.80  (>= 0.50) ok
+   2.54 mm screw terminals to the sled / guide posts                                          5.56  (>= 1.00) ok
+   feed wires (into the right-edge terminals from the ESP32 side) to the DevKit               2.16  (>= 1.00) ok
+   feeds / start leads to the carrier-foot glue bead                                          2.89  (>= 0.30) ok
+   hall lead to the carrier-foot glue bead                                                    3.41  (>= 0.30) ok
+   jumper ribbons + loops (bottom end) to the bottom cap lip / trim bosses                    0.50  (>= 0.20) ok
+   jumper ribbons + loops (top end) to the top cap lip / trim bosses                          1.50  (>= 0.50) ok
+   jumper loops to the tie rods                                                              14.88  (>= 3.00) ok
+   jumper loops to the sled rim                                                              23.42  (>= 3.00) ok
+   jumper loops to the bank                                                                  35.08  (>= 3.00) ok
+   jumper loops to the carrier                                                               29.45  (>= 3.00) ok
+   jumper ribbons through the 10 mm slots and on the wall (lie on the wall)                   0.10  (>= 0.05) ok
+   jumper ribbons / loops to the feeds and start leads (the feed and the ribbon share the 5V / GND pads at the six feed strips: 0 = soldered together; no loop at a feed slot)   0.00  (>= 0.00) ok
+   jumper loops to the hall lead / glue                                                       1.53  (>= 1.00) ok
+   ribbon ends on the strips' back pads (0 = soldered)                                        0.06  (>= 0.00) ok
+        closest: jumper_18_19_top_CLK_28rawg <-> strip_18_pcb_A at (-0.9, -79.9, 233.0)
+   pigtail cable (down the -x side of the bank to J1) to the wider, taller carrier PCB        1.10  (>= 1.00) ok
+   pigtail tails (into J1 from -x) to the carrier PCB                                         2.26  (>= 0.50) ok
+   pigtail tails in J1's clamps (0 = clamped)                                                 0.00  (>= 0.00) ok
+   pigtail / fuse holder to the DevKit                                                       12.02  (>= 3.00) ok
+   carrier PCB (70 x 90) to the bank                                                         10.70  (>= 3.00) ok
+   carrier PCB top corners (x -36.3 / +33.7, z 101) to the tube wall                         37.08  (>= 3.00) ok
+   carrier PCB to the tie rods                                                               28.41  (>= 3.00) ok
+   carrier PCB top edge (z 101) to the top cap                                              147.94  (>= 3.00) ok
+   carrier PCB to the jumper loops on the wall                                               31.38  (>= 3.00) ok
+   guide posts grip the board's 90 mm edges (0 = the board stands on the slot floors)         0.00  (>= 0.00) ok
+   carrier-foot glue bead on the sled (0 = contact)                                           0.00  (>= 0.00) ok
+   rev i: start_00 ends inside terminal J3's entry hole                                      0.320  (<= 0.45) ok
+   rev i: start_12 ends inside terminal J4's entry hole                                      0.320  (<= 0.45) ok
+   rev i: feed_03 ends inside terminal J6's entry hole                                       0.000  (<= 0.45) ok
+   rev i: feed_06 ends inside terminal J7's entry hole                                       0.000  (<= 0.45) ok
+   rev i: feed_09 ends inside terminal J8's entry hole                                       0.000  (<= 0.45) ok
+   rev i: feed_15 ends inside terminal J9's entry hole                                       0.000  (<= 0.45) ok
+   rev i: feed_18 ends inside terminal J10's entry hole                                      0.000  (<= 0.45) ok
+   rev i: feed_21 ends inside terminal J11's entry hole                                      0.000  (<= 0.45) ok
+   rev i: hall_lead ends inside terminal J5's entry hole                                     0.320  (<= 0.45) ok
+   rev i: pigtail_ ends inside terminal J1's entry hole                                      0.000  (<= 0.45) ok
+   USB plug overmold (x +-5.5, 20 mm above the DevKit) to the carrier's parts                 1.59  (>= 1.00) ok  [carrier_pcb]
+   USB plug overmold to the sled                                                             16.08  (>= 1.00) ok  [sled]
+   USB plug overmold to the bank                                                             14.19  (>= 1.00) ok  [power_bank]
+   USB plug overmold to the hall lead / glue                                                 56.67  (>= 1.00) ok  [hall_lead_GND_28awg]
+   USB plug overmold to the pigtail / fuse                                                   20.44  (>= 1.00) ok  [pigtail_5V_22awg]
+   1.5 mm hex key at the set screw (radial, +x) to the spinning cap                           2.98  (>= 2.00) ok
+   hex key to the core's spigot                                                               2.98  (>= 2.00) ok
+   hex key to the deck                                                                        3.02  (>= 2.00) ok
+   hex key to the tie rod at (60, 0) (turn the rotor 10-20 deg if the flat lands on a rod)    2.18  (>= 1.00) ok
+   hex key to the hall sensor                                                                38.65  (>= 2.00) ok
+   wiring inside the rotor envelope r 80.05 (worst: jumper_22_23_top_DATA_28rawg)             0.10  (> 0) ok
+   base shell top = deck top z -9.5 (flat, prints on the bed)                                0.000  ok
+   base shell bottom = wall bottom z -92 (the post ends at -52)                              0.000  ok
+== designed fits (mm)
+   core spigot d28 in the plate's d28.4 hole (radial)                                       0.20 (>= 0.15) ok
+   core d45 in the sled's d49 plate hole (radial)                                           2.00 (>= 1.50) ok
+   sled 45 deg cone over the core's chamfered top edge, perpendicular (mm)                  2.40 (>= 2.00) ok
+   sled cone to the coupling heads at z 11 (radial, mm)                                     11.15 (>= 3.00) ok
+   core screw M3 x 8 csk: 2 in the plate + 6 in the insert, hole 7 (mm spare)               1.00 (>= 0.50) ok
+   countersink edge to the plate's centre hole (mm)                                         0.70 (>= 0.50) ok
+   countersink 1.4 deep in the 2 mm plate: cylindrical land left (mm)                       0.60 (>= 0.50) ok
+   core wall outside the insert holes (mm)                                                  2.50 (>= 2.00) ok
+   core wall between the insert holes and the pocket (mm)                                   4.80 (>= 2.00) ok
+   spigot wall round the pocket (mm)                                                        2.80 (>= 2.00) ok
+   core material above the insert holes (mm)                                                1.00 (>= 0.80) ok
+   coupling head edge to the core screw hole edge (mm)                                      5.55 (>= 3.00) ok
+   cap plate ring under the core: inner window r 24 to the core edge (mm)                   1.50 (>= 1.00) ok
+   sled window gable apex below the cradle top (mm)                                         4.40 (>= 2.00) ok
+   end-window width at the pigtail zip tie (z 58) minus the two strands 7.2 (mm)            2.80 (>= 1.00) ok
+   floor pad length on the bank's -y edge (mm)                                              16.25 (>= 10.00) ok
+   bracket leg top to the deck underside (mm)                                               0.79 (>= 0.50) ok
+   motor screw heads: pocket radial / ceiling clearance (mm)                                1.00 (>= 0.90) ok
+   deck floor left above the head pockets (mm)                                              1.50 (>= 1.00) ok
+   boss d12 in the d18 deck hole (radial)                                                   3.00 (>= 2.50) ok
+   coupling hub d9.86 to the deck hole edge (radial)                                        4.07 (>= 2.50) ok
+   coupling flange d21.97 in the d22.4 pocket (radial)                                      0.21 (>= 0.15) ok
+   shaft stub above the flange face (mm)                                                    3.31 (>= 3.00) ok
+   open height above the flange face for the stub: hub hole to the bank bottom (mm)         12.00 (>= 4.50) ok
+   stub tip to the bank bottom (mm)                                                         8.69 (>= 3.00) ok
+   shaft d5.95 in the hub's d7 hole (radial)                                                0.52 (>= 0.40) ok
+   set screw (z -5.73): 1.5 mm key to the cap underside (mm)                                2.98 (>= 2.00) ok
+   set screw: key to the deck top (mm)                                                      3.02 (>= 2.00) ok
+   set screw above the boss face, on the D flat (mm)                                        4.13 (>= 1.00) ok
+   hub floor above the flange (mm)                                                          6.00 (>= 4.00) ok
+   M3 x 8 coupling screw reach beyond the floor vs the 1.98 flange (mm proud)               0.02 (<= 2.50) ok
+   bracket post insert hole 7 vs the M3 x 8 reach 6.54 (mm spare)                           0.46 (>= 0.30) ok
+   post wall beside the insert holes: y / below the lower hole (mm)                         3.61 (>= 2.00) ok
+   bracket vertical leg end above the post bottom... leg end z -54.29 vs post bottom -52 (mm) -2.29 (<= 5.00) ok
+   post screw heads (inside the L) to the gearbox OD (mm)                                   4.19 (>= 3.00) ok
+   gearbox d36.7 under the 40 mm leg (mm each side)                                         1.65 (>= 1.00) ok
+   boss d12 in the 12.92 bracket slot (radial)                                              0.46 (>= 0.30) ok
+   sled boss insert hole 7 vs the M3 x 8 reach 5.6 (mm spare)                               1.40 (>= 0.50) ok
+   plate boss insert hole 7 vs the M3 x 8 reach 5.0 (mm spare)                              2.00 (>= 0.50) ok
+   PWM board end to the flat's inner corner x 42.9 (mm)                                     4.83 (>= 1.00) ok
+   PWM board top edge to the deck underside (mm)                                            12.50 (>= 3.00) ok
+   PWM board bottom edge to the plate top (mm)                                              20.00 (>= 3.00) ok
+   PWM standoff d7 inside the board outline at the 4.86 end (mm)                            1.36 (>= 1.00) ok
+   under-board clearance: 10 mm standoff minus 3 mm pin tips (mm)                           7.00 (>= 3.00) ok
+   PWM standoff insert hole 8 vs the M3 x 8 reach 6.4 (mm spare)                            1.60 (>= 0.50) ok
+   M3 in the board's d3.0 holes (radial; tight M3 - ream to 3.2 if needed)                  0.00 (>= 0.00) ok
+   pot: front wall under the knob (mm) <= 4                                                 3.00 (<= 4.00) ok
+   pot bushing d7 in the d7.5 hole (radial)                                                 0.25 (>= 0.10) ok
+   pot body d16.3 behind the flat: to the plate top / to the post (mm)                      33.85 (>= 5.00) ok
+   lead notch 8 x 6 vs the 2 x d1.7 pair (mm spare in width)                                4.60 (>= 2.00) ok
+   pair (z -88, top -87.15) under the plate staple bar (z -84.5): mm spare                  2.65 (>= 1.00) ok
+   staple bar bridge between the posts (mm, printed flat)                                   8.00 (<= 8.00) ok
+   pair (2 x d1.7 at x +-1.2) between the staple posts (mm each side)                       1.95 (>= 1.00) ok
+   bank in the cradle (per side)                                                            0.40 (>= 0.30) ok
+   bank top to the top cap underside (mm)                                                   130.30 (>= 3.00) ok
+   USB-A plug metal 12 x 4.5 in the 12.6 x 4.8 opening (per side)                           0.15 (>= 0.10) ok
+   USB-A opening edge to the bank side (mm)                                                 10.60 (>= 5.00) ok
+   tube ID to cap lip OD (radial)                                                           0.20 (>= 0.20) ok
+   LED top to skirt ID (radial)                                                             1.14 (>= 0.50) ok
+   strip in rail slot (per side)                                                            0.30 (>= 0.30) ok
+   carrier PCB in guide slot (per side)                                                     0.30 (>= 0.30) ok
+   ribbon (4 x 1.27) + 26 AWG feed pair in the 10 mm slot width (mm spare)                  4.92 (>= 1.00) ok
+   ribbon row + feed row in the 5 mm slot height (mm spare)                                 1.90 (>= 1.00) ok
+   6-wire start lead in the 10 x 5 slot: width spare / height spare                         1.40 (>= 1.00) ok
+   end-pad span 9.0 (assumed, outer edge to outer edge) in the 10 mm slot: mm spare per side 0.50 (>= 0.50) ok
+   pad zone cut + 0.5..3.0 (assumed) over the slot (from cut + 1.0): solderable pad inside the slot footprint (mm) 2.00 (>= 1.50) ok
+   pad-end wire offsets +-3.75 inside the slot's half width minus the ribbon radius (mm spare) 0.75 (>= 0.30) ok
+   wall left between the slot edge and the rail root (mm)                                   1.30 (>= 1.00) ok
+   slot bridge span in the upright tube print (mm) <= 12                                    10.00 (<= 12.00) ok
+   end-ring perforation per z band: 8 slots x 10 of the 503 mm circumference (%) <= 25      15.92 (<= 25.00) ok
+   set-A bottom ribbon (lowest wire edge) above the 3 mm cap lip (mm)                       1.27 (>= 0.20) ok
+   jumper slack: ribbon that can be pulled out of the second slot = 2 x 10 + pi x 2.3 (mm)  27.23 (>= 20.00) ok
+   jumper fold radius 2.3 vs the ribbon's 2 x OD bend limit (mm spare)                      0.30 (>= 0.00) ok
+   loop (10 + fold 4.6) up the wall from a set-C bottom slot (z 17.4) to the mid ring at z 121.5 (mm spare) 87.01 (>= 50.00) ok
+   under-plate channel height (z 0..6) minus the tallest lane stack (start bundle 2 rows)   2.25 (>= 1.00) ok
+   crossing runs at z 4.7 (top 5.45) under the sled plate (z 6.0)                           0.55 (>= 0.30) ok
+   outer lane r 37.6 + 0.75 to the sled boss r 40.5                                         2.15 (>= 1.00) ok
+   inner lane r 25.6 - 0.75 to the hub r 20                                                 4.85 (>= 1.00) ok
+   6 feed pairs + 6-wire bundle across the 17 mm slot (mm spare)                            0.20 (>= 0.00) ok
+   sled slot web to the sled screw hole                                                     2.87 (>= 2.00) ok
+   DevKit antenna end (z 27.88) above the bottom-row terminal bodies (z 26.08)              1.80 (>= 1.00) ok
+   DevKit PCB underside above the carrier (male header spacer, mm)                          2.54 (>= 2.00) ok
+   rev h: carrier board 70 wide in the 70.6 mm guide slot (per side)                        0.30 (>= 0.25) ok
+   rev h: carrier board 70 x 90 = the measured Rindion board (mm, each)                     1.00 (>= 1.00) ok
+   rev h: netlist board size equals povlib PROTO (mm)                                       1.00 (>= 1.00) ok
+   rev h/i: guide posts (x -37.77 / +35.23, 6 wide at y -19) inside the r 50 sled plate (mm) 3.67 (>= 1.00) ok
+   rev h: guide posts to the cradle's -y wall (mm, in y)                                    6.40 (>= 3.00) ok
+   rev h: guide posts to the M6 trim bosses at (+-42.5, 0) (mm, in y)                       9.00 (>= 3.00) ok
+   rev h: guide posts to the sled screw holes at r 45 / 45 deg (mm, in y)                   8.12 (>= 3.00) ok
+   rev h: guide posts to the sled wire slots (mm, in y)                                     6.30 (>= 3.00) ok
+   rev h: edge gripped by the guides, z 11 to the post tops z 56.4 (mm of the 90 mm edge)   45.40 (>= 40.00) ok
+   rev h: board top (z 101) to the top cap underside (z 250) (mm)                           149.00 (>= 50.00) ok
+   rev h/i: board corners (x -36.27 / +33.73, y -19 +-0.8) inside the tube bore r 78.4 (mm) 37.08 (>= 10.00) ok
+   rev i: hole grid = Brian's count, 26 x 31 (1 = match)                                    1.00 (>= 1.00) ok
+   rev i: margins as measured: 3.25 across each side, row 1 7.5 above the bottom edge (mm error) -0.00 (<= 0.01) ok
+   rev i: netlist board_x -1.27 = povlib PROTO_X -1.27 (mm error)                           0.00 (<= 0.00) ok
+   rev i: DevKit centre (columns I / S) on the rotor axis: |x| (mm)                         0.00 (<= 0.00) ok
+   rev i: nearest used solder pad (r 1.0, rows 1-16) to the guides' 1.5 mm grip (mm)        5.83 (>= 1.00) ok
+   rev i: outermost columns A / Z: pad edge to the guides' grip (mm; spare columns)         0.75 (>= 0.50) ok
+   rev i: bottom terminals' wire S-bend room, body to the board's bottom edge (mm)          8.58 (>= 8.00) ok
+   rev h: USB plug keep-out top (z 99) below the board top (z 101): the plug sweeps the board, not air (mm) 1.67 (>= 0.00) ok
+== retention / load path
+   top cap <-> tube <-> bottom cap | 4 x M3 stainless tie rods in tension, nyloc each end (tube in compression)                           | rod beyond the bottom nylon ring (mm)                             1.20 >= 1     ok 
+                                  |                                                                                                      | rod beyond the top nylon ring (mm)                                1.10 >= 1     ok 
+                                  |                                                                                                      | floor above the bottom nut (mm)                                   2.20 >= 1.5   ok PETG boss (rev f; was PET-CF)
+                                  |                                                                                                      | floor under the top nut (mm)                                      2.00 >= 1.5   ok PETG boss
+                                  |                                                                                                      | nut bearing stress at 150 N/rod (MPa)                             9.61 <= 25    ok snug, not torqued
+                                  |                                                                                                      | tube end compression at 4 x 150 N (MPa)                           0.75 <= 13    ok limit = shell buckling
+   tube <-> caps (radial)         | 3 mm lips inside the tube bore, 0.2 radial                                                           | lip engagement (mm)                                               3.00 >= 2     ok spigot only; rods carry the load
+   hub core <-> coupling          | 4 x M3 x 8 SHCS through the 6.0 mm PET-CF core floor into the M3-tapped 1.98 mm steel flange (PCD 16) | thread engagement (mm) = flange thickness                         1.98 >= 1.5   ok NOTE: 2 mm of steel thread x 4 screws for 10 N axial + the motor torque; M3 x 10 gains nothing
+   hub core <-> cap plate         | 4 x M3 x 8 countersunk up through the 2 mm PETG plate into M3 x 6 inserts in the PET-CF core; d28 spigot in a d28.4 hole centres it | screw in insert (mm)                                              6.00 >= 4     ok the plate (and the whole rotor) hangs on these: 10 N + preload
+                                  |                                                                                                      | countersink bearing stress on the PETG plate at 300 N per screw (MPa)   14.21 <= 20    ok snug (~0.1 N m) + threadlocker; PETG creeps above ~20 MPa
+                                  |                                                                                                      | friction torque capacity of the joint vs the 0.03 N m spin-up torque (ratio)  216.00 >= 10    ok mu 0.3, 4 x 300 N at r 18
+                                  |                                                                                                      | seat flatness 0.05 (printed top layer) over d22 -> top-of-tube runout (mm)    0.57 <= 1     ok rev e bridged ceiling: 0.2-0.4 mm sag -> 2-5 mm
+   coupling <-> motor shaft       | hub seated on the d12 boss face (rotor weight on the boss, not on the set screw) + M3 set screw on the D flat | set screw above the boss face (mm)                                4.13 >= 1     ok the flat is assumed to run the shaft length: check before fitting
+   motor <-> L-bracket            | 6 x supplied M3 x ~5.5 pan screws down through the 1.46 mm leg into the tapped gearbox face          | thread engagement (mm)                                            4.04 >= 3     ok boss bears on the far end of the slot
+   L-bracket <-> post             | 4 x M3 x 8 SHCS through the vertical leg into M3 x 6 inserts (d4.0 x 7 holes)                        | screw in the insert (mm)                                          6.00 >= 4     ok 6.54 reach in a 7 mm hole
+   post <-> deck                  | printed as one: 10 x 44 pillar on the deck underside + two 45 deg gussets (deck-down print)          | root bending stress from 1.2 kg at 34 mm (MPa)                    0.56 <= 5     ok I = 44 x 10^3 / 12 mm^4
+   sled <-> cap plate             | 4 x M3 x 8 into M3 x 6 inserts in the PETG d9 x 6 bosses (d4.0 x 7); no load beyond the 3 N stack weight | screw in insert (mm)                                              5.60 >= 4     ok snug + threadlocker (PETG under the heads)
+   PWM board <-> standoffs        | 4 x M3 x 8 through the 1.6 board (d3.0 holes) into M3 x 4 inserts (d4.0 x 8)                         | screw in insert (mm)                                              4.00 >= 3     ok 6.4 reach in an 8 mm hole
+   pot <-> front flat             | M7 bushing nut + anti-rotation tab in the 2.7 x 1.4 slot                                             | wall under the nut (mm)                                           3.00 <= 4     ok <= 4 for the bushing length
+   12 V leads <-> base            | zip tie round the pair and the staple bar on the bottom plate, just inside the notch (modelled)      | ties                                                              1.00 >= 1     ok a tug reaches the tie, not the terminal
+   strips <-> tube                | 3M adhesive + rails (0.3/side) + printed end-stop (z datum)                                          | adhesive load at 225 rpm (kPa)                                    0.03 <= 5     ok 
+                                  |                                                                                                      | end-stop z error budget: print 0.1 + cut-line 0.5 (mm) vs row pitch/4    0.60 <= 1.38889 ok rows interleave if |dz| < 1.4
+   power bank <-> sled            | cradle captured on 4 sides + floor (67.1 x 25.8 for the measured 66.3 x 25.0), 2 zip ties            | radial load at the 5.3 mm CG offset (N)                           0.59 <= 5     ok 
+   hall sensor <-> bottom cap     | CA in the 0.5 mm pocket, legs through the slot                                                       | pocket depth (mm)                                                 0.50 >= 0.4   ok 
+   bottom plate <-> shell         | 4 x M3 x 8 countersunk into M3 x 6 inserts in the d9 x 10 bosses (d4.0 x 7)                          | screw in insert (mm)                                              5.00 >= 4     ok 
+   magnets <-> deck               | d6.3 x 6 pocket, seated on the floor, CA                                                             | magnet engaged below the deck face (mm)                           4.50 >= 3     ok 
+   rotor <-> base                 | rotor weight on the gearbox output bearing, no top bearing                                           | rotor cap to deck gap (mm)                                        7.50 >= 5     ok balance to G6.3
+   carrier board <-> sled         | hot-glue bead along the board foot, both faces + under the edge (modelled)                           | bead length / height (mm)                                        50.00 >= 20    ok R16 hotglue_carrier_foot
+   ESP32 <-> carrier              | 30 pins soldered through the carrier (no headers; diode test + first USB flash BEFORE soldering)     | soldered pins                                                    30.00 >= 30    ok 
+   strip jumpers / feeds <-> wall | Kapton (or tape) patch over every used slot, wires between patch and wall; 22 patches run on past the slot over a jumper's slack loop | patches                                                          46.00 >= 46    ok strips 11 / 23 bottom slots carry no wire
+   wire <-> strip pad             | solder + CA drop at the pad                                                                          | wire run along the pad before the slot (mm)                       1.70 >= 1     ok the 90 deg turn through the wall is the strain relief
+   jumper second end <-> strip    | soldered pads-up beside the tube with the ribbon pulled out of the second slot; the slack pushed back and taped flat (rev g, B2) | pull-out length (mm)                                             27.23 >= 20    ok every joint is a bench-style joint; a dead strip's loops come back out the same way
+   start leads / feeds / hall <-> sled | zip tie through the two d2.6 holes beside each pass-through slot                                     | ties                                                              2.00 >= 2     ok 
+   wires <-> screw terminals      | screw clamp (M1.6) on a tinned end; 28 AWG ends folded double; nail varnish on each screw            | terminals                                                        10.00 >= 10    ok 
+   pigtail <-> cradle             | zip tie through the narrow-wall window at z 58                                                       | ties                                                              1.00 >= 1     ok 
+   fuse holder <-> bank top       | hangs on the cable over the bank (7 g at r 13): NOTE, tape it to the bank top or skip F1             | fixings modelled                                                  0.00 >= 0     ok double-sided tape; not modelled
+   strips <-> rails               | liner on + one hot-glue dab per end over the strip edge onto the rail                                | dabs                                                             48.00 >= 48    ok reversible
+   hall legs <-> cap              | legs through the 1.4 x 4.5 lead slot, bent flat at z 3.4 (under the plate)                           | leg top below the sled plate (mm)                                 2.60 >= 1     ok 
+== bend radii (interior corners, mm; pad / terminal entries excluded)
+   feed           26    n= 12  interior min  3.00 (>= 3.0) | incl. entries  0.89  ok
+   hall           28    n=  3  interior min  2.40 (>= 2.4) | incl. entries  1.73  ok
+   jumper         28r   n= 88  interior min  2.00 (>= 2.0) | incl. entries  0.82  ok
+   motor          22    n=  2  interior min  6.80 (>= 3.4) | incl. entries  6.80  ok
+   pigtail        22    n=  2  interior min 999.00 (>= 3.4) | incl. entries  4.16  ok
+   pigtail        22c   n=  1  interior min  7.20 (>= 5.0) | incl. entries  7.20  ok
+   pot            cable n=  1  interior min 12.00 (>= 6.0) | incl. entries  8.10  ok
+   start          26    n=  4  interior min  3.00 (>= 3.0) | incl. entries  0.89  ok
+   start          28    n=  8  interior min  2.40 (>= 2.4) | incl. entries  0.73  ok
+   supply         22    n=  2  interior min 999.00 (>= 3.4) | incl. entries  6.80  ok
+== wire mass by gauge (modelled length x g/m): total g | copper g | wires
+   22     1.20 g | copper  0.92 g |   6 wires
+   22c    1.48 g | copper  0.72 g |   2 wires
+   26     4.74 g | copper  2.74 g |  16 wires
+   28     1.83 g | copper  1.02 g |  11 wires
+   28r    6.19 g | copper  4.09 g |  88 wires
+== per component: mass g | CG x y z mm | Izz kg mm^2 | vol cm3
+   B01 base shell                       362.6 |   -2.44    0.58   -34.4 |    2537.1 |   285.5
+   B02 base bottom plate                126.3 |   -0.06    0.17   -93.5 |     696.9 |    99.4
+   B03 gearmotor JGB37-520              164.0 |   -6.81    0.00   -34.8 |      31.9 |    40.3
+   B04 PWM controller                    30.0 |    3.85   69.78   -46.0 |     156.5 |    26.3
+   B06 hall magnet                        1.3 |    0.00   42.00   -11.0 |       2.3 |     0.2
+   B07 rubber feet                        2.0 |   -0.00    0.00   -97.0 |      14.8 |     1.9
+   B08 base wiring                        4.2 |   23.79   25.39   -45.1 |      28.7 |     3.3
+   B09 motor L-bracket                   41.4 |  -22.94   -0.00   -25.3 |      36.1 |     5.3
+   B10 speed pot                         12.0 |   -0.00  -94.12   -50.0 |     107.3 |     4.5
+   R01 flange coupling                    8.6 |   -0.05    0.00    -1.5 |       0.4 |     1.1
+   R02 bottom cap                        55.3 |   -0.00   -0.02    -0.1 |     239.5 |    43.5
+   R02b hub core                         15.0 |   -0.00    0.00     4.0 |       4.0 |    11.5
+   R03 hall sensor                        0.3 |    0.00   41.77    -2.0 |       0.5 |     0.0
+   R04 sled                              45.4 |   -0.11    1.62    22.7 |      56.1 |    35.8
+   R05 power bank                       199.0 |    0.00    5.30    66.6 |      89.0 |   174.3
+   R06 ESP32                              9.0 |   -0.00  -23.70    51.2 |       5.7 |     4.6
+   R07 carrier board (level shifters)    42.9 |   -0.52  -21.48    54.1 |      37.8 |    20.3
+   R08 USB pigtail                       17.6 |    0.43    4.83   142.7 |       7.5 |     8.9
+   R09 tube                             278.7 |    0.00   -0.00   124.7 |    1751.7 |   219.4
+   R10 LED strips                        96.0 |    0.00   -0.00   125.0 |     624.4 |    44.4
+   R11 top cap                           67.0 |    0.00   -0.00   250.4 |     267.2 |    52.8
+   R13 screws                            10.2 |    0.00   -0.00     6.0 |       9.1 |     1.3
+   R14 tie rods                          61.7 |    0.00    0.00   125.6 |     222.1 |     7.8
+   R15 chain wiring                      14.4 |    2.46   -7.40    82.5 |      61.0 |    11.2
+   R16 rotor harness                      2.3 |   -5.11  -12.10    29.6 |       4.3 |     2.2
+== ROTOR: mass 929 g (modelled 923 + unmodelled 6; wiring R15+R16+R08 34.2 g, carrier+ESP32 51.9 g, bank 199 g) | CG (0.00, -0.05, 99.3) mm | U = 44.2 g mm (G6.3 at 225 rpm allows 249: 18 %) | I_zz = 3.380e-03 kg m^2
+   CG direction 275 deg -> trim pocket at 95 deg: 1.7 M3 nuts (26 g mm each) bring U to ~0
+   225 rpm: U_allowed 249 g mm, KE 0.94 J, spin-up 3.0 s at 27 mN m, 4.5 g at the rim
+   300 rpm: U_allowed 186 g mm, KE 1.67 J, spin-up 4.0 s at 27 mN m, 8.0 g at the rim
+== BASE mass 744 g (shell 363, plate 126, motor 164, bracket 41, PWM 30, pot 12, wiring 4.2); total device 1673 g
+== jumper ribbons: routed 61-68 mm incl. the slack loop -> cut 80 (routed + 2 x 4, rounded up to 5); 22 x 80 = 1.76 m of 4-wire ribbon
+== 325 rows, 0 FAIL/NOTE (json -> calc/revj_checks.json + calc/wiring_cad_checks.json, text -> calc/wiring_cad_checks.txt)

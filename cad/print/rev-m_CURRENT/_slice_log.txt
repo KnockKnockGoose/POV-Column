@@ -1,0 +1,119 @@
+process: fdm_process_common -> fdm_process_dual_common -> fdm_process_dual_0.20_nozzle_0.4 -> 0.20mm Balanced Strength @BBL H2D -> 0.20mm Strength PET-CF @BBL H2D (shown in BS as '0.20mm Balanced Strength @BBL H2D' + 7 modified keys)
+process keys applied: 182
+filament: fdm_filament_common -> fdm_filament_pet -> Fiberon PET-CF @base -> Fiberon PET-CF @BBL H2D
+filament keys applied to slot 1: 124 (not in project config: 6)
+slot 1 -> extruder 1 (filament_map_mode Manual)
+set wall_loops = 6
+set top_shell_layers = 6
+set bottom_shell_layers = 6
+set sparse_infill_density = 85%
+object centred on the bed at (175, 160), no Z rotation
+wrote <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\revm2_drive_parts_PET-CF_plate_PET-CF.3mf
+
+=== revm2_drive_parts_PET-CF_plate_PET-CF.gcode.3mf ===
+filament: 26.03 g   est print: 93 min (1.55 h)
+nozzle_temperature: 300,220,220,220,220,220,220,220,265
+nozzle_temperature_initial_layer: 300,220,220,220,220,220,220,220,265
+textured_plate_temp: 70,55,55,55,55,55,55,55,100
+curr_bed_type: Textured PEI Plate
+filament_settings_id: "Fiberon PET-CF @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"PolyLite PLA @BBL H2D";"Bambu PA6-GF @BBL H2D"
+filament_map: 1,1,1,1,1,1,1,1,1
+layer_height: 0.2
+wall_loops: 6
+top_shell_layers: 6
+bottom_shell_layers: 6
+sparse_infill_density: 85%
+sparse_infill_pattern: gyroid
+enable_support: 0
+brim_type: no_brim
+total layer number: 76
+print_extent_mm: 103.3 x 93.0
+project (open/re-slice in Bambu Studio): <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\revm2_drive_parts_PET-CF_plate_PET-CF.3mf
+editable gcode: revm2_drive_parts_PET-CF_plate_PET-CF.plate_1.gcode (repack with: py slice.py --repack <file>)
+process: fdm_process_common -> fdm_process_dual_common -> fdm_process_dual_0.20_nozzle_0.4 -> 0.20mm Balanced Strength @BBL H2D -> 0.20mm PLA Fitcheck @BBL H2D (shown in BS as '0.20mm Balanced Strength @BBL H2D' + 7 modified keys)
+process keys applied: 182
+filament: fdm_filament_common -> fdm_filament_pla -> Bambu PLA Matte @base -> Bambu PLA Matte @BBL H2D
+filament keys applied to slot 1: 124 (not in project config: 7)
+slot 1 -> extruder 1 (filament_map_mode Manual)
+object centred on the bed at (175, 160), no Z rotation
+wrote <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\revm2_deck_drill_template_PLA.3mf
+
+=== revm2_deck_drill_template_PLA.gcode.3mf ===
+filament: 20.56 g   est print: 40 min (0.67 h)
+nozzle_temperature: 220,220,220,220,220,220,220,220,265
+nozzle_temperature_initial_layer: 220,220,220,220,220,220,220,220,265
+textured_plate_temp: 55,55,55,55,55,55,55,55,100
+curr_bed_type: Textured PEI Plate
+filament_settings_id: "Bambu PLA Matte @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"PolyLite PLA @BBL H2D";"Bambu PA6-GF @BBL H2D"
+filament_map: 1,1,1,1,1,1,1,1,1
+layer_height: 0.2
+wall_loops: 2
+top_shell_layers: 3
+bottom_shell_layers: 3
+sparse_infill_density: 10%
+sparse_infill_pattern: gyroid
+enable_support: 0
+brim_type: no_brim
+total layer number: 42
+print_extent_mm: 99.2 x 98.3
+project (open/re-slice in Bambu Studio): <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\revm2_deck_drill_template_PLA.3mf
+editable gcode: revm2_deck_drill_template_PLA.plate_1.gcode (repack with: py slice.py --repack <file>)
+process: fdm_process_common -> fdm_process_dual_common -> fdm_process_dual_0.20_nozzle_0.4 -> 0.20mm Balanced Strength @BBL H2D -> 0.20mm Structural PETG-PLA @BBL H2D (shown in BS as '0.20mm Balanced Strength @BBL H2D' + 7 modified keys)
+process keys applied: 182
+filament: fdm_filament_common -> fdm_filament_pet -> Bambu PETG Matte @base -> Bambu PETG Matte @BBL H2D 0.4 nozzle
+filament keys applied to slot 1: 124 (not in project config: 8)
+slot 1 -> extruder 1 (filament_map_mode Manual)
+object centred on the bed at (175, 160), no Z rotation
+wrote <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\alternates\base_shell_m2_PETG.3mf
+
+=== base_shell_m2_PETG.gcode.3mf ===
+filament: 296.25 g   est print: 501 min (8.36 h)
+nozzle_temperature: 245,220,220,220,220,220,220,220,265
+nozzle_temperature_initial_layer: 245,220,220,220,220,220,220,220,265
+textured_plate_temp: 70,55,55,55,55,55,55,55,100
+curr_bed_type: Textured PEI Plate
+filament_settings_id: "Bambu PETG Matte @BBL H2D 0.4 nozzle";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"PolyLite PLA @BBL H2D";"Bambu PA6-GF @BBL H2D"
+filament_map: 1,1,1,1,1,1,1,1,1
+layer_height: 0.2
+wall_loops: 4
+top_shell_layers: 4
+bottom_shell_layers: 4
+sparse_infill_density: 20%
+sparse_infill_pattern: gyroid
+enable_support: 0
+brim_type: no_brim
+total layer number: 412
+print_extent_mm: 199.6 x 179.6
+project (open/re-slice in Bambu Studio): <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\alternates\base_shell_m2_PETG.3mf
+editable gcode: base_shell_m2_PETG.plate_1.gcode (repack with: py slice.py --repack <file>)
+
+# 2026-11-15: base shell reprint in PETG-CF (Bambu PETG-CF @BBL H2D 0.4 nozzle, hardened nozzle, extruder 1), same process/orientation as the PETG shell
+process: fdm_process_common -> fdm_process_dual_common -> fdm_process_dual_0.20_nozzle_0.4 -> 0.20mm Balanced Strength @BBL H2D -> 0.20mm Structural PETG-PLA @BBL H2D (shown in BS as '0.20mm Balanced Strength @BBL H2D' + 7 modified keys)
+process keys applied: 182
+filament: fdm_filament_common -> fdm_filament_pet -> Bambu PETG-CF @base -> Bambu PETG-CF @BBL H2D 0.4 nozzle
+filament keys applied to slot 1: 124 (not in project config: 6)
+slot 1 -> extruder 1 (filament_map_mode Manual)
+object centred on the bed at (175, 160), no Z rotation
+wrote <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\base_shell_m2_PETG-CF.3mf
+
+=== base_shell_m2_PETG-CF.gcode.3mf ===
+filament: 270.30 g   est print: 530 min (8.84 h)
+nozzle_temperature: 255,220,220,220,220,220,220,220,265
+nozzle_temperature_initial_layer: 255,220,220,220,220,220,220,220,265
+textured_plate_temp: 70,55,55,55,55,55,55,55,100
+curr_bed_type: Textured PEI Plate
+filament_settings_id: "Bambu PETG-CF @BBL H2D 0.4 nozzle";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"Bambu PLA Basic @BBL H2D";"PolyLite PLA @BBL H2D";"Bambu PA6-GF @BBL H2D"
+filament_map: 1,1,1,1,1,1,1,1,1
+layer_height: 0.2
+wall_loops: 4
+top_shell_layers: 4
+bottom_shell_layers: 4
+sparse_infill_density: 20%
+sparse_infill_pattern: gyroid
+enable_support: 0
+brim_type: no_brim
+total layer number: 412
+print_extent_mm: 199.6 x 179.6
+project (open/re-slice in Bambu Studio): <projects>/POV-LED-Column\cad\print\rev-m_CURRENT\base_shell_m2_PETG-CF.3mf
+editable gcode: base_shell_m2_PETG-CF.plate_1.gcode (repack with: py slice.py --repack <file>)
+island check (fusionclaude/scripts/151): base_shell_m2_PETG-CF.3mf: vol 284251.9 mm3, 0 island start(s)

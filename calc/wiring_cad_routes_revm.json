@@ -1,0 +1,2250 @@
+{
+ "routes": [
+  {
+   "component": "R08 USB pigtail",
+   "name": "pigtail_cable",
+   "gauge": "22c",
+   "colour": "black jacket",
+   "length_mm": 135.0,
+   "min_bend_r_mm": 7.2,
+   "from": "USB-A plug (+x port)",
+   "to": "split 10 mm before J1",
+   "min_bend_r_interior_mm": 7.2,
+   "worst_corner_xyz": null
+  },
+  {
+   "component": "R08 USB pigtail",
+   "name": "pigtail_5V",
+   "gauge": "22",
+   "colour": "red",
+   "length_mm": 16.3,
+   "min_bend_r_mm": 4.16,
+   "from": "pigtail split",
+   "to": "J1 5V",
+   "min_bend_r_interior_mm": Infinity,
+   "worst_corner_xyz": null
+  },
+  {
+   "component": "R08 USB pigtail",
+   "name": "pigtail_GND",
+   "gauge": "22",
+   "colour": "black",
+   "length_mm": 13.5,
+   "min_bend_r_mm": 6.8,
+   "from": "pigtail split",
+   "to": "J1 GND",
+   "min_bend_r_interior_mm": Infinity,
+   "worst_corner_xyz": null
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_00_01_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 0 top pads (first end, bench)",
+   "to": "strip 1 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    77.6,
+    6.1,
+    230.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_00_01_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 0 top pads (first end, bench)",
+   "to": "strip 1 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    77.6,
+    6.1,
+    231.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_00_01_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 0 top pads (first end, bench)",
+   "to": "strip 1 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    77.6,
+    6.1,
+    232.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_00_01_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 0 top pads (first end, bench)",
+   "to": "strip 1 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    77.6,
+    6.1,
+    234.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_01_02_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 1 bottom pads (first end, bench)",
+   "to": "strip 2 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    73.3,
+    26.0,
+    10.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_01_02_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.6,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 1 bottom pads (first end, bench)",
+   "to": "strip 2 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    73.3,
+    26.0,
+    11.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_01_02_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.8,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 1 bottom pads (first end, bench)",
+   "to": "strip 2 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    73.3,
+    26.0,
+    12.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_01_02_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 63.1,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 1 bottom pads (first end, bench)",
+   "to": "strip 2 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    73.3,
+    26.0,
+    14.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_02_03_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 66.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 2 top pads (first end, bench)",
+   "to": "strip 3 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    64.1,
+    44.1,
+    241.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_02_03_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 65.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 2 top pads (first end, bench)",
+   "to": "strip 3 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    64.1,
+    44.1,
+    242.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_02_03_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 66.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 2 top pads (first end, bench)",
+   "to": "strip 3 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    64.1,
+    44.1,
+    244.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_02_03_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 68.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 2 top pads (first end, bench)",
+   "to": "strip 3 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    64.1,
+    44.1,
+    245.2
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_03_04_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 3 bottom pads (first end, bench)",
+   "to": "strip 4 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    50.5,
+    59.2,
+    3.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_03_04_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.3,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 3 bottom pads (first end, bench)",
+   "to": "strip 4 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    50.5,
+    59.2,
+    5.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_03_04_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 3 bottom pads (first end, bench)",
+   "to": "strip 4 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    50.5,
+    59.2,
+    6.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_03_04_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 3 bottom pads (first end, bench)",
+   "to": "strip 4 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    50.5,
+    59.2,
+    7.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_04_05_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 4 top pads (first end, bench)",
+   "to": "strip 5 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    33.5,
+    70.2,
+    235.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_04_05_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 4 top pads (first end, bench)",
+   "to": "strip 5 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    33.5,
+    70.2,
+    237.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_04_05_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 4 top pads (first end, bench)",
+   "to": "strip 5 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    33.5,
+    70.2,
+    238.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_04_05_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 4 top pads (first end, bench)",
+   "to": "strip 5 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    33.5,
+    70.2,
+    239.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_05_06_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 68.3,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 bottom pads (first end, bench)",
+   "to": "strip 5 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    77.6,
+    3.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_05_06_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 66.0,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 bottom pads (first end, bench)",
+   "to": "strip 5 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    77.6,
+    5.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_05_06_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 65.6,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 bottom pads (first end, bench)",
+   "to": "strip 5 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    77.6,
+    6.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_05_06_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 67.0,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 bottom pads (first end, bench)",
+   "to": "strip 5 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    77.6,
+    7.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_06_07_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 top pads (first end, bench)",
+   "to": "strip 7 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    77.6,
+    230.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_06_07_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 top pads (first end, bench)",
+   "to": "strip 7 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    77.6,
+    231.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_06_07_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 top pads (first end, bench)",
+   "to": "strip 7 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    77.6,
+    232.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_06_07_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 6 top pads (first end, bench)",
+   "to": "strip 7 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    77.6,
+    234.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_07_08_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 7 bottom pads (first end, bench)",
+   "to": "strip 8 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -26.0,
+    73.3,
+    10.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_07_08_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.6,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 7 bottom pads (first end, bench)",
+   "to": "strip 8 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -26.0,
+    73.3,
+    11.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_07_08_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.8,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 7 bottom pads (first end, bench)",
+   "to": "strip 8 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -26.0,
+    73.3,
+    12.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_07_08_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 63.1,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 7 bottom pads (first end, bench)",
+   "to": "strip 8 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -26.0,
+    73.3,
+    14.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_08_09_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 66.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 8 top pads (first end, bench)",
+   "to": "strip 9 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -44.1,
+    64.1,
+    241.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_08_09_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 65.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 8 top pads (first end, bench)",
+   "to": "strip 9 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -44.1,
+    64.1,
+    242.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_08_09_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 66.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 8 top pads (first end, bench)",
+   "to": "strip 9 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -44.1,
+    64.1,
+    244.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_08_09_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 68.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 8 top pads (first end, bench)",
+   "to": "strip 9 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -44.1,
+    64.1,
+    245.2
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_09_10_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 9 bottom pads (first end, bench)",
+   "to": "strip 10 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -59.2,
+    50.5,
+    3.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_09_10_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.3,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 9 bottom pads (first end, bench)",
+   "to": "strip 10 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -59.2,
+    50.5,
+    5.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_09_10_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 9 bottom pads (first end, bench)",
+   "to": "strip 10 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -59.2,
+    50.5,
+    6.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_09_10_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 9 bottom pads (first end, bench)",
+   "to": "strip 10 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -59.2,
+    50.5,
+    7.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_10_11_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 10 top pads (first end, bench)",
+   "to": "strip 11 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -70.2,
+    33.5,
+    235.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_10_11_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 10 top pads (first end, bench)",
+   "to": "strip 11 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -70.2,
+    33.5,
+    237.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_10_11_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 10 top pads (first end, bench)",
+   "to": "strip 11 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -70.2,
+    33.5,
+    238.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_10_11_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 10 top pads (first end, bench)",
+   "to": "strip 11 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -70.2,
+    33.5,
+    239.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_12_13_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 12 top pads (first end, bench)",
+   "to": "strip 13 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -77.6,
+    -6.1,
+    230.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_12_13_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 12 top pads (first end, bench)",
+   "to": "strip 13 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -77.6,
+    -6.1,
+    231.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_12_13_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 12 top pads (first end, bench)",
+   "to": "strip 13 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -77.6,
+    -6.1,
+    232.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_12_13_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 12 top pads (first end, bench)",
+   "to": "strip 13 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -77.6,
+    -6.1,
+    234.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_13_14_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 13 bottom pads (first end, bench)",
+   "to": "strip 14 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -73.3,
+    -26.0,
+    10.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_13_14_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.6,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 13 bottom pads (first end, bench)",
+   "to": "strip 14 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -73.3,
+    -26.0,
+    11.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_13_14_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.8,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 13 bottom pads (first end, bench)",
+   "to": "strip 14 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -73.3,
+    -26.0,
+    12.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_13_14_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 63.1,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 13 bottom pads (first end, bench)",
+   "to": "strip 14 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -73.3,
+    -26.0,
+    14.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_14_15_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 66.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 14 top pads (first end, bench)",
+   "to": "strip 15 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -64.1,
+    -44.1,
+    241.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_14_15_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 65.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 14 top pads (first end, bench)",
+   "to": "strip 15 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -64.1,
+    -44.1,
+    242.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_14_15_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 66.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 14 top pads (first end, bench)",
+   "to": "strip 15 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -64.1,
+    -44.1,
+    244.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_14_15_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 68.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 14 top pads (first end, bench)",
+   "to": "strip 15 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -64.1,
+    -44.1,
+    245.2
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_15_16_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 15 bottom pads (first end, bench)",
+   "to": "strip 16 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -50.5,
+    -59.2,
+    3.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_15_16_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.3,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 15 bottom pads (first end, bench)",
+   "to": "strip 16 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -50.5,
+    -59.2,
+    5.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_15_16_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 15 bottom pads (first end, bench)",
+   "to": "strip 16 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -50.5,
+    -59.2,
+    6.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_15_16_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 15 bottom pads (first end, bench)",
+   "to": "strip 16 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -50.5,
+    -59.2,
+    7.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_16_17_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 16 top pads (first end, bench)",
+   "to": "strip 17 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -33.5,
+    -70.2,
+    235.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_16_17_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 16 top pads (first end, bench)",
+   "to": "strip 17 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -33.5,
+    -70.2,
+    237.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_16_17_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 16 top pads (first end, bench)",
+   "to": "strip 17 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -33.5,
+    -70.2,
+    238.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_16_17_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 16 top pads (first end, bench)",
+   "to": "strip 17 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -33.5,
+    -70.2,
+    239.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_17_18_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 68.3,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 bottom pads (first end, bench)",
+   "to": "strip 17 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    -77.6,
+    3.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_17_18_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 66.0,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 bottom pads (first end, bench)",
+   "to": "strip 17 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    -77.6,
+    5.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_17_18_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 65.6,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 bottom pads (first end, bench)",
+   "to": "strip 17 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    -77.6,
+    6.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_17_18_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 67.0,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 bottom pads (first end, bench)",
+   "to": "strip 17 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    -6.1,
+    -77.6,
+    7.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_18_19_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 top pads (first end, bench)",
+   "to": "strip 19 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    -77.6,
+    230.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_18_19_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 top pads (first end, bench)",
+   "to": "strip 19 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    -77.6,
+    231.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_18_19_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 top pads (first end, bench)",
+   "to": "strip 19 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    -77.6,
+    232.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_18_19_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 18 top pads (first end, bench)",
+   "to": "strip 19 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    6.1,
+    -77.6,
+    234.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_19_20_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 19 bottom pads (first end, bench)",
+   "to": "strip 20 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    26.0,
+    -73.3,
+    10.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_19_20_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.6,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 19 bottom pads (first end, bench)",
+   "to": "strip 20 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    26.0,
+    -73.3,
+    11.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_19_20_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.8,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 19 bottom pads (first end, bench)",
+   "to": "strip 20 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    26.0,
+    -73.3,
+    12.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_19_20_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 63.1,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 19 bottom pads (first end, bench)",
+   "to": "strip 20 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    26.0,
+    -73.3,
+    14.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_20_21_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 66.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 20 top pads (first end, bench)",
+   "to": "strip 21 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    44.1,
+    -64.1,
+    241.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_20_21_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 65.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 20 top pads (first end, bench)",
+   "to": "strip 21 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    44.1,
+    -64.1,
+    242.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_20_21_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 66.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 20 top pads (first end, bench)",
+   "to": "strip 21 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    44.1,
+    -64.1,
+    244.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_20_21_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 68.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 20 top pads (first end, bench)",
+   "to": "strip 21 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    44.1,
+    -64.1,
+    245.2
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_21_22_bottom_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 65.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 21 bottom pads (first end, bench)",
+   "to": "strip 22 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    59.2,
+    -50.5,
+    3.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_21_22_bottom_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 62.3,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 21 bottom pads (first end, bench)",
+   "to": "strip 22 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    59.2,
+    -50.5,
+    5.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_21_22_bottom_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 61.4,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 21 bottom pads (first end, bench)",
+   "to": "strip 22 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    59.2,
+    -50.5,
+    6.3
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_21_22_bottom_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 21 bottom pads (first end, bench)",
+   "to": "strip 22 bottom pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    59.2,
+    -50.5,
+    7.6
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_22_23_top_5V",
+   "gauge": "28r",
+   "colour": "red",
+   "length_mm": 62.9,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 22 top pads (first end, bench)",
+   "to": "strip 23 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    70.2,
+    -33.5,
+    235.9
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_22_23_top_CLK",
+   "gauge": "28r",
+   "colour": "orange",
+   "length_mm": 61.7,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 22 top pads (first end, bench)",
+   "to": "strip 23 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    70.2,
+    -33.5,
+    237.1
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_22_23_top_DATA",
+   "gauge": "28r",
+   "colour": "yellow",
+   "length_mm": 62.2,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 22 top pads (first end, bench)",
+   "to": "strip 23 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    70.2,
+    -33.5,
+    238.4
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "jumper_22_23_top_GND",
+   "gauge": "28r",
+   "colour": "green",
+   "length_mm": 64.5,
+   "min_bend_r_mm": 0.82,
+   "from": "strip 22 top pads (first end, bench)",
+   "to": "strip 23 top pads (second end: loop 27 mm pulled out to solder)",
+   "min_bend_r_interior_mm": 2.0,
+   "worst_corner_xyz": [
+    70.2,
+    -33.5,
+    239.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_00_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 158.1,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 0 bottom 5V pad",
+   "to": "J3 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    70.2,
+    -7.3,
+    4.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_00_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 154.5,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 0 bottom GND pad",
+   "to": "J3 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    69.2,
+    -4.9,
+    4.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_00_CLK",
+   "gauge": "28",
+   "colour": "yellow",
+   "length_mm": 154.0,
+   "min_bend_r_mm": 0.8,
+   "from": "strip 0 bottom CLK pad",
+   "to": "J3 pin 3",
+   "min_bend_r_interior_mm": 2.4,
+   "worst_corner_xyz": [
+    70.2,
+    -7.3,
+    3.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_00_GNDc",
+   "gauge": "28",
+   "colour": "black",
+   "length_mm": 129.9,
+   "min_bend_r_mm": 1.71,
+   "from": "splice on the 26 AWG GND",
+   "to": "J3 pin 4",
+   "min_bend_r_interior_mm": 1.71,
+   "worst_corner_xyz": [
+    -17.8,
+    -5.7,
+    17.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_00_DATA",
+   "gauge": "28",
+   "colour": "green",
+   "length_mm": 154.6,
+   "min_bend_r_mm": 0.73,
+   "from": "strip 0 bottom DATA pad",
+   "to": "J3 pin 5",
+   "min_bend_r_interior_mm": 2.4,
+   "worst_corner_xyz": [
+    69.7,
+    -6.1,
+    3.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_00_GNDd",
+   "gauge": "28",
+   "colour": "black",
+   "length_mm": 128.4,
+   "min_bend_r_mm": 1.7,
+   "from": "splice on the 26 AWG GND",
+   "to": "J3 pin 6",
+   "min_bend_r_interior_mm": 1.7,
+   "worst_corner_xyz": [
+    -12.7,
+    -5.7,
+    17.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_12_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 150.8,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 12 bottom 5V pad",
+   "to": "J4 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    -69.2,
+    -4.9,
+    4.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_12_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 153.3,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 12 bottom GND pad",
+   "to": "J4 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    -70.2,
+    -7.3,
+    4.8
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_12_CLK",
+   "gauge": "28",
+   "colour": "yellow",
+   "length_mm": 153.6,
+   "min_bend_r_mm": 0.8,
+   "from": "strip 12 bottom CLK pad",
+   "to": "J4 pin 3",
+   "min_bend_r_interior_mm": 2.4,
+   "worst_corner_xyz": [
+    -69.2,
+    -4.9,
+    3.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_12_GNDc",
+   "gauge": "28",
+   "colour": "black",
+   "length_mm": 123.7,
+   "min_bend_r_mm": 1.71,
+   "from": "splice on the 26 AWG GND",
+   "to": "J4 pin 4",
+   "min_bend_r_interior_mm": 1.71,
+   "worst_corner_xyz": [
+    20.3,
+    -5.7,
+    17.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_12_DATA",
+   "gauge": "28",
+   "colour": "green",
+   "length_mm": 150.5,
+   "min_bend_r_mm": 0.73,
+   "from": "strip 12 bottom DATA pad",
+   "to": "J4 pin 5",
+   "min_bend_r_interior_mm": 2.4,
+   "worst_corner_xyz": [
+    -69.7,
+    -6.1,
+    3.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "start_12_GNDd",
+   "gauge": "28",
+   "colour": "black",
+   "length_mm": 129.5,
+   "min_bend_r_mm": 1.7,
+   "from": "splice on the 26 AWG GND",
+   "to": "J4 pin 6",
+   "min_bend_r_interior_mm": 1.7,
+   "worst_corner_xyz": [
+    25.4,
+    -5.7,
+    17.0
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_03_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 183.6,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 3 bottom 5V pad",
+   "to": "J6 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    54.3,
+    44.7,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_03_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 187.5,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 3 bottom GND pad",
+   "to": "J6 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    52.9,
+    45.3,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_06_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 215.1,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 6 bottom 5V pad",
+   "to": "J7 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    6.8,
+    70.0,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_06_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 218.0,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 6 bottom GND pad",
+   "to": "J7 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    5.4,
+    69.5,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_09_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 227.1,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 9 bottom 5V pad",
+   "to": "J8 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    -52.9,
+    45.3,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_09_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 231.8,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 9 bottom GND pad",
+   "to": "J8 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    -54.3,
+    44.7,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_15_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 145.3,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 15 bottom 5V pad",
+   "to": "J9 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    -45.3,
+    -52.9,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_15_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 146.5,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 15 bottom GND pad",
+   "to": "J9 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    -44.7,
+    -54.3,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_18_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 112.4,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 18 bottom 5V pad",
+   "to": "J10 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    5.4,
+    -69.5,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_18_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 113.9,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 18 bottom GND pad",
+   "to": "J10 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    6.8,
+    -70.0,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_21_5V",
+   "gauge": "26",
+   "colour": "red",
+   "length_mm": 114.0,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 21 bottom 5V pad",
+   "to": "J11 pin 1",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    44.6,
+    -54.3,
+    4.7
+   ]
+  },
+  {
+   "component": "R15 chain wiring",
+   "name": "feed_21_GND",
+   "gauge": "26",
+   "colour": "black",
+   "length_mm": 116.8,
+   "min_bend_r_mm": 0.89,
+   "from": "strip 21 bottom GND pad",
+   "to": "J11 pin 2",
+   "min_bend_r_interior_mm": 3.0,
+   "worst_corner_xyz": [
+    45.3,
+    -53.0,
+    4.7
+   ]
+  },
+  {
+   "component": "R16 rotor harness",
+   "name": "hall_lead_OUT",
+   "gauge": "28",
+   "colour": "white",
+   "length_mm": 148.9,
+   "min_bend_r_mm": 1.65,
+   "from": "A3144 leg OUT",
+   "to": "J5 pin 1"
+  },
+  {
+   "component": "R16 rotor harness",
+   "name": "hall_lead_GND",
+   "gauge": "28",
+   "colour": "black",
+   "length_mm": 146.9,
+   "min_bend_r_mm": 1.63,
+   "from": "A3144 leg GND",
+   "to": "J5 pin 2"
+  },
+  {
+   "component": "R16 rotor harness",
+   "name": "hall_lead_VCC",
+   "gauge": "28",
+   "colour": "red",
+   "length_mm": 145.5,
+   "min_bend_r_mm": 1.62,
+   "from": "A3144 leg VCC",
+   "to": "J5 pin 3"
+  }
+ ],
+ "lanes": [
+  [
+   "start 0",
+   "L0+U0",
+   37.6,
+   2.1,
+   -1,
+   -14.5,
+   -108.4,
+   -19.05,
+   -30.0
+  ],
+  [
+   "start 12",
+   "L1+U1",
+   33.6,
+   2.1,
+   1,
+   194.5,
+   288.4,
+   19.05,
+   -30.0
+  ],
+  [
+   "feed 3",
+   "L1",
+   33.6,
+   1.2,
+   -1,
+   30.5,
+   -42.1,
+   21.7,
+   -32.3
+  ],
+  [
+   "feed 6",
+   "L2",
+   29.6,
+   1.2,
+   -1,
+   75.5,
+   -45.0,
+   19.4,
+   -32.3
+  ],
+  [
+   "feed 9",
+   "L2",
+   29.6,
+   1.2,
+   1,
+   149.5,
+   283.6,
+   16.9,
+   -32.3
+  ],
+  [
+   "feed 15",
+   "L3",
+   25.6,
+   1.2,
+   1,
+   239.5,
+   280.0,
+   14.4,
+   -32.3
+  ],
+  [
+   "feed 18",
+   "direct",
+   0.0,
+   4.7,
+   1,
+   284.5,
+   284.5,
+   11.8,
+   -30.999999999999996
+  ],
+  [
+   "feed 21",
+   "direct",
+   0.0,
+   4.7,
+   -1,
+   300.5,
+   300.5,
+   24.0,
+   -30.999999999999996
+  ],
+  [
+   "hall",
+   "L0",
+   37.6,
+   1.2,
+   1,
+   100.0,
+   234.8,
+   -12.5,
+   -32.3
+  ]
+ ],
+ "lane_r": [
+  37.6,
+  33.6,
+  29.6,
+  25.6
+ ],
+ "z_lanes": [
+  1.2,
+  3.0,
+  4.7
+ ],
+ "wire_table": {
+  "22": [
+   1.7,
+   3.8,
+   0.326
+  ],
+  "26": [
+   1.5,
+   2.0,
+   0.129
+  ],
+  "28": [
+   1.2,
+   1.3,
+   0.081
+  ],
+  "28r": [
+   1.0,
+   1.1,
+   0.081
+  ],
+  "22c": [
+   3.6,
+   12.0,
+   0.652
+  ]
+ },
+ "terminal_entries": [
+  {
+   "terminal": "J3",
+   "pin": 1,
+   "entry_xyz": [
+    -25.4,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J3",
+   "pin": 2,
+   "entry_xyz": [
+    -22.86,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J3",
+   "pin": 3,
+   "entry_xyz": [
+    -20.32,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J3",
+   "pin": 4,
+   "entry_xyz": [
+    -17.78,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J3",
+   "pin": 5,
+   "entry_xyz": [
+    -15.24,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J3",
+   "pin": 6,
+   "entry_xyz": [
+    -12.7,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J4",
+   "pin": 1,
+   "entry_xyz": [
+    12.7,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J4",
+   "pin": 2,
+   "entry_xyz": [
+    15.24,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J4",
+   "pin": 3,
+   "entry_xyz": [
+    17.78,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J4",
+   "pin": 4,
+   "entry_xyz": [
+    20.32,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J4",
+   "pin": 5,
+   "entry_xyz": [
+    22.86,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J4",
+   "pin": 6,
+   "entry_xyz": [
+    25.4,
+    -5.72,
+    19.48
+   ]
+  },
+  {
+   "terminal": "J6",
+   "pin": 1,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    51.52
+   ]
+  },
+  {
+   "terminal": "J6",
+   "pin": 2,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    54.06
+   ]
+  },
+  {
+   "terminal": "J7",
+   "pin": 1,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    59.14
+   ]
+  },
+  {
+   "terminal": "J7",
+   "pin": 2,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    61.68
+   ]
+  },
+  {
+   "terminal": "J8",
+   "pin": 1,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    66.76
+   ]
+  },
+  {
+   "terminal": "J8",
+   "pin": 2,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    69.3
+   ]
+  },
+  {
+   "terminal": "J9",
+   "pin": 1,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    28.66
+   ]
+  },
+  {
+   "terminal": "J9",
+   "pin": 2,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    31.2
+   ]
+  },
+  {
+   "terminal": "J10",
+   "pin": 1,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    36.28
+   ]
+  },
+  {
+   "terminal": "J10",
+   "pin": 2,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    38.82
+   ]
+  },
+  {
+   "terminal": "J11",
+   "pin": 1,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    43.9
+   ]
+  },
+  {
+   "terminal": "J11",
+   "pin": 2,
+   "entry_xyz": [
+    18.76,
+    -5.72,
+    46.44
+   ]
+  },
+  {
+   "terminal": "J5",
+   "pin": 1,
+   "entry_xyz": [
+    -7.62,
+    -23.2,
+    19.56
+   ]
+  },
+  {
+   "terminal": "J5",
+   "pin": 2,
+   "entry_xyz": [
+    -5.08,
+    -23.2,
+    19.56
+   ]
+  },
+  {
+   "terminal": "J5",
+   "pin": 3,
+   "entry_xyz": [
+    -2.54,
+    -23.2,
+    19.56
+   ]
+  }
+ ],
+ "notes": [
+  "2026-11-03 rev d: switch_loop_BUS / switch_loop_IN removed (KCD11 deleted; the pigtail plug is the on/off)"
+ ],
+ "rev": "m (2026-11-13): carrier at y -1.52 (rev k: -19.0); R15 + hall lead re-routed by 170"
+}

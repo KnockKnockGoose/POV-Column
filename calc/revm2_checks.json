@@ -1,0 +1,1804 @@
+{
+ "date": "2026-11-13",
+ "rev": "m.2 (12.5 mm capsule)",
+ "rows": [
+  {
+   "check": "R24 rev m rotor wiring / B15 slip ring 12.5 6ch (sr_rotor_pos_30tawg / sr12_stator)",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B11 bearing collar (rotor_ring / bearing_collar)",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B14 magnet riser (rotor_ring / magnet_riser)",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R14 tie rods / B11 bearing collar (nut_ring_2 / bearing_collar)",
+   "value_mm": 2.313,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B20 slip-ring clamp (lead_guide / slipring_clamp)",
+   "value_mm": 2.828,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B15 slip ring 12.5 6ch (lead_guide / sr12_stator)",
+   "value_mm": 3.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R22 slip ring rotor / B20 slip-ring clamp (sr_rotor_boss / slipring_clamp)",
+   "value_mm": 3.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B06 hall magnet (rotor_ring / magnets_6x3_x2)",
+   "value_mm": 3.606,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B19 rev m hardware (drive_spool / flange_screw_1)",
+   "value_mm": 3.775,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B01 base shell (rotor_ring / base_shell)",
+   "value_mm": 4.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R24 rev m rotor wiring / B20 slip-ring clamp (sr_rotor_pos_30tawg / slipring_clamp)",
+   "value_mm": 4.6,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R18 hex keys / B11 bearing collar (hex_key_0 / bearing_collar)",
+   "value_mm": 4.669,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R03 hall sensor / B14 magnet riser (hall_A3144 / magnets_6x3_x2_k)",
+   "value_mm": 5.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R02 bottom cap / B14 magnet riser (bottom_cap / magnets_6x3_x2_k)",
+   "value_mm": 6.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R22 slip ring rotor / B01 base shell (sr_rotor_boss / base_shell)",
+   "value_mm": 6.61,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R02 bottom cap / B11 bearing collar (bottom_cap / bearing_collar)",
+   "value_mm": 7.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B01 base shell (lead_guide / base_shell)",
+   "value_mm": 7.212,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R24 rev m rotor wiring / B01 base shell (sr_rotor_pos_30tawg / base_shell)",
+   "value_mm": 8.246,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B16 motor hanger (rotor_ring / motor_hanger)",
+   "value_mm": 8.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B19 rev m hardware (rotor_ring / gearbox_screw_2)",
+   "value_mm": 8.8,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R16 rotor harness / B14 magnet riser (hall_lead_OUT_28awg / magnets_6x3_x2_k)",
+   "value_mm": 9.535,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B13 rev k hardware (rotor_ring / collar_bolt_3)",
+   "value_mm": 9.626,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R15 chain wiring / B11 bearing collar (start_00_CLK_28awg / bearing_collar)",
+   "value_mm": 11.4,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R22 slip ring rotor / B19 rev m hardware (sr_rotor_boss / flange_washer_1)",
+   "value_mm": 11.511,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R09 tube / B11 bearing collar (tube / bearing_collar)",
+   "value_mm": 12.092,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R22 slip ring rotor / B16 motor hanger (sr_rotor_boss / motor_hanger)",
+   "value_mm": 12.621,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R15 chain wiring / B14 magnet riser (feed_06_GND_26awg / magnets_6x3_x2_k)",
+   "value_mm": 12.787,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R24 rev m rotor wiring / B19 rev m hardware (sr_rotor_pos_30tawg / flange_washer_0)",
+   "value_mm": 12.987,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R14 tie rods / B14 magnet riser (nut_ring_1 / magnet_riser)",
+   "value_mm": 13.511,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B16 motor hanger (lead_guide / motor_hanger)",
+   "value_mm": 13.588,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B03 gearmotor JGB37-520 (rotor_ring / shaft_boss)",
+   "value_mm": 13.711,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R10 LED strips / B11 bearing collar (strip_00_pcb_A / bearing_collar)",
+   "value_mm": 17.175,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R13 screws / B11 bearing collar (screw_sled_1 / bearing_collar)",
+   "value_mm": 19.13,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R18 hex keys / B13 rev k hardware (hex_key_0 / collar_bolt_0)",
+   "value_mm": 19.3,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R03 hall sensor / B11 bearing collar (hall_A3144 / bearing_collar)",
+   "value_mm": 20.202,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R16 rotor harness / B11 bearing collar (zip_tie_slot_L / bearing_collar)",
+   "value_mm": 22.903,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B08 base wiring (rotor_ring / pot_cable_3w)",
+   "value_mm": 24.169,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B20 slip-ring clamp (rotor_ring / slipring_clamp)",
+   "value_mm": 25.034,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R17 rotor ring / B15 slip ring 12.5 6ch (rotor_ring / sr12_stator)",
+   "value_mm": 35.155,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R09 tube / B14 magnet riser (tube / magnets_6x3_x2_k)",
+   "value_mm": 35.318,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R24 rev m rotor wiring / B11 bearing collar (sr_rotor_neg_30tawg / bearing_collar)",
+   "value_mm": 37.704,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R02b hub core / B11 bearing collar (hub_core / bearing_collar)",
+   "value_mm": 41.207,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B11 bearing collar (drive_spool / bearing_collar)",
+   "value_mm": 46.476,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R22 slip ring rotor / B11 bearing collar (sr_rotor_boss / bearing_collar)",
+   "value_mm": 57.3,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R24 rev m rotor wiring / B08 base wiring (sr_rotor_neg_30tawg / pot_cable_3w)",
+   "value_mm": 78.267,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R21 drive spool / B08 base wiring (lead_guide / pot_cable_3w)",
+   "value_mm": 78.66,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "R22 slip ring rotor / B08 base wiring (sr_rotor_boss / pot_cable_3w)",
+   "value_mm": 80.052,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep rot-stat"
+  },
+  {
+   "check": "B17 motor pulley 20T / R02 bottom cap (pulley_20T / bottom_cap)",
+   "value_mm": 1.6,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R02 bottom cap (belt_gt2_122 / bottom_cap)",
+   "value_mm": 3.1,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R02b hub core (belt_gt2_122 / hub_core)",
+   "value_mm": 3.1,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R13 screws (belt_gt2_122 / screw_core_2)",
+   "value_mm": 3.1,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B16 motor hanger (d_shaft_6mm / motor_hanger)",
+   "value_mm": 3.225,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / B03 gearmotor JGB37-520 (belt_gt2_122 / d_shaft_6mm)",
+   "value_mm": 3.411,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B18 GT2 belt 122 (d_shaft_6mm / belt_gt2_122)",
+   "value_mm": 3.411,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R02b hub core (pulley_20T / hub_core)",
+   "value_mm": 3.6,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B01 base shell (pulley_20T / base_shell)",
+   "value_mm": 3.9,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B01 base shell (d_shaft_6mm / base_shell)",
+   "value_mm": 4.025,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R15 chain wiring (pulley_20T / feed_09_5V_26awg)",
+   "value_mm": 4.05,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B20 slip-ring clamp (pulley_20T / slipring_clamp)",
+   "value_mm": 5.065,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R15 chain wiring (belt_gt2_122 / feed_09_GND_26awg)",
+   "value_mm": 5.55,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / B19 rev m hardware (belt_gt2_122 / flange_screw_2)",
+   "value_mm": 5.7,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B19 rev m hardware (pulley_20T / flange_washer_2)",
+   "value_mm": 6.02,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R16 rotor harness (pulley_20T / hall_lead_OUT_28awg)",
+   "value_mm": 6.377,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B16 motor hanger (pulley_20T / motor_hanger)",
+   "value_mm": 7.9,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B03 gearmotor JGB37-520 (pulley_20T / shaft_boss)",
+   "value_mm": 8.01,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R21 drive spool (pulley_20T / drive_spool)",
+   "value_mm": 8.33,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R16 rotor harness (belt_gt2_122 / hall_lead_OUT_28awg)",
+   "value_mm": 8.333,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R17 rotor ring (pulley_20T / rotor_ring)",
+   "value_mm": 8.67,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / B20 slip-ring clamp (belt_gt2_122 / slipring_clamp)",
+   "value_mm": 9.2,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R04 sled (pulley_20T / sled)",
+   "value_mm": 9.6,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R17 rotor ring (belt_gt2_122 / rotor_ring)",
+   "value_mm": 9.928,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B20 slip-ring clamp (d_shaft_6mm / slipring_clamp)",
+   "value_mm": 10.052,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / R02 bottom cap (d_shaft_6mm / bottom_cap)",
+   "value_mm": 10.44,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B15 slip ring 12.5 6ch (pulley_20T / sr12_stator)",
+   "value_mm": 10.677,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B19 rev m hardware (d_shaft_6mm / gearbox_screw_0)",
+   "value_mm": 10.828,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R13 screws (pulley_20T / screw_core_3)",
+   "value_mm": 10.84,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R24 rev m rotor wiring (belt_gt2_122 / sr_rotor_pos_30tawg)",
+   "value_mm": 11.078,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R04 sled (belt_gt2_122 / sled)",
+   "value_mm": 11.1,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / B15 slip ring 12.5 6ch (belt_gt2_122 / sr12_stator)",
+   "value_mm": 11.21,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B12 bearing 6820ZZ (pulley_20T / brg_inner_ring)",
+   "value_mm": 11.67,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / B12 bearing 6820ZZ (belt_gt2_122 / brg_inner_ring)",
+   "value_mm": 12.928,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / R02b hub core (d_shaft_6mm / hub_core)",
+   "value_mm": 13.552,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / R17 rotor ring (d_shaft_6mm / rotor_ring)",
+   "value_mm": 13.695,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R22 slip ring rotor (belt_gt2_122 / sr_rotor_boss)",
+   "value_mm": 13.916,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B12 bearing 6820ZZ (d_shaft_6mm / brg_inner_ring)",
+   "value_mm": 16.695,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / R13 screws (d_shaft_6mm / screw_core_2)",
+   "value_mm": 18.893,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B11 bearing collar (pulley_20T / bearing_collar)",
+   "value_mm": 21.516,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / B11 bearing collar (belt_gt2_122 / bearing_collar)",
+   "value_mm": 24.79,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B11 bearing collar (d_shaft_6mm / bearing_collar)",
+   "value_mm": 26.495,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / R09 tube (pulley_20T / tube)",
+   "value_mm": 40.231,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B18 GT2 belt 122 / R09 tube (belt_gt2_122 / tube)",
+   "value_mm": 41.641,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B03 gearmotor JGB37-520 / B08 base wiring (d_shaft_6mm / pot_cable_3w)",
+   "value_mm": 50.282,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "B17 motor pulley 20T / B08 base wiring (pulley_20T / pot_cable_3w)",
+   "value_mm": 50.836,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "sweep moving"
+  },
+  {
+   "check": "motor pulley to the rotor ring's spigot / hub",
+   "value_mm": 8.67,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / rotor_ring)",
+   "kind": "check"
+  },
+  {
+   "check": "belt to the spigot",
+   "value_mm": 9.928,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(belt_gt2_122 / rotor_ring)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley to the magnet riser",
+   "value_mm": 58.361,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / magnet_riser)",
+   "kind": "check"
+  },
+  {
+   "check": "belt to the magnet riser",
+   "value_mm": 23.933,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(belt_gt2_122 / magnet_riser)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley to the collar",
+   "value_mm": 21.516,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / bearing_collar)",
+   "kind": "check"
+  },
+  {
+   "check": "belt to the collar",
+   "value_mm": 24.79,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(belt_gt2_122 / bearing_collar)",
+   "kind": "check"
+  },
+  {
+   "check": "spool to the slip-ring flange / neck",
+   "value_mm": 3.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(lead_guide / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "slip-ring body to the PWM board",
+   "value_mm": 46.422,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(sr12_stator / pwm_heat_sink)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley hub to the slip-ring flange (rev m: 1.50)",
+   "value_mm": 10.677,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley top flange to the rotor plate",
+   "value_mm": 1.6,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / bottom_cap)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley to the spool",
+   "value_mm": 8.33,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / drive_spool)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley to the flange screw heads",
+   "value_mm": 6.02,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / flange_washer_2)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor leads to the slip-ring stator",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(sr_rotor_pos_30tawg / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "lead-guide nose to the slip-ring flange",
+   "value_mm": 3.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(lead_guide / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "lead-guide nose to the clamp ring",
+   "value_mm": 2.828,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(lead_guide / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "spool to the clamp ring",
+   "value_mm": 7.2,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(drive_spool / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "spool to the clamp screw heads",
+   "value_mm": 3.775,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(drive_spool / flange_screw_1)",
+   "kind": "check"
+  },
+  {
+   "check": "slip-ring rotor boss to the clamp opening",
+   "value_mm": 3.5,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(sr_rotor_boss / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor leads to the clamp opening",
+   "value_mm": 4.6,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(sr_rotor_pos_30tawg / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "motor pulley hub to the clamp ring",
+   "value_mm": 5.065,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(pulley_20T / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "belt to the clamp ring",
+   "value_mm": 9.2,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(belt_gt2_122 / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "lead-guide nose above the rotor boss (2.0 designed: free axially)",
+   "value_mm": 2.0,
+   "limit": "1.90..2.10",
+   "ok": true,
+   "note": "(lead_guide / sr_rotor_boss)",
+   "kind": "check"
+  },
+  {
+   "check": "modelled rotor-lead bundles inside the slot / wire hole",
+   "value_mm": 0.15,
+   "limit": ">= 0.10",
+   "ok": true,
+   "note": "(sr_rotor_pos_30tawg / lead_guide)",
+   "kind": "check"
+  },
+  {
+   "check": "lead guide keyed in the spool (0.1 tube / keys / ceiling; CA)",
+   "value_mm": 0.1,
+   "limit": "0.10..0.10",
+   "ok": true,
+   "note": "(lead_guide / drive_spool)",
+   "kind": "check"
+  },
+  {
+   "check": "clamp ring on the flange (0 = contact; pins 0.2 in the d3.2 holes)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(slipring_clamp / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "clamp ring 0.1 above the deck (0.1 crush on the flange)",
+   "value_mm": 0.1,
+   "limit": "0.10..0.10",
+   "ok": true,
+   "note": "(slipring_clamp / base_shell)",
+   "kind": "check"
+  },
+  {
+   "check": "clamp washers on the ring (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(flange_washer_0 / slipring_clamp)",
+   "kind": "check"
+  },
+  {
+   "check": "clamp ring to the magnet riser",
+   "value_mm": 17.735,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(slipring_clamp / magnet_riser)",
+   "kind": "check"
+  },
+  {
+   "check": "clamp ring to the bearing collar",
+   "value_mm": 37.8,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(slipring_clamp / bearing_collar)",
+   "kind": "check"
+  },
+  {
+   "check": "spool plug in the core's pocket (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(drive_spool / hub_core)",
+   "kind": "check"
+  },
+  {
+   "check": "inserts in the plug (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(drive_spool / spool_insert_0)",
+   "kind": "check"
+  },
+  {
+   "check": "belt on the spool (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.05",
+   "ok": true,
+   "note": "(drive_spool / belt_gt2_122)",
+   "kind": "check"
+  },
+  {
+   "check": "belt on the motor pulley (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.05",
+   "ok": true,
+   "note": "(pulley_20T / belt_gt2_122)",
+   "kind": "check"
+  },
+  {
+   "check": "slip-ring flange on the deck (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(sr12_stator / base_shell)",
+   "kind": "check"
+  },
+  {
+   "check": "hanger against the deck underside (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(motor_hanger / base_shell)",
+   "kind": "check"
+  },
+  {
+   "check": "gearbox face on the hanger (0 = contact)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(motor_hanger / gearbox)",
+   "kind": "check"
+  },
+  {
+   "check": "motor (boss) to the deck",
+   "value_mm": 1.006,
+   "limit": ">= 0.10",
+   "ok": true,
+   "note": "(shaft_boss / base_shell)",
+   "kind": "check"
+  },
+  {
+   "check": "motor to the slip-ring body",
+   "value_mm": 12.195,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(gearbox / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "motor to the PWM board",
+   "value_mm": 60.0,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(> 60 mm / bbox)",
+   "kind": "check"
+  },
+  {
+   "check": "motor to the speed pot",
+   "value_mm": 24.517,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(gearbox / pot_body)",
+   "kind": "check"
+  },
+  {
+   "check": "hanger to the pot cable",
+   "value_mm": 23.657,
+   "limit": ">= 2.00",
+   "ok": true,
+   "note": "(motor_hanger / pot_cable_3w)",
+   "kind": "check"
+  },
+  {
+   "check": "motor to the pot cable",
+   "value_mm": 21.21,
+   "limit": ">= 2.00",
+   "ok": true,
+   "note": "(gearbox / pot_cable_3w)",
+   "kind": "check"
+  },
+  {
+   "check": "hanger to the slip-ring body",
+   "value_mm": 4.472,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(motor_hanger / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "hanger screw heads to the gearbox",
+   "value_mm": 5.698,
+   "limit": ">= 1.00",
+   "ok": true,
+   "note": "(hanger_washer_0 / gearbox)",
+   "kind": "check"
+  },
+  {
+   "check": "slip-ring stator leads to the motor",
+   "value_mm": 18.341,
+   "limit": ">= 1.00",
+   "ok": true,
+   "note": "(sr_stator_pos_30tawg / gearbox)",
+   "kind": "check"
+  },
+  {
+   "check": "motor leads to the slip-ring body",
+   "value_mm": 46.389,
+   "limit": ">= 1.00",
+   "ok": true,
+   "note": "(motor_pos_22awg / sr12_stator)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor leads in the channel: to the carrier pins",
+   "value_mm": 1.067,
+   "limit": ">= 0.30",
+   "ok": true,
+   "note": "(sr_rotor_pos_30tawg / carrier_pcb)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor leads in the channel: to the sled wall",
+   "value_mm": 2.442,
+   "limit": ">= 0.30",
+   "ok": true,
+   "note": "(sr_rotor_neg_30tawg / sled)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor leads to the coupling screw heads",
+   "value_mm": 1.85,
+   "limit": ">= 0.30",
+   "ok": true,
+   "note": "(sr_rotor_neg_30tawg / buck_screw_1)",
+   "kind": "check"
+  },
+  {
+   "check": "buck OUT leads round the board edge",
+   "value_mm": 0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "(buck_out_5V_22awg / j1_screw_terminal)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor wiring to the tube",
+   "value_mm": 32.93,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(buck_out_GND_22awg / tube)",
+   "kind": "check"
+  },
+  {
+   "check": "rotor wiring to the tie rods",
+   "value_mm": 13.754,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(buck_out_GND_22awg / tie_rod_2)",
+   "kind": "check"
+  },
+  {
+   "check": "board in the card slots: bottom edge on the slot floors (0 = contact; 0.3 / side in x and y)",
+   "value_mm": 0.0,
+   "limit": "0.00..0.00",
+   "ok": true,
+   "note": "(carrier_pcb / sled)",
+   "kind": "check"
+  },
+  {
+   "check": "buck on its standoffs (0 = contact)",
+   "value_mm": 0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "(buck_pcb / sled)",
+   "kind": "check"
+  },
+  {
+   "check": "buck to the carrier (pin tips / lane wires)",
+   "value_mm": 7.06,
+   "limit": ">= 5.00",
+   "ok": true,
+   "note": "(buck_pcb / wire_5V_A_7_0)",
+   "kind": "check"
+  },
+  {
+   "check": "buck to the tie rods",
+   "value_mm": 29.202,
+   "limit": ">= 5.00",
+   "ok": true,
+   "note": "(buck_pcb / tie_rod_0)",
+   "kind": "check"
+  },
+  {
+   "check": "buck to the coupling / sled screw heads",
+   "value_mm": 3.023,
+   "limit": ">= 1.00",
+   "ok": true,
+   "note": "(buck_pcb / screw_coupling_0)",
+   "kind": "check"
+  },
+  {
+   "check": "sled to the tie rods",
+   "value_mm": 7.844,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(sled / nyloc_bot_0)",
+   "kind": "check"
+  },
+  {
+   "check": "sled wall arch to the coupling screw heads",
+   "value_mm": 9.385,
+   "limit": ">= 1.00",
+   "ok": true,
+   "note": "(sled / screw_coupling_0)",
+   "kind": "check"
+  },
+  {
+   "check": "sled to the hub core",
+   "value_mm": 2.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "(sled / hub_core)",
+   "kind": "check"
+  },
+  {
+   "check": "sled to the chain wiring (leads pass its slots)",
+   "value_mm": 0.189,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "(sled / start_00_GNDd_28awg)",
+   "kind": "check"
+  },
+  {
+   "check": "ESP32 header pin tips to the buck wall (2.5 designed)",
+   "value_mm": 2.5,
+   "limit": ">= 2.40",
+   "ok": true,
+   "note": "(esp32_pins_L / sled)",
+   "kind": "check"
+  },
+  {
+   "check": "chain wiring to the buck",
+   "value_mm": 12.05,
+   "limit": ">= 3.00",
+   "ok": true,
+   "note": "(feed_06_5V_26awg / buck_pcb)",
+   "kind": "check"
+  },
+  {
+   "check": "hall lead to the sled (passes its slot)",
+   "value_mm": 1.027,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "(hall_lead_OUT_28awg / sled)",
+   "kind": "check"
+  },
+  {
+   "check": "travel -2 mm: pulley / motor to the slip ring",
+   "value_mm": 12.622,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel -2 mm: pulley to the spool",
+   "value_mm": 10.33,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel -2 mm: pulley to the spigot",
+   "value_mm": 6.67,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel -2 mm: pulley to the clamp screws",
+   "value_mm": 7.778,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel -2 mm: pulley to the clamp ring",
+   "value_mm": 6.811,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel -2 mm: motor (shaft / boss) to the deck hole / underside",
+   "value_mm": 0.11,
+   "limit": ">= 0.10",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel +2 mm: pulley / motor to the slip ring",
+   "value_mm": 8.757,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel +2 mm: pulley to the spool",
+   "value_mm": 6.33,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel +2 mm: pulley to the spigot",
+   "value_mm": 10.67,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel +2 mm: pulley to the clamp screws",
+   "value_mm": 4.32,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel +2 mm: pulley to the clamp ring",
+   "value_mm": 3.389,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "travel +2 mm: motor (shaft / boss) to the deck hole / underside",
+   "value_mm": 0.11,
+   "limit": ">= 0.10",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "overlap B16 motor hanger with the base shell (mm3)",
+   "value_mm": -0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "",
+   "kind": "overlap"
+  },
+  {
+   "check": "overlap B15 slip ring 12.5 6ch with the base shell (mm3)",
+   "value_mm": -0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "",
+   "kind": "overlap"
+  },
+  {
+   "check": "overlap B20 slip-ring clamp with the base shell (mm3)",
+   "value_mm": -0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "",
+   "kind": "overlap"
+  },
+  {
+   "check": "overlap B03 gearmotor JGB37-520 with the base shell (mm3)",
+   "value_mm": -0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "",
+   "kind": "overlap"
+  },
+  {
+   "check": "overlap B11 bearing collar with the base shell (mm3)",
+   "value_mm": -0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "",
+   "kind": "overlap"
+  },
+  {
+   "check": "overlap B14 magnet riser with the base shell (mm3)",
+   "value_mm": -0.0,
+   "limit": ">= 0.00",
+   "ok": true,
+   "note": "",
+   "kind": "overlap"
+  },
+  {
+   "check": "axis wire channel: a d2.6 bundle from the slot top (z -15.1) to the core top (z 8) clears everything",
+   "value_mm": 1.31,
+   "limit": ">= 0.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "lead slot: a 6 x d0.6 row (3.6 x 0.6) in the 4.6 x 1.6 slot has play every way (0.5 designed)",
+   "value_mm": 0.495,
+   "limit": "0.45..0.55",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "lead slot: the lead row clears every other body (stationary: flange / clamp)",
+   "value_mm": 3.0,
+   "limit": ">= 1.50",
+   "ok": true,
+   "note": "",
+   "kind": "check"
+  },
+  {
+   "check": "USB from the top: plug + cable envelope above the receptacle (top cap off) clears the rotor",
+   "value_mm": 1.59,
+   "limit": ">= 0.50",
+   "ok": true,
+   "note": "(carrier_pcb)",
+   "kind": "check"
+  },
+  {
+   "check": "USB receptacle",
+   "value_mm": [
+    -4.0,
+    -9.36,
+    74.33,
+    4.0,
+    -6.46,
+    79.93
+   ],
+   "limit": "info",
+   "ok": true,
+   "kind": "info"
+  },
+  {
+   "check": "rotor U (g mm) <= G6.3 at 225 rpm",
+   "value_mm": 51.573,
+   "limit": "-1000000000.00..237.70",
+   "ok": true,
+   "note": "",
+   "kind": "balance"
+  },
+  {
+   "check": "rotor U (g mm) <= G2.5 at 225 rpm",
+   "value_mm": 51.573,
+   "limit": "-1000000000.00..94.32",
+   "ok": true,
+   "note": "",
+   "kind": "balance"
+  }
+ ],
+ "n_rows": 182,
+ "n_fail": 0,
+ "leads": [
+  {
+   "lead": "start_00_5V",
+   "terminal": "J3",
+   "routed_revk_mm": 143.9,
+   "routed_revm_mm": 158.1,
+   "delta_mm": 14.2,
+   "cut_mm": 170,
+   "left_mm": 11.9,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_00_GND",
+   "terminal": "J3",
+   "routed_revk_mm": 140.1,
+   "routed_revm_mm": 154.5,
+   "delta_mm": 14.4,
+   "cut_mm": 170,
+   "left_mm": 15.5,
+   "verdict": "reaches"
+  },
+  {
+   "lead": "start_00_CLK",
+   "terminal": "J3",
+   "routed_revk_mm": 139.4,
+   "routed_revm_mm": 154.0,
+   "delta_mm": 14.6,
+   "cut_mm": 165,
+   "left_mm": 11.0,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_00_DATA",
+   "terminal": "J3",
+   "routed_revk_mm": 140.7,
+   "routed_revm_mm": 154.6,
+   "delta_mm": 13.9,
+   "cut_mm": 165,
+   "left_mm": 10.4,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_00_GNDc",
+   "terminal": "J3",
+   "routed_revk_mm": 115.8,
+   "routed_revm_mm": 129.9,
+   "delta_mm": 14.1,
+   "cut_mm": 135,
+   "left_mm": 5.1,
+   "verdict": "extend 10 mm at the terminal end"
+  },
+  {
+   "lead": "start_00_GNDd",
+   "terminal": "J3",
+   "routed_revk_mm": 114.7,
+   "routed_revm_mm": 128.4,
+   "delta_mm": 13.7,
+   "cut_mm": 135,
+   "left_mm": 6.6,
+   "verdict": "extend 10 mm at the terminal end"
+  },
+  {
+   "lead": "start_12_5V",
+   "terminal": "J4",
+   "routed_revk_mm": 136.6,
+   "routed_revm_mm": 150.8,
+   "delta_mm": 14.2,
+   "cut_mm": 165,
+   "left_mm": 14.2,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_12_GND",
+   "terminal": "J4",
+   "routed_revk_mm": 139.0,
+   "routed_revm_mm": 153.3,
+   "delta_mm": 14.3,
+   "cut_mm": 165,
+   "left_mm": 11.7,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_12_CLK",
+   "terminal": "J4",
+   "routed_revk_mm": 139.0,
+   "routed_revm_mm": 153.6,
+   "delta_mm": 14.6,
+   "cut_mm": 165,
+   "left_mm": 11.4,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_12_DATA",
+   "terminal": "J4",
+   "routed_revk_mm": 136.6,
+   "routed_revm_mm": 150.5,
+   "delta_mm": 13.9,
+   "cut_mm": 165,
+   "left_mm": 14.5,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_12_GNDc",
+   "terminal": "J4",
+   "routed_revk_mm": 109.7,
+   "routed_revm_mm": 123.7,
+   "delta_mm": 14.0,
+   "cut_mm": 135,
+   "left_mm": 11.3,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "start_12_GNDd",
+   "terminal": "J4",
+   "routed_revk_mm": 115.8,
+   "routed_revm_mm": 129.5,
+   "delta_mm": 13.7,
+   "cut_mm": 135,
+   "left_mm": 5.5,
+   "verdict": "extend 10 mm at the terminal end"
+  },
+  {
+   "lead": "feed_03_5V",
+   "terminal": "J6",
+   "routed_revk_mm": 166.8,
+   "routed_revm_mm": 183.6,
+   "delta_mm": 16.8,
+   "cut_mm": 200,
+   "left_mm": 16.4,
+   "verdict": "reaches"
+  },
+  {
+   "lead": "feed_03_GND",
+   "terminal": "J6",
+   "routed_revk_mm": 170.7,
+   "routed_revm_mm": 187.5,
+   "delta_mm": 16.8,
+   "cut_mm": 200,
+   "left_mm": 12.5,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "feed_06_5V",
+   "terminal": "J7",
+   "routed_revk_mm": 198.3,
+   "routed_revm_mm": 215.1,
+   "delta_mm": 16.8,
+   "cut_mm": 235,
+   "left_mm": 19.9,
+   "verdict": "reaches"
+  },
+  {
+   "lead": "feed_06_GND",
+   "terminal": "J7",
+   "routed_revk_mm": 201.2,
+   "routed_revm_mm": 218.0,
+   "delta_mm": 16.8,
+   "cut_mm": 235,
+   "left_mm": 17.0,
+   "verdict": "reaches"
+  },
+  {
+   "lead": "feed_09_5V",
+   "terminal": "J8",
+   "routed_revk_mm": 210.3,
+   "routed_revm_mm": 227.1,
+   "delta_mm": 16.8,
+   "cut_mm": 250,
+   "left_mm": 22.9,
+   "verdict": "reaches"
+  },
+  {
+   "lead": "feed_09_GND",
+   "terminal": "J8",
+   "routed_revk_mm": 215.0,
+   "routed_revm_mm": 231.8,
+   "delta_mm": 16.8,
+   "cut_mm": 250,
+   "left_mm": 18.2,
+   "verdict": "reaches"
+  },
+  {
+   "lead": "feed_15_5V",
+   "terminal": "J9",
+   "routed_revk_mm": 128.5,
+   "routed_revm_mm": 145.3,
+   "delta_mm": 16.8,
+   "cut_mm": 155,
+   "left_mm": 9.7,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "feed_15_GND",
+   "terminal": "J9",
+   "routed_revk_mm": 129.8,
+   "routed_revm_mm": 146.5,
+   "delta_mm": 16.7,
+   "cut_mm": 155,
+   "left_mm": 8.5,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "feed_18_5V",
+   "terminal": "J10",
+   "routed_revk_mm": 95.8,
+   "routed_revm_mm": 112.4,
+   "delta_mm": 16.6,
+   "cut_mm": 120,
+   "left_mm": 7.6,
+   "verdict": "extend 10 mm at the terminal end"
+  },
+  {
+   "lead": "feed_18_GND",
+   "terminal": "J10",
+   "routed_revk_mm": 97.3,
+   "routed_revm_mm": 113.9,
+   "delta_mm": 16.6,
+   "cut_mm": 120,
+   "left_mm": 6.1,
+   "verdict": "extend 10 mm at the terminal end"
+  },
+  {
+   "lead": "feed_21_5V",
+   "terminal": "J11",
+   "routed_revk_mm": 97.4,
+   "routed_revm_mm": 114.0,
+   "delta_mm": 16.6,
+   "cut_mm": 125,
+   "left_mm": 11.0,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "feed_21_GND",
+   "terminal": "J11",
+   "routed_revk_mm": 100.2,
+   "routed_revm_mm": 116.8,
+   "delta_mm": 16.6,
+   "cut_mm": 125,
+   "left_mm": 8.2,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "hall_lead_OUT",
+   "terminal": "J5",
+   "routed_revk_mm": 134.0,
+   "routed_revm_mm": 148.9,
+   "delta_mm": 14.9,
+   "cut_mm": 160,
+   "left_mm": 11.1,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "hall_lead_GND",
+   "terminal": "J5",
+   "routed_revk_mm": 132.8,
+   "routed_revm_mm": 146.9,
+   "delta_mm": 14.1,
+   "cut_mm": 160,
+   "left_mm": 13.1,
+   "verdict": "tight (no slack left)"
+  },
+  {
+   "lead": "hall_lead_VCC",
+   "terminal": "J5",
+   "routed_revk_mm": 132.4,
+   "routed_revm_mm": 145.5,
+   "delta_mm": 13.1,
+   "cut_mm": 160,
+   "left_mm": 14.5,
+   "verdict": "tight (no slack left)"
+  }
+ ],
+ "rotor": {
+  "mass_g": 889.0,
+  "cg_mm": [
+   0.021,
+   -0.054,
+   84.871
+  ],
+  "U_gmm": 51.6,
+  "U_G63_gmm": 237.7,
+  "U_G25_gmm": 94.3,
+  "Izz_kgm2": 0.003887396693915982,
+  "It_cg_kgm2": 0.009346595003039714,
+  "It_bearing_kgm2": 0.01812490512332976,
+  "rocking_Hz": 41.4
+ },
+ "baseline_revk_l": {
+  "mass_g": 1106.1,
+  "U_gmm": 42.5
+ },
+ "bank_out_only": {
+  "mass_g": 889.5,
+  "U_gmm": 1181.9
+ },
+ "trim_model": {
+  "plane_A": {
+   "z": -5.0,
+   "r": 88.0,
+   "U_gmm": 27.9,
+   "deg": 127.0
+  },
+  "plane_B": {
+   "z": 250.0,
+   "r": 72.0,
+   "U_gmm": 26.0,
+   "deg": 93.0
+  }
+ },
+ "base_mass_g": 932.0,
+ "per_component_rotor_g": {
+  "R10 LED strips": 96.0,
+  "R03 hall sensor": 0.28,
+  "R16 rotor harness": 1.14,
+  "R11 top cap": 68.58,
+  "R09 tube": 278.67,
+  "R02 bottom cap": 56.58,
+  "R02b hub core": 14.95,
+  "R07 carrier board (level shifters)": 42.86,
+  "R06 ESP32": 9.03,
+  "B12 bearing 6820ZZ": 65.0,
+  "R17 rotor ring": 95.98,
+  "R18 hex keys": 0.79,
+  "R13 screws": 12.95,
+  "R14 tie rods": 64.02,
+  "R15 chain wiring": 15.01,
+  "R21 drive spool": 8.17,
+  "R22 slip ring rotor": 2.0,
+  "R04 sled": 31.75,
+  "R23 buck 5V": 18.0,
+  "R24 rev m rotor wiring": 1.03
+ },
+ "stack_board_y_mm": -1.52,
+ "buck_x_mm": 3.58
+}

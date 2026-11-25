@@ -1,0 +1,47 @@
+id,action,staging,sky,uses,enabled
+1,rides a skateboard,"stands on his skateboard rolling round the meadow in a red helmet; an ollie hop as he passes the viewer",day,skateboard_ride,1
+2,mows the lawn,"pushes a red lawn mower; the grass behind him is cut short and clippings fly",day,"mower, meadow(mown=t)",1
+3,chases a butterfly,"prances after a butterfly that zig-zags just ahead of his nose; he leaps at it in front of the viewer",day,"butterfly, jump",1
+4,flies a kite,"trots with the kite string in his mouth; a big diamond kite flies high behind him, its tail rippling",day,kite,1
+5,eats a cupcake,"carries a cupcake in his mouth and takes bites as he goes (a fresh one while he is behind the column); crumbs fall",day,"cupcake, carry",1
+6,plays guitar,"struts round strumming an orange guitar, music notes rising",sunset,"guitar, notes",1
+7,blows bubbles,"bubbles stream from his mouth, float up and pop",day,bubbles,1
+8,rides a bike,"pedals a red bicycle in a helmet, wheels spinning",day,bike_ride,1
+9,drives a little red car,"drives a little red open-top car in sunglasses, exhaust puffs behind",day,car_ride,1
+10,rides a hot-air balloon,"floats round above the meadow in the basket of a striped hot-air balloon, bobbing; the burner flickers",day,balloon_ride,1
+11,holds a bunch of balloons,"three balloons tied to his back bob above him; he floats up off the grass for a moment in front of the viewer",day,"balloons, jump",1
+12,walks in the rain,"walks under a red-and-white umbrella while the rain falls",rain,umbrella,1
+13,goes to a party,"prances in a party hat while confetti falls in front of the viewer",day,"hat party, confetti",1
+14,struts in sunglasses,"struts in sunglasses; a sparkle glints off them as he passes the viewer",sunset,"shades, sparkle",1
+15,is the king of the meadow,"walks proudly in a gold crown and a red cape, sparkles around him",day,"hat crown, cape, sparkle",1
+16,plays the trumpet,"marches tooting a golden trumpet, notes bursting out",day,trumpet,1
+17,plays the drum,"marches beating a little red drum, a sparkle on every beat",day,drum,1
+18,pulls a wagon of flowers,"pulls a little red wagon full of flowers by its handle",day,wagon,1
+19,delivers the mail,"trots with a letter in his mouth wearing a blue cap; a second letter flutters behind",day,"carry letter, hat cap",1
+20,fetches a stick,"carries a big stick in his mouth, tail wagging fast, proud",day,carry stick,1
+21,carries a bone,"carries a bone in his mouth; little hearts float up",day,"carry bone, hearts_rising",1
+22,eats an ice cream,"trots holding an ice-cream cone in front of his mouth, licking it",day,ice_cream,1
+23,catches a frisbee,"a frisbee flies in from ahead; he leaps and catches it in front of the viewer, then carries it",day,"frisbee, jump, carry",1
+24,chases a ball,"a red ball bounces along just ahead of him; he leaps for it in front of the viewer",day,"ball, jump",1
+25,flies like a superhero,"flies over the grass in a red cape with his legs stretched out, speed lines behind",day,"cape, speed_lines",1
+26,rides a scooter,"rides a kick scooter round the meadow",day,scooter_ride,1
+27,juggles three balls,"walks juggling three balls above his head",day,juggle,1
+28,waves a flag,"trots with a pennant on a pole on his back, rippling in the wind",day,flag,1
+29,watches the fireworks,"walks through the meadow at night while fireworks burst in the sky",night,fireworks_show,1
+30,catches snowflakes,"trots with his tongue out catching snowflakes, a pink bow on his head",snow,hat bow,1
+31,chases fireflies,"prances after the blinking fireflies in the dark meadow",night,fireflies,1
+32,walks under a rainbow,"prances under a big rainbow, sparkles on the grass",day,"meadow(rainbow=True), sparkle",1
+33,sniffs the flowers,"walks with his nose down sniffing each flower; a little heart pops up at each one",day,heart,1
+34,waters the flowers,"carries a green watering can; drops sprinkle onto the flowers, which grow bigger as he passes",day,draw: watering can,1
+35,paints a rainbow trail,"leaves a rainbow-striped trail along the grass behind him with a paintbrush in his mouth",day,draw: paint trail,1
+36,throws a paper plane,"a white paper plane loops ahead of him; he leaps after it",day,paper_plane,1
+37,races the goose,"races a Canada goose round the meadow, neck and neck",day,goose,1
+38,walks the cat,"walks an orange cat on a leash held in his mouth",day,"cat, leash line",1
+39,rides a rocket,"rides a red rocket round the column with a flickering flame trail and stars",night,draw: rocket,1
+40,eats a slice of pizza,"wears a chef hat and carries a slice of pizza in his mouth",day,"draw: pizza, hat chef",1
+41,bounces on a pogo stick,"bounces round on a pogo stick, a big boing in front of the viewer",day,draw: pogo stick,1
+42,rides a unicycle,"wobbles round on a unicycle, swaying for balance",day,draw: unicycle,1
+43,brings a birthday cake,"wears a party hat and carries a little birthday cake with a flickering candle",day,"draw: cake, hat party",1
+44,blows dandelion seeds,"blows a dandelion; white seeds drift up and away",day,draw: dandelion,1
+45,pulls a sled,"pulls a red sled through the snow",snow,draw: sled,1
+46,goes roller skating,"rolls round on roller skates in a helmet",day,"draw: roller skates, hat helmet",1

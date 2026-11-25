@@ -1,0 +1,406 @@
+{
+ "A": {
+  "drop": 3.2,
+  "pins": {
+   "16": {
+    "tip": -8.0,
+    "in_notch": 1.6999999999999993,
+    "below_chamfer": 0.8999999999999995,
+    "floor_clear": 6.0
+   },
+   "18": {
+    "tip": -10.0,
+    "in_notch": 3.6999999999999993,
+    "below_chamfer": 2.8999999999999995,
+    "floor_clear": 4.0
+   },
+   "20": {
+    "tip": -12.0,
+    "in_notch": 5.699999999999999,
+    "below_chamfer": 4.8999999999999995,
+    "floor_clear": 2.0
+   }
+  },
+  "cup_v2_screws": {
+   "300": {
+    "L": 6,
+    "tip": -27.0,
+    "in_insert": 3.5,
+    "past_deck": -0.5
+   },
+   "60": {
+    "L": 10,
+    "tip": -31.0,
+    "in_insert": 4.0,
+    "past_deck": 3.5
+   },
+   "180": {
+    "L": 10,
+    "tip": -31.0,
+    "in_insert": 4.0,
+    "past_deck": 3.5
+   }
+  },
+  "belt_plane": -11.3,
+  "bearing": [
+   -22.9,
+   -17.9
+  ],
+  "crown": -6.300000000000001
+ },
+ "B": {
+  "bore_drawn": 24.2,
+  "printed": [
+   24.02,
+   24.099999999999998
+  ],
+  "clearance": [
+   0.019999999999999574,
+   0.10899999999999821
+  ],
+  "stiffness_ratio": 16.581374999999998,
+  "head_area": 12.417144963313657,
+  "snug_Nm": 0.15
+ },
+ "C": {
+  "drag_cases": {
+   "assumed rev m.2/n": 1.0,
+   "Moflon catalog (0.005 N m)": 5.0,
+   "A2V CTC012-06S catalog (0.05 N m)": 50.0
+  },
+  "wire": {
+   "assumed rev m.2/n": {
+    "T": 1.0,
+    "alpha": 0.046666113593356755,
+    "strain": 0.001088863078954038,
+    "twist_deg_6mm": 20.053285163830665
+   },
+   "Moflon catalog (0.005 N m)": {
+    "T": 5.0,
+    "alpha": 0.07979793176952249,
+    "strain": 0.0031838549573466835,
+    "twist_deg_6mm": 34.29063528199911
+   },
+   "A2V CTC012-06S catalog (0.05 N m)": {
+    "T": 50.0,
+    "alpha": 0.1719194323970566,
+    "strain": 0.014778145617863055,
+    "twist_deg_6mm": 73.87693419477013
+   }
+  }
+ },
+ "D": {
+  "key": [
+   4.4,
+   2.7
+  ],
+  "channel": [
+   2.6,
+   1.0
+  ],
+  "t_min": 0.8500000000000001,
+  "Am": 5.740525214227767,
+  "Z_weak": 5.185506172839507,
+  "cases": {
+   "assumed rev m.2/n": {
+    "tau": 0.10247064025774481,
+    "bearing": 0.5208333333333334,
+    "side_N": 0.1111111111111111,
+    "bending": 0.13927709237047228
+   },
+   "Moflon catalog (0.005 N m)": {
+    "tau": 0.5123532012887241,
+    "bearing": 2.604166666666667,
+    "side_N": 0.5555555555555556,
+    "bending": 0.6963854618523614
+   },
+   "A2V CTC012-06S catalog (0.05 N m)": {
+    "tau": 5.123532012887241,
+    "bearing": 26.041666666666668,
+    "side_N": 5.555555555555555,
+    "bending": 6.963854618523613
+   }
+  },
+  "socket_Nmm": 196.34954084936209
+ },
+ "E": {
+  "A": {
+   "0": 6.48,
+   "1": 6.99,
+   "2": 7.49,
+   "3": 8.0,
+   "4": 8.51,
+   "5": 8.89,
+   "6": 9.4,
+   "7": 9.91,
+   "8": 10.41,
+   "9": 10.92
+  },
+  "seat": 2.0,
+  "c_nom": 0.8,
+  "stroke": 1.4,
+  "force_N": 0.6376499999999999,
+  "landing": [
+   {
+    "offset": 0.0,
+    "plus_margin": 1.45,
+    "minus_on_worst": 2
+   },
+   {
+    "offset": 0.5,
+    "plus_margin": 0.95,
+    "minus_on_worst": 2
+   },
+   {
+    "offset": 0.85,
+    "plus_margin": 0.5999999999999999,
+    "minus_on_worst": 2
+   },
+   {
+    "offset": 1.0,
+    "plus_margin": 0.44999999999999996,
+    "minus_on_worst": 1
+   }
+  ]
+ },
+ "F": {
+  "G": {
+   "2": {
+    "2": 2289.773888062892,
+    "3": 1449.459101183797,
+    "4": 946.9577113269075,
+    "5": 643.6253731511285,
+    "6": 454.29185487249674,
+    "7": 331.47699405937226,
+    "8": 248.83941905018924,
+    "9": 191.38426584243805,
+    "10": 150.27541027902336
+   },
+   "3": {
+    "2": 2460.381750075018,
+    "3": 1578.2143137527064,
+    "4": 1046.3471741677188,
+    "5": 721.856930189192,
+    "6": 516.9209081460256,
+    "7": 382.3629414975844,
+    "8": 290.72628749335405,
+    "9": 226.2637546897799,
+    "10": 179.620080647507
+   }
+  },
+  "decision": "keep 3 magnets, no riser cap"
+ },
+ "G": {
+  "k_range": [
+   3.2164482123879843,
+   9.189852035394239
+  ],
+  "arc": 31.10176727053895,
+  "rows": [
+   [
+    99.9,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    100.0,
+    0.015000000000000568,
+    0.04824672318582159,
+    0.1378477805309188
+   ],
+   [
+    100.1,
+    0.06499999999999773,
+    0.20906913380521167,
+    0.5973403823006046
+   ],
+   [
+    100.2,
+    0.11500000000000199,
+    0.3698915444246246,
+    1.0568329840703556
+   ],
+   [
+    100.3,
+    0.16499999999999915,
+    0.5307139550440146,
+    1.5163255858400415
+   ],
+   [
+    100.4,
+    0.2150000000000034,
+    0.6915363656634276,
+    1.9758181876097927
+   ]
+  ],
+  "skin_stress": 21.26641661127383,
+  "tips_drawn": 100.6
+ },
+ "H": {
+  "revn_play": [
+   1.0,
+   0.6999999999999993
+  ],
+  "v2_play": 0.21999999999999886
+ },
+ "I": {
+  "as built": {
+   "rows": 153,
+   "fail": 0,
+   "m": 883.5,
+   "U": 51.6,
+   "G63": 236.2,
+   "rock": 41.4,
+   "hub": {
+    "parts": [
+     "R21 drive hub"
+    ],
+    "mass_g": 4.81,
+    "U_gmm": 0.0
+   }
+  },
+  "rev o": {
+   "rows": 258,
+   "fail": 0,
+   "m": 883.6,
+   "U": 51.6,
+   "G63": 236.3,
+   "rock": 41.4,
+   "hub": {
+    "parts": [
+     "R21 drive hub",
+     "R25 slip-ring mast",
+     "R26 contact head",
+     "R22 slip ring rotor"
+    ],
+    "mass_g": 8.33,
+    "U_gmm": 0.01
+   }
+  }
+ },
+ "J": [
+  [
+   "6802 outer ring in cup v2",
+   "clearance bore + 3 CA dots in the grooves; seat ledge",
+   "belt 8-18 N radial, pins' push",
+   "CA dots >> 20 N"
+  ],
+  [
+   "cup v2 on the deck",
+   "3 x M3 (snug 0.15 N m) + 3 epoxy dots",
+   "belt pull 8-18 N",
+   "friction 225 N"
+  ],
+  [
+   "hub in the 6802",
+   "CA'd as built",
+   "belt + pin push 8-30 N",
+   "as built"
+  ],
+  [
+   "rotor drive",
+   "4 x M3 x 20 pins in the notches (4.9 engaged)",
+   "rotor drag 30-130 mN m -> 4-16 N per pin",
+   "steel pins, 0.5 play"
+  ],
+  [
+   "slip-ring stator",
+   "flange on the bracket ledge, 3 pins (+-0.4 float)",
+   "drag 5-50 mN m -> 0.6-5.6 N on one pin",
+   "pin shear 1.2 MPa max"
+  ],
+  [
+   "bracket under the deck",
+   "2 x M3 x 10 through the deck inserts, 3.5 mm self-tapped",
+   "0.1 N + pin reaction",
+   "~400 N pull-out"
+  ],
+  [
+   "slip-ring rotor",
+   "mast socket CA'd on the d5 boss",
+   "drag 5-50 mN m",
+   "~0.2 N m"
+  ],
+  [
+   "mast drive",
+   "obround key in the hub's 4.6 x 3.0 neck",
+   "drag 5-50 mN m",
+   "2.6-26 MPa bearing on 1.2 mm"
+  ],
+  [
+   "contact head in the hub",
+   "45 deg cone seat + d11 slip fit, CA",
+   "pogo 1.9 N down; lift-off friction ~0.2 N",
+   "CA >> 10 N"
+  ],
+  [
+   "brass washer / slug",
+   "recess / well + CA; leads soldered before pressing in",
+   "pogo 0.6-0.8 N each",
+   "seated on plastic"
+  ],
+  [
+   "pogo pins in the nut plate",
+   "barrel in d1.70, collar on its step, CA; core ceiling 0 mm above",
+   "0.6-0.9 N push-up",
+   "CA + step"
+  ],
+  [
+   "rotor on the 6820",
+   "own weight (8.7 N) on the inner ring; compliant spigot centres it",
+   "pogo 1.9 N up",
+   "net 6.8 N down"
+  ]
+ ],
+ "K": [
+  [
+   "Mill-Max 0908-6-15-20-75-14-11-0 pogo pin (A 9.40)",
+   4,
+   "2 + 2 spares",
+   "Digi-Key 1991679"
+  ],
+  [
+   "Mill-Max 0908-9-15-20-75-14-11-0 pogo pin (A 10.92)",
+   2,
+   "1 + 1 spare",
+   "Digi-Key 1991682"
+  ],
+  [
+   "M4 brass flat washer DIN 125-A, 4.3 x 9 x 0.8",
+   1,
+   "pack (one used)",
+   "Amazon / McMaster brass washers"
+  ],
+  [
+   "M2 brass heat-set insert (INCLY kit)",
+   1,
+   "have",
+   "kit"
+  ],
+  [
+   "M3 x 10 SHCS",
+   2,
+   "have (kit)",
+   "kit"
+  ],
+  [
+   "M3 x 6 SHCS",
+   1,
+   "have / bench plan",
+   "kit"
+  ],
+  [
+   "26 AWG silicone wire red + black, ~120 mm",
+   1,
+   "have",
+   "kit"
+  ],
+  [
+   "6802-2RS (new, for a fresh hub if ever needed)",
+   0,
+   "have (10-pack)",
+   ""
+  ]
+ ]
+}

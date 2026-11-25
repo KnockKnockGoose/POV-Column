@@ -1,0 +1,217 @@
+== sweep 1: rotating (R*) vs stationary (B*, without the pulley / belt / bearing), >= 1.5; pairs closer than 12 mm listed
+   R17 rotor ring / B11 bearing collar (rotor_ring / bearing_collar)         2.000  >= 1.50     ok 
+   R17 rotor ring / B14 magnet riser (rotor_ring / magnet_riser)             2.000  >= 1.50     ok 
+   R14 tie rods / B11 bearing collar (nut_ring_2 / bearing_collar)           2.313  >= 1.50     ok 
+   R22 slip ring rotor / B15 slip ring SNM022A-06 (sr_driver / sr_stator)    3.000  >= 1.50     ok 
+   R21 drive spool / B15 slip ring SNM022A-06 (drive_spool / sr_stator)      3.000  >= 1.50     ok 
+   R17 rotor ring / B06 hall magnet (rotor_ring / magnets_6x3_x2)            3.606  >= 1.50     ok 
+   R17 rotor ring / B01 base shell (rotor_ring / base_shell)                 4.500  >= 1.50     ok 
+   R21 drive spool / B19 rev m hardware (drive_spool / flange_screw_0)       4.562  >= 1.50     ok 
+   R18 hex keys / B11 bearing collar (hex_key_0 / bearing_collar)            4.669  >= 1.50     ok 
+   R03 hall sensor / B14 magnet riser (hall_A3144 / magnets_6x3_x2_k)        5.000  >= 1.50     ok 
+   R02 bottom cap / B14 magnet riser (bottom_cap / magnets_6x3_x2_k)         6.000  >= 1.50     ok 
+   R02 bottom cap / B11 bearing collar (bottom_cap / bearing_collar)         7.000  >= 1.50     ok 
+   R17 rotor ring / B16 motor hanger (rotor_ring / motor_hanger)             8.500  >= 1.50     ok 
+   R17 rotor ring / B19 rev m hardware (rotor_ring / gearbox_screw_2)        8.800  >= 1.50     ok 
+   R22 slip ring rotor / B19 rev m hardware (sr_driver / flange_screw_1)     8.962  >= 1.50     ok 
+   R24 rev m rotor wiring / B15 slip ring SNM022A-06 (sr_rotor_pos_28tawg / sr_stator)    9.500  >= 1.50     ok 
+   R16 rotor harness / B14 magnet riser (hall_lead_OUT_28awg / magnets_6x3_x2_k)    9.535  >= 1.50     ok 
+   R17 rotor ring / B13 rev k hardware (rotor_ring / collar_bolt_3)          9.626  >= 1.50     ok 
+   R21 drive spool / B01 base shell (drive_spool / base_shell)              10.400  >= 1.50     ok 
+   R22 slip ring rotor / B01 base shell (sr_rotor_stub / base_shell)        10.608  >= 1.50     ok 
+   R15 chain wiring / B11 bearing collar (start_00_CLK_28awg / bearing_collar)   11.400  >= 1.50     ok 
+   R09 tube / B11 bearing collar (tube / bearing_collar)                    12.092  >= 1.50     ok 
+   R15 chain wiring / B14 magnet riser (feed_06_GND_26awg / magnets_6x3_x2_k)   12.787  >= 1.50     ok 
+   R14 tie rods / B14 magnet riser (nut_ring_1 / magnet_riser)              13.511  >= 1.50     ok 
+   R17 rotor ring / B03 gearmotor JGB37-520 (rotor_ring / shaft_boss)       13.711  >= 1.50     ok 
+   R22 slip ring rotor / B16 motor hanger (sr_rotor_stub / motor_hanger)    15.231  >= 1.50     ok 
+   R10 LED strips / B11 bearing collar (strip_00_pcb_A / bearing_collar)    17.175  >= 1.50     ok 
+   R24 rev m rotor wiring / B19 rev m hardware (sr_rotor_pos_28tawg / flange_screw_0)   17.209  >= 1.50     ok 
+   R13 screws / B11 bearing collar (screw_sled_1 / bearing_collar)          19.130  >= 1.50     ok 
+   R18 hex keys / B13 rev k hardware (hex_key_0 / collar_bolt_0)            19.300  >= 1.50     ok 
+   R03 hall sensor / B11 bearing collar (hall_A3144 / bearing_collar)       20.202  >= 1.50     ok 
+   R16 rotor harness / B11 bearing collar (zip_tie_slot_L / bearing_collar)   22.903  >= 1.50     ok 
+   R17 rotor ring / B08 base wiring (rotor_ring / pot_cable_3w)             24.169  >= 1.50     ok 
+   R17 rotor ring / B15 slip ring SNM022A-06 (rotor_ring / sr_stator)       24.839  >= 1.50     ok 
+   R09 tube / B14 magnet riser (tube / magnets_6x3_x2_k)                    35.318  >= 1.50     ok 
+   R24 rev m rotor wiring / B11 bearing collar (sr_rotor_neg_28tawg / bearing_collar)   37.554  >= 1.50     ok 
+   R02b hub core / B11 bearing collar (hub_core / bearing_collar)           41.207  >= 1.50     ok 
+   R21 drive spool / B11 bearing collar (drive_spool / bearing_collar)      46.476  >= 1.50     ok 
+   R22 slip ring rotor / B11 bearing collar (sr_driver / bearing_collar)    53.231  >= 1.50     ok 
+== sweep 2: motor-driven (pulley, belt, motor shaft) vs everything else, >= 1.5
+   B17 motor pulley 20T / B15 slip ring SNM022A-06 (pulley_20T / sr_stator)    1.502  >= 1.50     ok 
+   B17 motor pulley 20T / R02 bottom cap (pulley_20T / bottom_cap)           1.600  >= 1.50     ok 
+   B18 GT2 belt 122 / R02 bottom cap (belt_gt2_122 / bottom_cap)             3.100  >= 1.50     ok 
+   B18 GT2 belt 122 / R02b hub core (belt_gt2_122 / hub_core)                3.100  >= 1.50     ok 
+   B18 GT2 belt 122 / R13 screws (belt_gt2_122 / screw_core_2)               3.100  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B16 motor hanger (d_shaft_6mm / motor_hanger)    3.225  >= 1.50     ok 
+   B18 GT2 belt 122 / B03 gearmotor JGB37-520 (belt_gt2_122 / d_shaft_6mm)    3.411  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B18 GT2 belt 122 (d_shaft_6mm / belt_gt2_122)    3.411  >= 1.50     ok 
+   B17 motor pulley 20T / R02b hub core (pulley_20T / hub_core)              3.600  >= 1.50     ok 
+   B17 motor pulley 20T / B01 base shell (pulley_20T / base_shell)           3.900  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B01 base shell (d_shaft_6mm / base_shell)       4.025  >= 1.50     ok 
+   B17 motor pulley 20T / R15 chain wiring (pulley_20T / feed_09_5V_26awg)    4.050  >= 1.50     ok 
+   B18 GT2 belt 122 / B15 slip ring SNM022A-06 (belt_gt2_122 / sr_stator)    5.214  >= 1.50     ok 
+   B18 GT2 belt 122 / R22 slip ring rotor (belt_gt2_122 / sr_driver)         5.319  >= 1.50     ok 
+   B18 GT2 belt 122 / R15 chain wiring (belt_gt2_122 / feed_09_GND_26awg)    5.550  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B15 slip ring SNM022A-06 (d_shaft_6mm / sr_stator)    5.625  >= 1.50     ok 
+   B17 motor pulley 20T / B19 rev m hardware (pulley_20T / flange_washer_2)    6.099  >= 1.50     ok 
+   B17 motor pulley 20T / R16 rotor harness (pulley_20T / hall_lead_OUT_28awg)    6.377  >= 1.50     ok 
+   B18 GT2 belt 122 / B19 rev m hardware (belt_gt2_122 / flange_screw_2)     6.500  >= 1.50     ok 
+   B17 motor pulley 20T / B16 motor hanger (pulley_20T / motor_hanger)       7.900  >= 1.50     ok 
+   B17 motor pulley 20T / B03 gearmotor JGB37-520 (pulley_20T / shaft_boss)    8.010  >= 1.50     ok 
+   B17 motor pulley 20T / R21 drive spool (pulley_20T / drive_spool)         8.330  >= 1.50     ok 
+   B18 GT2 belt 122 / R16 rotor harness (belt_gt2_122 / hall_lead_OUT_28awg)    8.333  >= 1.50     ok 
+   B17 motor pulley 20T / R17 rotor ring (pulley_20T / rotor_ring)           8.670  >= 1.50     ok 
+   B17 motor pulley 20T / R04 sled (pulley_20T / sled)                       9.600  >= 1.50     ok 
+   B18 GT2 belt 122 / R17 rotor ring (belt_gt2_122 / rotor_ring)             9.928  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R02 bottom cap (d_shaft_6mm / bottom_cap)      10.440  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B19 rev m hardware (d_shaft_6mm / gearbox_screw_0)   10.828  >= 1.50     ok 
+   B18 GT2 belt 122 / R24 rev m rotor wiring (belt_gt2_122 / sr_rotor_pos_28tawg)   10.828  >= 1.50     ok 
+   B17 motor pulley 20T / R13 screws (pulley_20T / screw_core_3)            10.840  >= 1.50     ok 
+   B18 GT2 belt 122 / R04 sled (belt_gt2_122 / sled)                        11.100  >= 1.50     ok 
+   B17 motor pulley 20T / B12 bearing 6820ZZ (pulley_20T / brg_inner_ring)   11.670  >= 1.50     ok 
+   B18 GT2 belt 122 / B12 bearing 6820ZZ (belt_gt2_122 / brg_inner_ring)    12.928  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R02b hub core (d_shaft_6mm / hub_core)         13.552  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R17 rotor ring (d_shaft_6mm / rotor_ring)      13.695  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B12 bearing 6820ZZ (d_shaft_6mm / brg_inner_ring)   16.695  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / R13 screws (d_shaft_6mm / screw_core_2)        18.893  >= 1.50     ok 
+   B17 motor pulley 20T / B11 bearing collar (pulley_20T / bearing_collar)   21.516  >= 1.50     ok 
+   B18 GT2 belt 122 / B11 bearing collar (belt_gt2_122 / bearing_collar)    24.790  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B11 bearing collar (d_shaft_6mm / bearing_collar)   26.495  >= 1.50     ok 
+   B17 motor pulley 20T / R09 tube (pulley_20T / tube)                      40.231  >= 1.50     ok 
+   B18 GT2 belt 122 / R09 tube (belt_gt2_122 / tube)                        41.641  >= 1.50     ok 
+   B03 gearmotor JGB37-520 / B08 base wiring (d_shaft_6mm / pot_cable_3w)   50.282  >= 1.50     ok 
+   B17 motor pulley 20T / B08 base wiring (pulley_20T / pot_cable_3w)       50.836  >= 1.50     ok 
+== named rows
+   motor pulley to the rotor ring's spigot / hub                             8.670  >= 1.50     ok (pulley_20T / rotor_ring)
+   belt to the spigot                                                        9.928  >= 1.50     ok (belt_gt2_122 / rotor_ring)
+   motor pulley to the magnet riser                                         58.361  >= 1.50     ok (pulley_20T / magnet_riser)
+   belt to the magnet riser                                                 23.933  >= 1.50     ok (belt_gt2_122 / magnet_riser)
+   motor pulley to the collar                                               21.516  >= 1.50     ok (pulley_20T / bearing_collar)
+   belt to the collar                                                       24.790  >= 1.50     ok (belt_gt2_122 / bearing_collar)
+   spool to the slip-ring flange / neck                                      3.000  >= 1.50     ok (drive_spool / sr_stator)
+   driver sleeve to the slip-ring neck                                       3.000  >= 1.50     ok (sr_driver / sr_stator)
+   slip-ring body to the PWM board                                          37.568  >= 1.50     ok (sr_stator / pwm_heat_sink)
+   motor pulley hub to the slip-ring flange                                  1.502  >= 1.50     ok (pulley_20T / sr_stator)
+   motor pulley top flange to the rotor plate                                1.600  >= 1.50     ok (pulley_20T / bottom_cap)
+   motor pulley to the spool                                                 8.330  >= 1.50     ok (pulley_20T / drive_spool)
+   spool to the flange screw heads / washers                                 4.562  >= 1.50     ok (drive_spool / flange_screw_0)
+   motor pulley to the flange screw heads                                    6.099  >= 1.50     ok (pulley_20T / flange_washer_2)
+   rotor leads to the slip-ring stator                                       9.500  >= 1.50     ok (sr_rotor_pos_28tawg / sr_stator)
+   FORK float: driver in the spool's bore / slots (1.0 designed)             1.000  0.90..1.10  ok (drive_spool / sr_driver)
+   spool plug in the core's pocket (0 = contact)                             0.000  0.00..0.00  ok (drive_spool / hub_core)
+   inserts in the plug (0 = contact)                                         0.000  0.00..0.00  ok (drive_spool / spool_insert_0)
+   belt on the spool (0 = contact)                                           0.000  0.00..0.05  ok (drive_spool / belt_gt2_122)
+   belt on the motor pulley (0 = contact)                                    0.000  0.00..0.05  ok (pulley_20T / belt_gt2_122)
+   slip-ring flange on the deck (0 = contact)                                0.000  0.00..0.00  ok (sr_stator / base_shell)
+   hanger against the deck underside (0 = contact)                           0.000  0.00..0.00  ok (motor_hanger / base_shell)
+   gearbox face on the hanger (0 = contact)                                  0.000  0.00..0.00  ok (motor_hanger / gearbox)
+   motor (boss) to the deck                                                  1.006  >= 0.10     ok (shaft_boss / base_shell)
+   motor to the slip-ring body / cone                                        4.606  >= 1.50     ok (shaft_boss / sr_stator)
+   motor to the PWM board                                                   60.000  >= 3.00     ok (> 60 mm / bbox)
+   motor to the speed pot                                                   24.517  >= 3.00     ok (gearbox / pot_body)
+   hanger to the pot cable                                                  23.657  >= 2.00     ok (motor_hanger / pot_cable_3w)
+   motor to the pot cable                                                   21.210  >= 2.00     ok (gearbox / pot_cable_3w)
+   hanger to the slip-ring body                                              3.000  >= 1.50     ok (motor_hanger / sr_stator)
+   hanger screw heads to the gearbox                                         5.698  >= 1.00     ok (hanger_washer_0 / gearbox)
+   slip-ring stator leads to the motor                                      18.191  >= 1.00     ok (sr_stator_pos_28tawg / gearbox)
+   motor leads to the slip-ring cone                                        43.849  >= 1.00     ok (motor_pos_22awg / sr_stator)
+   rotor leads in the channel: to the carrier pins                           1.139  >= 0.30     ok (sr_rotor_pos_28tawg / carrier_pcb)
+   rotor leads in the channel: to the sled wall                              2.350  >= 0.30     ok (sr_rotor_neg_28tawg / sled)
+   rotor leads to the coupling screw heads                                   1.778  >= 0.30     ok (sr_rotor_pos_28tawg / screw_coupling_0)
+   buck OUT leads round the board edge                                       0.000  >= 0.00     ok (buck_out_5V_22awg / j1_screw_terminal)
+   rotor wiring to the tube                                                 32.930  >= 3.00     ok (buck_out_GND_22awg / tube)
+   rotor wiring to the tie rods                                             13.754  >= 3.00     ok (buck_out_GND_22awg / tie_rod_2)
+   board in the card slots: bottom edge on the slot floors (0 = contact; 0.3 / side in x and y)    0.000  0.00..0.00  ok (carrier_pcb / sled)
+   buck on its standoffs (0 = contact)                                       0.000  >= 0.00     ok (buck_pcb / sled)
+   buck to the carrier (pin tips / lane wires)                               7.060  >= 5.00     ok (buck_pcb / wire_5V_A_7_0)
+   buck to the tie rods                                                     29.202  >= 5.00     ok (buck_pcb / tie_rod_0)
+   buck to the coupling / sled screw heads                                   3.023  >= 1.00     ok (buck_pcb / screw_coupling_0)
+   sled to the tie rods                                                      7.844  >= 3.00     ok (sled / nyloc_bot_0)
+   sled wall arch to the coupling screw heads                                9.385  >= 1.00     ok (sled / screw_coupling_0)
+   sled to the hub core                                                      2.000  >= 1.50     ok (sled / hub_core)
+   sled to the chain wiring (leads pass its slots)                           0.189  >= 0.00     ok (sled / start_00_GNDd_28awg)
+   ESP32 header pin tips to the buck wall (2.5 designed)                     2.500  >= 2.40     ok (esp32_pins_L / sled)
+   chain wiring to the buck                                                 12.050  >= 3.00     ok (feed_06_5V_26awg / buck_pcb)
+   hall lead to the sled (passes its slot)                                   1.027  >= 0.00     ok (hall_lead_OUT_28awg / sled)
+== tension travel (hanger slots +-2): motor, hanger, pulley copies moved along y
+   travel -2 mm: pulley / motor to the slip ring                             2.564  >= 1.50     ok 
+   travel -2 mm: pulley to the spool                                        10.330  >= 1.50     ok 
+   travel -2 mm: pulley to the spigot                                        6.670  >= 1.50     ok 
+   travel -2 mm: pulley to the flange screws                                 7.839  >= 1.50     ok 
+   travel -2 mm: motor (shaft / boss) to the deck hole / underside           0.110  >= 0.10     ok 
+   travel +2 mm: pulley / motor to the slip ring                             1.500  >= 1.50     ok 
+   travel +2 mm: pulley to the spool                                         6.330  >= 1.50     ok 
+   travel +2 mm: pulley to the spigot                                       10.670  >= 1.50     ok 
+   travel +2 mm: pulley to the flange screws                                 4.430  >= 1.50     ok 
+   travel +2 mm: motor (shaft / boss) to the deck hole / underside           0.110  >= 0.10     ok 
+== overlap volumes (must be 0)
+   overlap B16 motor hanger with the base shell (mm3)                       -0.000  >= 0.00     ok 
+   overlap B15 slip ring SNM022A-06 with the base shell (mm3)               -0.000  >= 0.00     ok 
+   overlap B03 gearmotor JGB37-520 with the base shell (mm3)                -0.000  >= 0.00     ok 
+   overlap B11 bearing collar with the base shell (mm3)                     -0.000  >= 0.00     ok 
+   overlap B14 magnet riser with the base shell (mm3)                       -0.000  >= 0.00     ok 
+== axis channel and USB from the top
+   axis wire channel: a d2.6 bundle from the stub top (z -7.1) to the core top (z 8) clears everything    0.600  >= 0.50     ok 
+   USB from the top: plug + cable envelope above the receptacle (top cap off) clears the rotor    1.590  >= 0.50     ok (carrier_pcb)
+== lead reach (routed length rev k -> rev m; the cut sheet; allowance = cut - routed, 8 mm of it is stripped ends)
+   start_00_5V      J3    143.9 ->  158.1 (+14.2)  cut 170  left  11.9  tight (no slack left)
+   start_00_GND     J3    140.1 ->  154.5 (+14.4)  cut 170  left  15.5  reaches
+   start_00_CLK     J3    139.4 ->  154.0 (+14.6)  cut 165  left  11.0  tight (no slack left)
+   start_00_DATA    J3    140.7 ->  154.6 (+13.9)  cut 165  left  10.4  tight (no slack left)
+   start_00_GNDc    J3    115.8 ->  129.9 (+14.1)  cut 135  left   5.1  extend 10 mm at the terminal end
+   start_00_GNDd    J3    114.7 ->  128.4 (+13.7)  cut 135  left   6.6  extend 10 mm at the terminal end
+   start_12_5V      J4    136.6 ->  150.8 (+14.2)  cut 165  left  14.2  tight (no slack left)
+   start_12_GND     J4    139.0 ->  153.3 (+14.3)  cut 165  left  11.7  tight (no slack left)
+   start_12_CLK     J4    139.0 ->  153.6 (+14.6)  cut 165  left  11.4  tight (no slack left)
+   start_12_DATA    J4    136.6 ->  150.5 (+13.9)  cut 165  left  14.5  tight (no slack left)
+   start_12_GNDc    J4    109.7 ->  123.7 (+14.0)  cut 135  left  11.3  tight (no slack left)
+   start_12_GNDd    J4    115.8 ->  129.5 (+13.7)  cut 135  left   5.5  extend 10 mm at the terminal end
+   feed_03_5V       J6    166.8 ->  183.6 (+16.8)  cut 200  left  16.4  reaches
+   feed_03_GND      J6    170.7 ->  187.5 (+16.8)  cut 200  left  12.5  tight (no slack left)
+   feed_06_5V       J7    198.3 ->  215.1 (+16.8)  cut 235  left  19.9  reaches
+   feed_06_GND      J7    201.2 ->  218.0 (+16.8)  cut 235  left  17.0  reaches
+   feed_09_5V       J8    210.3 ->  227.1 (+16.8)  cut 250  left  22.9  reaches
+   feed_09_GND      J8    215.0 ->  231.8 (+16.8)  cut 250  left  18.2  reaches
+   feed_15_5V       J9    128.5 ->  145.3 (+16.8)  cut 155  left   9.7  tight (no slack left)
+   feed_15_GND      J9    129.8 ->  146.5 (+16.7)  cut 155  left   8.5  tight (no slack left)
+   feed_18_5V       J10    95.8 ->  112.4 (+16.6)  cut 120  left   7.6  extend 10 mm at the terminal end
+   feed_18_GND      J10    97.3 ->  113.9 (+16.6)  cut 120  left   6.1  extend 10 mm at the terminal end
+   feed_21_5V       J11    97.4 ->  114.0 (+16.6)  cut 125  left  11.0  tight (no slack left)
+   feed_21_GND      J11   100.2 ->  116.8 (+16.6)  cut 125  left   8.2  tight (no slack left)
+   hall_lead_OUT    J5    134.0 ->  148.9 (+14.9)  cut 160  left  11.1  tight (no slack left)
+   hall_lead_GND    J5    132.8 ->  146.9 (+14.1)  cut 160  left  13.1  tight (no slack left)
+   hall_lead_VCC    J5    132.4 ->  145.5 (+13.1)  cut 160  left  14.5  tight (no slack left)
+== mass properties
+   rev k + l (bank in):       1106.1 g, U 42.5 g mm (G6.3 296)
+   bank + pigtail out only:   889.5 g, U 1182 g mm (CG (-0.00, -1.33)) = 497 % of G6.3 238
+   REV M (centred sled v2):   889.4 g, CG (0.023, -0.052, 84.86), U 50.6 g mm = 21 % of G6.3 238 / 54 % of G2.5 94
+   I_zz 3.887e-03 kg m2; I_t about the CG 9.345e-03, about the bearing centre (z -14.5) 1.813e-02; rocking mode 41.4 Hz (k 1225 N m/rad, gravity 0.87) = 11.0 x the 3.75 Hz spin
+   rotor U (g mm) <= G6.3 at 225 rpm                                        50.626  -1000000000.00..237.80 ok 
+   rotor U (g mm) <= G2.5 at 225 rpm                                        50.626  -1000000000.00..94.36 ok 
+   two-plane correction (model): plane A (trim flange r 88, z -5) 27.9 g mm at 133 deg = 0.32 g; plane B (top cap r 72, z 250) 25.8 g mm at 94 deg = 0.36 g
+   per component (rotor share, g):
+      B12 bearing 6820ZZ                     65.00  cg (  -0.00,   -0.00,  -14.5)
+      R02 bottom cap                         56.58  cg (  -0.00,   -0.02,   -0.1)
+      R02b hub core                          14.95  cg (  -0.00,    0.00,    4.0)
+      R03 hall sensor                         0.28  cg (   0.00,   41.77,   -2.0)
+      R04 sled                               31.75  cg (  -0.60,    1.12,   16.9)
+      R06 ESP32                               9.03  cg (  -0.00,   -6.22,   51.2)
+      R07 carrier board (level shifters)     42.86  cg (  -0.52,   -4.00,   54.1)
+      R09 tube                              278.67  cg (   0.00,   -0.00,  124.7)
+      R10 LED strips                         96.00  cg (   0.00,   -0.00,  125.0)
+      R11 top cap                            68.58  cg (   0.00,   -0.00,  250.4)
+      R13 screws                             12.95  cg (   0.44,    1.22,    7.9)
+      R14 tie rods                           64.02  cg (   0.00,   -0.00,  120.8)
+      R15 chain wiring                       15.01  cg (   2.77,   -7.40,   80.3)
+      R16 rotor harness                       1.14  cg ( -10.58,   -4.51,   48.7)
+      R17 rotor ring                         95.98  cg (   0.00,    0.00,   -5.4)
+      R18 hex keys                            0.79  cg (  -0.00,    0.00,   -1.9)
+      R21 drive spool                         6.88  cg (  -0.00,   -0.00,   -5.8)
+      R22 slip ring rotor                     3.50  cg (   0.00,    0.00,  -11.4)
+      R23 buck 5V                            18.00  cg (   2.44,   12.66,   25.5)
+      R24 rev m rotor wiring                  1.19  cg ( -14.40,    6.70,   37.8)
+== BASE 933 g; device 1822 g
+== 154 rows, 0 FAIL
+wrote calc/revm_checks.json

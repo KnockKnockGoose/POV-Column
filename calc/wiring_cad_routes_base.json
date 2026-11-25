@@ -1,0 +1,76 @@
+{
+ "routes": [
+  {
+   "component": "B08 base wiring",
+   "name": "supply_pos",
+   "gauge": "22",
+   "colour": "red",
+   "length_mm": 48.6,
+   "min_bend_r_mm": 6.8,
+   "from": "bench supply + lead (outside the notch)",
+   "to": "PWM IN+",
+   "min_bend_r_interior_mm": Infinity,
+   "worst_corner_xyz": null
+  },
+  {
+   "component": "B08 base wiring",
+   "name": "supply_neg",
+   "gauge": "22",
+   "colour": "black",
+   "length_mm": 48.6,
+   "min_bend_r_mm": 6.8,
+   "from": "bench supply - lead (outside the notch)",
+   "to": "PWM IN-",
+   "min_bend_r_interior_mm": Infinity,
+   "worst_corner_xyz": null
+  },
+  {
+   "component": "B08 base wiring",
+   "name": "motor_pos",
+   "gauge": "22",
+   "colour": "red",
+   "length_mm": 97.2,
+   "min_bend_r_mm": 6.8,
+   "from": "PWM OUT+",
+   "to": "motor tab +",
+   "min_bend_r_interior_mm": 6.8,
+   "worst_corner_xyz": [
+    -17.2,
+    40.0,
+    -84.0
+   ]
+  },
+  {
+   "component": "B08 base wiring",
+   "name": "motor_neg",
+   "gauge": "22",
+   "colour": "black",
+   "length_mm": 91.5,
+   "min_bend_r_mm": 6.8,
+   "from": "PWM OUT-",
+   "to": "motor tab -",
+   "min_bend_r_interior_mm": 6.8,
+   "worst_corner_xyz": [
+    -14.8,
+    40.0,
+    -84.0
+   ]
+  },
+  {
+   "component": "B08 base wiring",
+   "name": "pot_cable_3w",
+   "gauge": "cable",
+   "colour": "white",
+   "length_mm": 361.7,
+   "min_bend_r_mm": 8.1,
+   "from": "WH148 pot terminals (front flat)",
+   "to": "PWM pot connector (-x end)",
+   "min_bend_r_interior_mm": 12.0,
+   "worst_corner_xyz": [
+    30.0,
+    -83.0,
+    -45.0
+   ]
+  }
+ ]
+}

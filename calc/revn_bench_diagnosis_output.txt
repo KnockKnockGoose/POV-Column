@@ -1,0 +1,127 @@
+
+== A. Bench data, 2026-11-19 (Main session on the laptop; hall rpm read over Wi-Fi from /api/status)
+  11:44  hub journal loose in the 6802                12 V via PWM                 -         -     hub wobbles, noisy, belt skips; hub CA'd into the 6802 -> much better
+  12:00  tight ring (100.80), bare rotor              12 V via PWM, full knob   0.735 A      -     no board on the rotor, so no rpm
+  12:23  tight ring + board + battery, 2 magnets      12 V via PWM, full knob      -       73 rpm  1.2 pulses/s: hall missing ~3 of 4 passes
+  12:24  tight ring + board + battery                 12 V via PWM, full knob   0.789 A      -     Brian: 'it feels slow'
+  12:29  tight ring + board + battery, 3 magnets      12 V via PWM, full knob   0.789 A   102 rpm  100.9-103.1 rpm, valid flickers at the 100 rpm gate, 7 rejected, 27 resyncs
+  12:33  same, PWM bypassed                           13.5 V direct                -      114 rpm  111.3-116.5 rpm (+11 %), one false 2164 rpm, rejected 16->19, resyncs 54->63
+  12:38  base alone (rotor off)                       12 V direct               0.122 A      -     cup screws as fitted
+  12:39  base alone, cup screws loosened              12 V direct               0.110 A      -     
+  12:40  base alone, cup screws looser                12 V direct               0.080 A      -     rotor on with screws this loose: belt skips
+  12:44  base alone, cup screws snug                  12 V direct               0.104 A      -     
+  13:27  tight ring, rotor on, belt skipping          12 V direct               0.600 A     0 rpm  rotor stalled (no new hall pulses), belt jumping teeth
+  13:34  tight ring, belt off, by hand                -                            -         -     even drag all round, no catch point, does not coast
+  14:28  6820 taken off                               12 V direct                  -         -     'all the load went away, it spun really fast'
+  14:35  old loose ring (99.43), bare rotor           12 V direct               0.327 A      -     board not fitted, so no rpm
+  14:54  old loose ring + board + battery, 3 magnets  12 V direct               0.660 A   117 rpm  117.5-119.6 rpm valid, 0 rejected; then 114.8-117.0, 2 rejected; popping / odd sounds
+  Correction: 119 rpm was NOT measured at 327 mA. 327 mA was the bare rotor (no board, so no rpm);
+  117-119 rpm was measured at 660 mA with the board and battery on the rotor.
+
+== B. Motor (JGB37-520, 12 V; belt 20T:40T, so motor rpm = 2 x rotor rpm if the belt does not slip)
+  Two loaded points at 12 V: 0.660 A -> 234 motor rpm, 0.789 A -> 204 motor rpm
+  Straight line N = 387 - 233 I  ->  K = 30.97 mV/rpm, R = 7.2 ohm, no-load 364 rpm, stall 1.67 A
+  The listing's stall current is 1.65 A (calc/elec_calc.py): the fit's 1.67 A agrees; its no-load speed (364) does not agree with 600.
+  Cross-check, 11-14 rev j direct drive: 188 rpm (image locked + 191 rpm FFT) at 5.07 V. The fitted motor would top out at 140 rpm on 5.07 V even with no load,
+  so either the motor changed, or tonight's speeds hide belt slip, or the line is not straight (it is two points). Measure it (bench step 1).
+
+  Rotor rpm at 12 V for a total motor current of:   0.15    0.25    0.33    0.40    0.50    0.66    0.79 A
+  M0 design (listing: 600 rpm, 1.65 A stall)                       290    271    255    242    223    192    166
+  M1 tonight's two points only                                     176    165    155    147    136    117    102
+  M2 best fit, tonight + 11-14 (520 rpm, 1.2 A stall)              248    225    206    189    165    128     97
+
+  Current budget for 188 rpm (and 225), at 12 / 15 / 16 V:
+  M0 design (listing: 600 rpm, 1.65 A stall)                     188:  0.68 /  1.07 /  1.20 A    225 @ 12 V:  0.49 A
+  M1 tonight's two points only                                   188:  none /  0.44 /  0.57 A    225 @ 12 V:  none A
+  M2 best fit, tonight + 11-14 (520 rpm, 1.2 A stall)            188:  0.40 /  0.68 /  0.77 A    225 @ 12 V:  0.25 A
+  (a budget below ~0.11 A is impossible: the base alone draws 0.08-0.12 A)
+
+  Rotor drag implied by the extra current above the base (0.104 A), N m per A at the rotor:
+    M0 design (listing: 600 rpm, 1.65 A stall)                     0.222 N m/A
+    M1 tonight's two points only                                   0.365 N m/A
+    M2 best fit, tonight + 11-14 (520 rpm, 1.2 A stall)            0.249 N m/A
+  case                                   extra A    drag at the rotor, mN m (M0 / M1 / M2)
+    old loose ring, bare rotor            0.223        49 /    81 /    56
+    old loose ring + board + battery      0.556       123 /   203 /   139
+    tight ring, bare rotor                0.631       140 /   230 /   157
+    tight ring + board + battery          0.685       152 /   250 /   171
+    belt-skip stall                       0.496       110 /   181 /   124
+  Design budget (rev k / m / n): 29 mN m at 225 rpm = 27 'air' + 2 bearing.
+
+  Belt skip limit (M0): ~110 mN m at the hub = 8.6 N effective pull on the 40T (r 12.73 mm)
+  Belt skip limit (M1): ~181 mN m at the hub = 14.2 N effective pull on the 40T (r 12.73 mm)
+  Belt skip limit (M2): ~124 mN m at the hub = 9.7 N effective pull on the 40T (r 12.73 mm)
+
+== C. 6820ZZ running torque, properly fitted (SKF frictional-moment model, rolling term; ZZ shields add none)
+  dm 112.5 mm, Fa 10.0 N, Fr 2.0 N -> alpha_F 3.8 deg, G_rr 0.0984
+  M_rr = G_rr (nu n)^0.6 [N mm]; nu = grease base-oil viscosity at room temperature (ASSUMED 100-250 mm2/s)
+  rpm:            100     150     188     225
+  nu 100 mm2/s:      25     32     36     40   mN m
+  nu 150 mm2/s:      32     40     46     51   mN m
+  nu 250 mm2/s:      43     55     63     70   mN m
+  The design assumed 1.9 mN m (mu 0.0015 x load), which ignores this viscous rolling term. A thin-section bearing at
+  almost no load is all viscous drag: ~30-60 mN m here, more than the whole 29 mN m budget. It drops ~30 % after
+  an hour's run-in (grease channels) and ~4x if the grease is replaced by light oil (M ~ nu^0.6).
+  Hand-spin coast, bare rotor (I_zz ~1.8e-03 kg m2 ASSUMED) from 1 rev/s at 35 mN m: stops in 0.32 s after 0.16 rev.
+  So 'it does not coast' is normal for this bearing. The current at 12 V is the test, not the coast.
+
+== D. The thin inner ring vs a printed spigot
+  Inner ring EI 6.71e+06 N mm2; two opposite forces P ovalise it by 3.0 um per N
+  Internal clearance (group N) 12-36 um is used up by P = 4-12 N across the ring
+  Printed spigot as a free 2.8 mm ring: 210 um per N (soft); the whole rotor ring in its plane: 0.43 um per N
+  The rotor ring is 7x stiffer in-plane than the steel inner ring: its 0.4 mm of ovality is imposed on the bearing.
+  Measured ovality of the printed ring: 0.40 mm (99.24-99.64). That is 11-33x the bearing's clearance.
+  => any spigot that grips on all 8 ribs pinches the balls along its long axis; any that does not pinch is loose on its short axis.
+
+== E. As-built drive stack: clamp ring (3.2 mm incl. its 0.1 crush gap) removed, cup on the deck
+  crown          design   -3.1   as built   -6.3
+  notch_floor    design  -10.8   as built  -14.0
+  belt           design   -8.1   as built  -11.3
+  brg_bot        design  -19.7   as built  -22.9
+  brg_top        design  -14.7   as built  -17.9
+  cup_bot        design  -20.3   as built  -23.5
+  journal_end    design  -18.3   as built  -21.5
+  pins M3 x 16: tip z  -8.0, in the notch  1.7 mm ( 0.9 below the chamfer), above the floor  6.0 mm
+  pins M3 x 18: tip z -10.0, in the notch  3.7 mm ( 2.9 below the chamfer), above the floor  4.0 mm
+  pins M3 x 20: tip z -12.0, in the notch  5.7 mm ( 4.9 below the chamfer), above the floor  2.0 mm
+  -> as built, M3 x 20 is the right pin (design check: >= 3.5 engaged, >= 1.0 above the floor); M3 x 16 barely reaches.
+  cup screw M3 x 5 + washer: tip z -26.0, 2.5 mm in the deck insert, +1.5 mm vs the motor hanger's top
+  cup screw M3 x 6 + washer: tip z -27.0, 3.5 mm in the deck insert, +0.5 mm vs the motor hanger's top
+  cup screw M3 x 8 + washer: tip z -29.0, 4.0 mm in the deck insert, -1.5 mm vs the motor hanger's top
+  -> the M3 x 8 over the motor hanger (flange_screw_2) now reaches 1.5 mm INTO the hanger: it bottoms before it clamps
+     that lobe. Use M3 x 6 (3.5 mm in the insert, 0.5 mm clear) or keep x 8 with 2 mm of washers under the head.
+
+== F. Side loads on the hub: one driving pin at r 8 mm + the belt
+  rotor drag   29 mN m: pin force   3.6 N (turns with the rotor), belt effective pull   2.3 N + ~8 N static (fixed)
+  rotor drag   60 mN m: pin force   7.5 N (turns with the rotor), belt effective pull   4.7 N + ~8 N static (fixed)
+  rotor drag  130 mN m: pin force  16.2 N (turns with the rotor), belt effective pull  10.2 N + ~8 N static (fixed)
+  The 6802 is one 5 mm bearing with the load ~10 mm above its centre: the resultant swings 8-30 N once per turn
+  at high drag, so the hub nods in the bearing's internal play (~0.2-0.5 deg for a 6802, group N). That is the 'wobble'.
+
+== G. Hall sensor: field on the axis of a stack of 6 x 3 mm N35 discs (Br ~1.2 T ASSUMED)
+  gap mm:     2      3      4      5      6      7      8      9     10
+  1 magnet    1817   1124    715    473    326    232    171    129     99  G
+  2 magnets   2290   1449    947    644    454    331    249    191    150  G
+  3 magnets   2460   1578   1046    722    517    382    291    226    180  G
+  A3144 operate point 70-350 G (datasheet span). Tonight: 1 magnet = no pulses, 2 = about 1 pass in 4, 3 = every pass.
+  2 magnets at the design 5.0 mm give 644 G, so the as-built gap is larger: ~7.5-8 mm with 2 (300 G), ~4.5-5 mm with 3.
+  Likely: the riser or the sensor sits ~2.5 mm further apart than drawn (clay check in bench step 4).
+
+== H. Hanging slip ring: pendulum, wind-up and kinking
+  pendulum 50 mm: 2.23 Hz =   134 rpm
+  pendulum 60 mm: 2.04 Hz =   122 rpm
+  pendulum 68 mm: 1.91 Hz =   115 rpm
+  pendulum 80 mm: 1.76 Hz =   106 rpm
+  Tonight's top speed was 115-119 rpm: on the pendulum's resonance (68 mm -> 114 rpm).
+  red/black pair, 60 mm, twisted  2 turns: shortens  0.8 mm before it kinks
+  red/black pair, 60 mm, twisted  5 turns: shortens  4.7 mm before it kinks
+  red/black pair, 60 mm, twisted 10 turns: shortens 14.0 mm before it kinks
+  kink (loop) torque 2 sqrt(EI T) at 0.10 N tension: 0.89 mN m (6 x 30 AWG PTFE leads of the design: ~4 mN m)
+  kink (loop) torque 2 sqrt(EI T) at 0.15 N tension: 1.10 mN m (6 x 30 AWG PTFE leads of the design: ~4 mN m)
+  kink (loop) torque 2 sqrt(EI T) at 0.30 N tension: 1.55 mN m (6 x 30 AWG PTFE leads of the design: ~4 mN m)
+  A capsule ring's drag is ~1 mN m by catalogue, more on cheap clones (ASSUMED): at or above the pair's kink torque.
+  The body is held only by its stator leads in a loose 60 mm loop: nothing stops it turning for the first turn(s),
+  so the rotor drags the whole ring round and winds the stator leads; once they wind up, the pair above it twists.
+  Both wind-ups shorten the leads and lift the ring. The ring weighs ~10 g: 0.1 N cannot keep 60 mm of lead straight.
+
+figure: docs\img\revn_diag_speed_vs_current.png

@@ -1,0 +1,1652 @@
+{
+ "rev": "g (QA B2 jumper fix: 10 mm wall slots, jumper slack loops 10 mm past the second slot; on rev f; 2026-11-03)",
+ "rotor_mass_g": 924.0,
+ "modelled_g": 917.8,
+ "wiring_g": 34.25,
+ "carrier_esp_g": 47.7,
+ "bank_g": 199.0,
+ "cg_mm": [
+  0.032,
+  0.05,
+  99.6
+ ],
+ "U_gmm": 55.2,
+ "U_target_gmm": 247.1,
+ "Izz_kgm2": 0.003373859548521142,
+ "trim_nuts": 2.1,
+ "wire_mass": {
+  "28": [
+   1.83,
+   1.02,
+   11
+  ],
+  "22c": [
+   1.48,
+   0.72,
+   2
+  ],
+  "22": [
+   1.2,
+   0.92,
+   6
+  ],
+  "28r": [
+   6.19,
+   4.09,
+   88
+  ],
+  "26": [
+   4.74,
+   2.74,
+   16
+  ]
+ },
+ "per_comp": {
+  "B07 rubber feet": [
+   2.04,
+   -0.0,
+   0.0,
+   -96.95,
+   0.15
+  ],
+  "B06 hall magnet": [
+   1.3,
+   0.0,
+   42.0,
+   -11.0,
+   0.02
+  ],
+  "R10 LED strips": [
+   96.0,
+   0.0,
+   -0.0,
+   125.0,
+   6.24
+  ],
+  "R03 hall sensor": [
+   0.28,
+   0.0,
+   41.77,
+   -2.03,
+   0.0
+  ],
+  "R16 rotor harness": [
+   2.26,
+   -5.11,
+   -12.1,
+   29.59,
+   0.04
+  ],
+  "R11 top cap": [
+   67.0,
+   0.0,
+   -0.0,
+   250.38,
+   2.67
+  ],
+  "R07 carrier board (level shifters)": [
+   38.63,
+   -0.03,
+   -21.75,
+   52.33,
+   0.33
+  ],
+  "R06 ESP32": [
+   9.03,
+   -0.0,
+   -23.7,
+   51.28,
+   0.06
+  ],
+  "R01 flange coupling": [
+   8.59,
+   -0.05,
+   0.0,
+   -1.45,
+   0.0
+  ],
+  "B03 gearmotor JGB37-520": [
+   164.0,
+   -6.81,
+   0.0,
+   -34.8,
+   0.32
+  ],
+  "B09 motor L-bracket": [
+   41.43,
+   -22.94,
+   -0.0,
+   -25.29,
+   0.36
+  ],
+  "R05 power bank": [
+   199.0,
+   0.0,
+   5.3,
+   66.59,
+   0.89
+  ],
+  "R08 USB pigtail": [
+   17.63,
+   0.43,
+   4.83,
+   142.67,
+   0.07
+  ],
+  "B02 base bottom plate": [
+   126.29,
+   -0.06,
+   0.17,
+   -93.48,
+   6.97
+  ],
+  "B04 PWM controller": [
+   30.0,
+   3.85,
+   69.78,
+   -46.01,
+   1.56
+  ],
+  "B10 speed pot": [
+   12.0,
+   -0.0,
+   -94.12,
+   -49.98,
+   1.07
+  ],
+  "B08 base wiring": [
+   4.25,
+   23.79,
+   25.39,
+   -45.1,
+   0.29
+  ],
+  "R04 sled": [
+   44.22,
+   -0.0,
+   1.9,
+   22.6,
+   0.54
+  ],
+  "B01 base shell": [
+   361.68,
+   -2.45,
+   0.58,
+   -34.27,
+   25.29
+  ],
+  "R09 tube": [
+   278.67,
+   0.0,
+   -0.0,
+   124.72,
+   17.52
+  ],
+  "R15 chain wiring": [
+   14.35,
+   2.46,
+   -7.4,
+   82.46,
+   0.61
+  ],
+  "R02 bottom cap": [
+   55.28,
+   -0.0,
+   -0.02,
+   -0.07,
+   2.39
+  ],
+  "R02b hub core": [
+   14.95,
+   -0.0,
+   0.0,
+   3.97,
+   0.04
+  ],
+  "R13 screws": [
+   10.22,
+   0.0,
+   -0.0,
+   5.99,
+   0.09
+  ],
+  "R14 tie rods": [
+   61.68,
+   0.0,
+   0.0,
+   125.6,
+   2.22
+  ]
+ },
+ "bank_y": 5.3,
+ "base_mass_g": 743.0,
+ "n_rows": 285,
+ "n_fail": 0,
+ "checks": [
+  {
+   "check": "rotor cap underside to base deck (gap) >= 5.00",
+   "value": 7.5,
+   "ok": true
+  },
+  {
+   "check": "tie-rod bottom ends to base deck >= 5.00",
+   "value": 6.7,
+   "ok": true
+  },
+  {
+   "check": "hall sensor to deck face >= 4.00",
+   "value": 6.53,
+   "ok": true
+  },
+  {
+   "check": "hall face to magnet top (sensing gap 3-6) >= 3.00",
+   "value": 5.0,
+   "ok": true
+  },
+  {
+   "check": "cap underside to the proud magnet >= 4.00",
+   "value": 6.0,
+   "ok": true
+  },
+  {
+   "check": "tube bottom to base deck >= 5.00",
+   "value": 9.5,
+   "ok": true
+  },
+  {
+   "check": "spinning cap to the bracket / motor screw heads >= 5.00",
+   "value": 10.29,
+   "ok": true
+  },
+  {
+   "check": "coupling hub (spins) to the d18 deck hole edge >= 2.50",
+   "value": 4.07,
+   "ok": true
+  },
+  {
+   "check": "coupling bottom to the bracket leg / motor screw heads >= 3.00",
+   "value": 3.1,
+   "ok": true
+  },
+  {
+   "check": "coupling seated on the boss face, shaft in the bore (0 = contact) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "flange seated in the core's pocket (0 = contact) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "flange / coupling hub clear of the plate's d28.4 hole >= 2.00",
+   "value": 3.22,
+   "ok": true
+  },
+  {
+   "check": "coupling screws threaded into the flange (0 = contact) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "d12 boss in the d18 deck hole (radial) >= 2.50",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "shaft stub in the core's d7 hole (radial) >= 0.50",
+   "value": 0.53,
+   "ok": true
+  },
+  {
+   "check": "shaft stub to the cap plate >= 3.00",
+   "value": 11.23,
+   "ok": true
+  },
+  {
+   "check": "shaft stub tip to the bank bottom (hub pocket clearance for the stub) >= 4.50",
+   "value": 8.69,
+   "ok": true
+  },
+  {
+   "check": "shaft stub to the coupling screw shanks >= 1.00",
+   "value": 3.52,
+   "ok": true
+  },
+  {
+   "check": "shaft stub to the sled plate >= 3.00",
+   "value": 17.41,
+   "ok": true
+  },
+  {
+   "check": "motor body (gearbox, can, terminals) to the shell: deck underside over the bracket, post, walls >= 2.00",
+   "value": 2.25,
+   "ok": true
+  },
+  {
+   "check": "motor terminals to the bottom plate >= 3.00",
+   "value": 28.5,
+   "ok": true
+  },
+  {
+   "check": "motor to the PWM board / heat sink >= 5.00",
+   "value": 35.44,
+   "ok": true
+  },
+  {
+   "check": "motor to the pot body >= 5.00",
+   "value": 62.19,
+   "ok": true
+  },
+  {
+   "check": "motor to the magnet boss >= 3.00",
+   "value": 21.3,
+   "ok": true
+  },
+  {
+   "check": "motor screw heads inside the deck's head pockets (radial 1.0, ceiling 1.3) >= 0.90",
+   "value": 1.0,
+   "ok": true
+  },
+  {
+   "check": "post screw heads (inside the L) to the gearbox >= 3.00",
+   "value": 7.3,
+   "ok": true
+  },
+  {
+   "check": "bracket on the post face (0 = bolted) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "bracket to the PWM board >= 5.00",
+   "value": 36.82,
+   "ok": true
+  },
+  {
+   "check": "bracket to the base leads >= 3.00",
+   "value": 17.4,
+   "ok": true
+  },
+  {
+   "check": "bracket leg end to the bottom plate >= 3.00",
+   "value": 37.71,
+   "ok": true
+  },
+  {
+   "check": "bracket to the magnet boss >= 3.00",
+   "value": 19.51,
+   "ok": true
+  },
+  {
+   "check": "PWM heat sink / pot connector / capacitor to the shell >= 3.00",
+   "value": 4.21,
+   "ok": true
+  },
+  {
+   "check": "PWM terminal blocks to the shell (the standoffs are behind the 1.6 mm board) >= 1.50",
+   "value": 1.6,
+   "ok": true
+  },
+  {
+   "check": "pin tips to the back wall / standoffs (under-board clearance) >= 3.00",
+   "value": 4.2,
+   "ok": true
+  },
+  {
+   "check": "PWM to the magnet boss >= 5.00",
+   "value": 18.52,
+   "ok": true
+  },
+  {
+   "check": "PWM to the spinning rotor >= 5.00",
+   "value": 24.0,
+   "ok": true
+  },
+  {
+   "check": "PWM to the bottom plate >= 3.00",
+   "value": 10.5,
+   "ok": true
+  },
+  {
+   "check": "PWM to the pot >= 5.00",
+   "value": 133.4,
+   "ok": true
+  },
+  {
+   "check": "pot bushing / body / nut on the front flat (0 = clamped) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "knob clear of the outside of the flat >= 1.00",
+   "value": 3.5,
+   "ok": true
+  },
+  {
+   "check": "knob to spinning rotor >= 3.00",
+   "value": 41.74,
+   "ok": true
+  },
+  {
+   "check": "pot to the bottom plate >= 3.00",
+   "value": 33.85,
+   "ok": true
+  },
+  {
+   "check": "base leads along the walls / through the notch (lie on the wall) >= 0.30",
+   "value": 1.15,
+   "ok": true
+  },
+  {
+   "check": "supply pair under the plate's staple bar / above the plate >= 0.50",
+   "value": 1.83,
+   "ok": true
+  },
+  {
+   "check": "zip tie round the staple bar (0 = touching) >= 0.00",
+   "value": 0.85,
+   "ok": true
+  },
+  {
+   "check": "zip tie to the shell wall >= 1.00",
+   "value": 5.9,
+   "ok": true
+  },
+  {
+   "check": "base leads into the PWM terminals / pot connector (0 = in the terminal) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "motor leads on the tabs (0 = soldered) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "base leads to the motor body (the tabs they end on excluded) >= 1.00",
+   "value": 3.39,
+   "ok": true
+  },
+  {
+   "check": "motor leads / pot cable to the bottom plate >= 3.00",
+   "value": 6.11,
+   "ok": true
+  },
+  {
+   "check": "base wiring to the spinning cap >= 5.00",
+   "value": 14.51,
+   "ok": true
+  },
+  {
+   "check": "base wiring to the rod ends >= 5.00",
+   "value": 25.41,
+   "ok": true
+  },
+  {
+   "check": "base wiring to the magnet boss >= 3.00",
+   "value": 37.7,
+   "ok": true
+  },
+  {
+   "check": "pot cable from the pot terminals (0 = soldered) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "core on the plate's top face, spigot in the d28.4 hole (0 = seated) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "coupling + core screws in the core (0 = contact) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "core body (d45, chamfered top edge) to the sled's d49 plate hole and 45 deg cone >= 2.00",
+   "value": 2.0,
+   "ok": true
+  },
+  {
+   "check": "core top to the bank bottom >= 3.00",
+   "value": 6.0,
+   "ok": true
+  },
+  {
+   "check": "core to the under-plate wiring lanes >= 1.00",
+   "value": 1.42,
+   "ok": true
+  },
+  {
+   "check": "core to the hall lead >= 1.00",
+   "value": 7.87,
+   "ok": true
+  },
+  {
+   "check": "core top to the carrier-foot glue bead (modelled straight along the foot: over the d49 hole it floats 0.4 above the core; glue where the slot floor exists, |x| > 15.5) >= 0.30",
+   "value": 0.4,
+   "ok": true
+  },
+  {
+   "check": "core to the hall sensor >= 3.00",
+   "value": 16.62,
+   "ok": true
+  },
+  {
+   "check": "core spigot bottom (flush with the cap underside) to the deck >= 5.00",
+   "value": 7.5,
+   "ok": true
+  },
+  {
+   "check": "core to the proud magnet >= 4.00",
+   "value": 18.34,
+   "ok": true
+  },
+  {
+   "check": "core to the tie rods >= 3.00",
+   "value": 34.42,
+   "ok": true
+  },
+  {
+   "check": "shaft inside the core's d7 hole, nothing else touches (>= 0) >= 0.00",
+   "value": 0.53,
+   "ok": true
+  },
+  {
+   "check": "flush countersunk core screws to the deck >= 5.00",
+   "value": 7.5,
+   "ok": true
+  },
+  {
+   "check": "core screws to the under-plate wiring >= 1.00",
+   "value": 6.28,
+   "ok": true
+  },
+  {
+   "check": "core screws to the hall lead >= 1.00",
+   "value": 2.82,
+   "ok": true
+  },
+  {
+   "check": "csk heads in the plate's countersinks (0 = seated) >= 0.00",
+   "value": 0.07,
+   "ok": true
+  },
+  {
+   "check": "core screws to the hall sensor >= 3.00",
+   "value": 25.74,
+   "ok": true
+  },
+  {
+   "check": "sled cone / floor opening to the coupling screw heads >= 3.00",
+   "value": 8.31,
+   "ok": true
+  },
+  {
+   "check": "bank standing on the floor pads (0 = contact) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "tie rods to sled >= 3.00",
+   "value": 7.84,
+   "ok": true
+  },
+  {
+   "check": "tie rods to power bank >= 3.00",
+   "value": 25.35,
+   "ok": true
+  },
+  {
+   "check": "tie rods to carrier board + components >= 3.00",
+   "value": 23.32,
+   "ok": true
+  },
+  {
+   "check": "tie rods to ESP32 >= 3.00",
+   "value": 31.46,
+   "ok": true
+  },
+  {
+   "check": "tie rods to tube wall / mid ring >= 3.00",
+   "value": 13.9,
+   "ok": true
+  },
+  {
+   "check": "tie rods to hall sensor >= 3.00",
+   "value": 13.78,
+   "ok": true
+  },
+  {
+   "check": "tie rods to screws >= 3.00",
+   "value": 37.24,
+   "ok": true
+  },
+  {
+   "check": "LED bodies to bottom skirt >= 0.50",
+   "value": 1.8,
+   "ok": true
+  },
+  {
+   "check": "LED bodies to top skirt >= 0.50",
+   "value": 1.8,
+   "ok": true
+  },
+  {
+   "check": "ESP32 to tube wall >= 3.00",
+   "value": 48.52,
+   "ok": true
+  },
+  {
+   "check": "ESP32 to sled / guides >= 3.00",
+   "value": 7.1,
+   "ok": true
+  },
+  {
+   "check": "ESP32 to power bank >= 3.00",
+   "value": 9.5,
+   "ok": true
+  },
+  {
+   "check": "74AHCT125 to sled guide posts >= 3.00",
+   "value": 5.46,
+   "ok": true
+  },
+  {
+   "check": "carrier solder side (wires, bumps) to the wider bank / cradle >= 3.00",
+   "value": 8.26,
+   "ok": true
+  },
+  {
+   "check": "carrier PCB standing on the guide-slot floor (0 = contact) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "carrier solder-side wires / parts to the sled guides and the wider cradle wall >= 0.50",
+   "value": 0.98,
+   "ok": true
+  },
+  {
+   "check": "carrier components to tube wall >= 3.00",
+   "value": 34.06,
+   "ok": true
+  },
+  {
+   "check": "carrier (J1/J12/C2 at the top) to top cap >= 3.00",
+   "value": 156.22,
+   "ok": true
+  },
+  {
+   "check": "coupling screw heads to bank bottom >= 3.00",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "plain top cap to the bank top (+0.3 mm) >= 3.00",
+   "value": 129.0,
+   "ok": true
+  },
+  {
+   "check": "power button (0.3 proud) under the cradle wall (0.4 clearance) >= 0.05",
+   "value": 4.1,
+   "ok": true
+  },
+  {
+   "check": "sled to tube wall >= 3.00",
+   "value": 28.4,
+   "ok": true
+  },
+  {
+   "check": "sled to strips >= 3.00",
+   "value": 30.0,
+   "ok": true
+  },
+  {
+   "check": "wider cradle wall to the carrier's tall parts >= 1.00",
+   "value": 2.21,
+   "ok": true
+  },
+  {
+   "check": "jumpers / feeds / start leads to tie rods >= 3.00",
+   "value": 4.43,
+   "ok": true
+  },
+  {
+   "check": "hall lead / glue to tie rods >= 3.00",
+   "value": 17.65,
+   "ok": true
+  },
+  {
+   "check": "pigtail + fuse holder to tie rods >= 3.00",
+   "value": 14.35,
+   "ok": true
+  },
+  {
+   "check": "rotor wiring (R15) to base deck >= 5.00",
+   "value": 9.95,
+   "ok": true
+  },
+  {
+   "check": "rotor harness (R16) to base deck >= 5.00",
+   "value": 9.2,
+   "ok": true
+  },
+  {
+   "check": "pigtail to base >= 5.00",
+   "value": 66.9,
+   "ok": true
+  },
+  {
+   "check": "under-plate wiring to the proud magnet >= 4.00",
+   "value": 12.83,
+   "ok": true
+  },
+  {
+   "check": "hall lead to the magnet >= 4.00",
+   "value": 9.73,
+   "ok": true
+  },
+  {
+   "check": "carrier to base >= 5.00",
+   "value": 20.5,
+   "ok": true
+  },
+  {
+   "check": "under-plate wiring to the sled plate (channel + slots) >= 0.30",
+   "value": 0.35,
+   "ok": true
+  },
+  {
+   "check": "hall lead through the -x slot to the sled plate >= 0.30",
+   "value": 1.04,
+   "ok": true
+  },
+  {
+   "check": "under-plate wiring / bottom ribbons to the bottom cap (plate, lip, bosses) >= 0.20",
+   "value": 0.42,
+   "ok": true
+  },
+  {
+   "check": "top ribbons to the top cap lip / bosses >= 0.50",
+   "value": 0.6,
+   "ok": true
+  },
+  {
+   "check": "R16 (hall lead, ties, glue) to the top cap >= 0.50",
+   "value": 1.23,
+   "ok": true
+  },
+  {
+   "check": "ribbons / feeds in the slots and on the wall (lie on the wall) >= 0.05",
+   "value": 0.1,
+   "ok": true
+  },
+  {
+   "check": "hall lead / glue to the bank >= 2.00",
+   "value": 8.61,
+   "ok": true
+  },
+  {
+   "check": "pigtail cable + fuse holder to the bank body (the plug sits in the port) >= 2.00",
+   "value": 6.05,
+   "ok": true
+  },
+  {
+   "check": "pigtail cable to the wider cradle (zip tie excluded: it passes through the window) >= 2.00",
+   "value": 19.6,
+   "ok": true
+  },
+  {
+   "check": "pigtail / fuse holder to the tube wall >= 3.00",
+   "value": 32.26,
+   "ok": true
+  },
+  {
+   "check": "fuse holder to the top cap >= 3.00",
+   "value": 78.2,
+   "ok": true
+  },
+  {
+   "check": "under-plate lanes to the hall legs (lane blocked at theta 86-94) >= 0.50",
+   "value": 5.38,
+   "ok": true
+  },
+  {
+   "check": "under-plate wiring to the sled / coupling screws >= 1.00",
+   "value": 3.42,
+   "ok": true
+  },
+  {
+   "check": "hall lead to the screws >= 1.00",
+   "value": 2.82,
+   "ok": true
+  },
+  {
+   "check": "feeds / start leads into the screw terminals (0 = clamped) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "wire ends on the strip back pads (0 = soldered) >= 0.00",
+   "value": 0.06,
+   "ok": true
+  },
+  {
+   "check": "DevKit PCB / USB / buttons to the carrier's tall parts (terminals, caps, resistors, test points) >= 1.00",
+   "value": 1.16,
+   "ok": true
+  },
+  {
+   "check": "DevKit PCB edge to the 2.54 mm screw terminals >= 1.00",
+   "value": 1.8,
+   "ok": true
+  },
+  {
+   "check": "WROOM module (its antenna tip overhangs the PCB edge by 1 mm) to the bottom-row terminals >= 0.50",
+   "value": 0.8,
+   "ok": true
+  },
+  {
+   "check": "2.54 mm screw terminals to the sled / guide posts >= 1.00",
+   "value": 1.83,
+   "ok": true
+  },
+  {
+   "check": "feed wires (into the right-edge terminals from the ESP32 side) to the DevKit >= 1.00",
+   "value": 2.16,
+   "ok": true
+  },
+  {
+   "check": "feeds / start leads to the carrier-foot glue bead >= 0.30",
+   "value": 2.89,
+   "ok": true
+  },
+  {
+   "check": "hall lead to the carrier-foot glue bead >= 0.30",
+   "value": 3.41,
+   "ok": true
+  },
+  {
+   "check": "jumper ribbons + loops (bottom end) to the bottom cap lip / trim bosses >= 0.20",
+   "value": 0.5,
+   "ok": true
+  },
+  {
+   "check": "jumper ribbons + loops (top end) to the top cap lip / trim bosses >= 0.50",
+   "value": 1.5,
+   "ok": true
+  },
+  {
+   "check": "jumper loops to the tie rods >= 3.00",
+   "value": 14.88,
+   "ok": true
+  },
+  {
+   "check": "jumper loops to the sled rim >= 3.00",
+   "value": 23.42,
+   "ok": true
+  },
+  {
+   "check": "jumper loops to the bank >= 3.00",
+   "value": 35.08,
+   "ok": true
+  },
+  {
+   "check": "jumper loops to the carrier >= 3.00",
+   "value": 29.46,
+   "ok": true
+  },
+  {
+   "check": "jumper ribbons through the 10 mm slots and on the wall (lie on the wall) >= 0.05",
+   "value": 0.1,
+   "ok": true
+  },
+  {
+   "check": "jumper ribbons / loops to the feeds and start leads (the feed and the ribbon share the 5V / GND pads at the six feed strips: 0 = soldered together; no loop at a feed slot) >= 0.00",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "jumper loops to the hall lead / glue >= 1.00",
+   "value": 1.53,
+   "ok": true
+  },
+  {
+   "check": "ribbon ends on the strips' back pads (0 = soldered) >= 0.00",
+   "value": 0.06,
+   "ok": true
+  },
+  {
+   "check": "USB plug overmold (x +-5.5, 20 mm above the DevKit) to the carrier's parts >= 1.00 (worst carrier_pcb)",
+   "value": 1.59,
+   "ok": true
+  },
+  {
+   "check": "USB plug overmold to the sled >= 1.00 (worst sled)",
+   "value": 16.13,
+   "ok": true
+  },
+  {
+   "check": "USB plug overmold to the bank >= 1.00 (worst power_bank)",
+   "value": 14.19,
+   "ok": true
+  },
+  {
+   "check": "USB plug overmold to the hall lead / glue >= 1.00 (worst hall_lead_GND_28awg)",
+   "value": 56.75,
+   "ok": true
+  },
+  {
+   "check": "USB plug overmold to the pigtail / fuse >= 1.00 (worst pigtail_5V_22awg)",
+   "value": 20.44,
+   "ok": true
+  },
+  {
+   "check": "1.5 mm hex key at the set screw (radial, +x) to the spinning cap >= 2.00",
+   "value": 2.98,
+   "ok": true
+  },
+  {
+   "check": "hex key to the core's spigot >= 2.00",
+   "value": 2.98,
+   "ok": true
+  },
+  {
+   "check": "hex key to the deck >= 2.00",
+   "value": 3.02,
+   "ok": true
+  },
+  {
+   "check": "hex key to the tie rod at (60, 0) (turn the rotor 10-20 deg if the flat lands on a rod) >= 1.00",
+   "value": 2.18,
+   "ok": true
+  },
+  {
+   "check": "hex key to the hall sensor >= 2.00",
+   "value": 38.65,
+   "ok": true
+  },
+  {
+   "check": "rotor wiring inside r 80.05 (worst body jumper_22_23_top_DATA_28rawg)",
+   "value": 0.1,
+   "ok": true
+  },
+  {
+   "check": "base shell top = deck top z -9.5 (flat, prints on the bed)",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "base shell bottom = wall bottom z -92 (the post ends at -52)",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "fit: core spigot d28 in the plate's d28.4 hole (radial)",
+   "value": 0.2,
+   "ok": true
+  },
+  {
+   "check": "fit: core d45 in the sled's d49 plate hole (radial)",
+   "value": 2.0,
+   "ok": true
+  },
+  {
+   "check": "fit: sled 45 deg cone over the core's chamfered top edge, perpendicular (mm)",
+   "value": 2.404,
+   "ok": true
+  },
+  {
+   "check": "fit: sled cone to the coupling heads at z 11 (radial, mm)",
+   "value": 11.15,
+   "ok": true
+  },
+  {
+   "check": "fit: core screw M3 x 8 csk: 2 in the plate + 6 in the insert, hole 7 (mm spare)",
+   "value": 1.0,
+   "ok": true
+  },
+  {
+   "check": "fit: countersink edge to the plate's centre hole (mm)",
+   "value": 0.7,
+   "ok": true
+  },
+  {
+   "check": "fit: countersink 1.4 deep in the 2 mm plate: cylindrical land left (mm)",
+   "value": 0.6,
+   "ok": true
+  },
+  {
+   "check": "fit: core wall outside the insert holes (mm)",
+   "value": 2.5,
+   "ok": true
+  },
+  {
+   "check": "fit: core wall between the insert holes and the pocket (mm)",
+   "value": 4.8,
+   "ok": true
+  },
+  {
+   "check": "fit: spigot wall round the pocket (mm)",
+   "value": 2.8,
+   "ok": true
+  },
+  {
+   "check": "fit: core material above the insert holes (mm)",
+   "value": 1.0,
+   "ok": true
+  },
+  {
+   "check": "fit: coupling head edge to the core screw hole edge (mm)",
+   "value": 5.55,
+   "ok": true
+  },
+  {
+   "check": "fit: cap plate ring under the core: inner window r 24 to the core edge (mm)",
+   "value": 1.5,
+   "ok": true
+  },
+  {
+   "check": "fit: sled window gable apex below the cradle top (mm)",
+   "value": 4.4,
+   "ok": true
+  },
+  {
+   "check": "fit: end-window width at the pigtail zip tie (z 58) minus the two strands 7.2 (mm)",
+   "value": 2.8,
+   "ok": true
+  },
+  {
+   "check": "fit: floor pad length on the bank's -y edge (mm)",
+   "value": 16.245,
+   "ok": true
+  },
+  {
+   "check": "fit: bracket leg top to the deck underside (mm)",
+   "value": 0.79,
+   "ok": true
+  },
+  {
+   "check": "fit: motor screw heads: pocket radial / ceiling clearance (mm)",
+   "value": 1.0,
+   "ok": true
+  },
+  {
+   "check": "fit: deck floor left above the head pockets (mm)",
+   "value": 1.5,
+   "ok": true
+  },
+  {
+   "check": "fit: boss d12 in the d18 deck hole (radial)",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "fit: coupling hub d9.86 to the deck hole edge (radial)",
+   "value": 4.07,
+   "ok": true
+  },
+  {
+   "check": "fit: coupling flange d21.97 in the d22.4 pocket (radial)",
+   "value": 0.215,
+   "ok": true
+  },
+  {
+   "check": "fit: shaft stub above the flange face (mm)",
+   "value": 3.31,
+   "ok": true
+  },
+  {
+   "check": "fit: open height above the flange face for the stub: hub hole to the bank bottom (mm)",
+   "value": 12.0,
+   "ok": true
+  },
+  {
+   "check": "fit: stub tip to the bank bottom (mm)",
+   "value": 8.69,
+   "ok": true
+  },
+  {
+   "check": "fit: shaft d5.95 in the hub's d7 hole (radial)",
+   "value": 0.525,
+   "ok": true
+  },
+  {
+   "check": "fit: set screw (z -5.73): 1.5 mm key to the cap underside (mm)",
+   "value": 2.98,
+   "ok": true
+  },
+  {
+   "check": "fit: set screw: key to the deck top (mm)",
+   "value": 3.02,
+   "ok": true
+  },
+  {
+   "check": "fit: set screw above the boss face, on the D flat (mm)",
+   "value": 4.13,
+   "ok": true
+  },
+  {
+   "check": "fit: hub floor above the flange (mm)",
+   "value": 6.0,
+   "ok": true
+  },
+  {
+   "check": "fit: M3 x 8 coupling screw reach beyond the floor vs the 1.98 flange (mm proud)",
+   "value": 0.02,
+   "ok": true
+  },
+  {
+   "check": "fit: bracket post insert hole 7 vs the M3 x 8 reach 6.54 (mm spare)",
+   "value": 0.46,
+   "ok": true
+  },
+  {
+   "check": "fit: post wall beside the insert holes: y / below the lower hole (mm)",
+   "value": 3.61,
+   "ok": true
+  },
+  {
+   "check": "fit: bracket vertical leg end above the post bottom... leg end z -54.29 vs post bottom -52 (mm)",
+   "value": -2.29,
+   "ok": true
+  },
+  {
+   "check": "fit: post screw heads (inside the L) to the gearbox OD (mm)",
+   "value": 4.19,
+   "ok": true
+  },
+  {
+   "check": "fit: gearbox d36.7 under the 40 mm leg (mm each side)",
+   "value": 1.65,
+   "ok": true
+  },
+  {
+   "check": "fit: boss d12 in the 12.92 bracket slot (radial)",
+   "value": 0.46,
+   "ok": true
+  },
+  {
+   "check": "fit: sled boss insert hole 7 vs the M3 x 8 reach 5.6 (mm spare)",
+   "value": 1.4,
+   "ok": true
+  },
+  {
+   "check": "fit: plate boss insert hole 7 vs the M3 x 8 reach 5.0 (mm spare)",
+   "value": 2.0,
+   "ok": true
+  },
+  {
+   "check": "fit: PWM board end to the flat's inner corner x 42.9 (mm)",
+   "value": 4.83,
+   "ok": true
+  },
+  {
+   "check": "fit: PWM board top edge to the deck underside (mm)",
+   "value": 12.5,
+   "ok": true
+  },
+  {
+   "check": "fit: PWM board bottom edge to the plate top (mm)",
+   "value": 20.0,
+   "ok": true
+  },
+  {
+   "check": "fit: PWM standoff d7 inside the board outline at the 4.86 end (mm)",
+   "value": 1.36,
+   "ok": true
+  },
+  {
+   "check": "fit: under-board clearance: 10 mm standoff minus 3 mm pin tips (mm)",
+   "value": 7.0,
+   "ok": true
+  },
+  {
+   "check": "fit: PWM standoff insert hole 8 vs the M3 x 8 reach 6.4 (mm spare)",
+   "value": 1.6,
+   "ok": true
+  },
+  {
+   "check": "fit: M3 in the board's d3.0 holes (radial; tight M3 - ream to 3.2 if needed)",
+   "value": 0.0,
+   "ok": true
+  },
+  {
+   "check": "fit: pot: front wall under the knob (mm) <= 4",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "fit: pot bushing d7 in the d7.5 hole (radial)",
+   "value": 0.25,
+   "ok": true
+  },
+  {
+   "check": "fit: pot body d16.3 behind the flat: to the plate top / to the post (mm)",
+   "value": 33.85,
+   "ok": true
+  },
+  {
+   "check": "fit: lead notch 8 x 6 vs the 2 x d1.7 pair (mm spare in width)",
+   "value": 4.6,
+   "ok": true
+  },
+  {
+   "check": "fit: pair (z -88, top -87.15) under the plate staple bar (z -84.5): mm spare",
+   "value": 2.65,
+   "ok": true
+  },
+  {
+   "check": "fit: staple bar bridge between the posts (mm, printed flat)",
+   "value": 8.0,
+   "ok": true
+  },
+  {
+   "check": "fit: pair (2 x d1.7 at x +-1.2) between the staple posts (mm each side)",
+   "value": 1.95,
+   "ok": true
+  },
+  {
+   "check": "fit: bank in the cradle (per side)",
+   "value": 0.4,
+   "ok": true
+  },
+  {
+   "check": "fit: bank top to the top cap underside (mm)",
+   "value": 130.3,
+   "ok": true
+  },
+  {
+   "check": "fit: USB-A plug metal 12 x 4.5 in the 12.6 x 4.8 opening (per side)",
+   "value": 0.15,
+   "ok": true
+  },
+  {
+   "check": "fit: USB-A opening edge to the bank side (mm)",
+   "value": 10.6,
+   "ok": true
+  },
+  {
+   "check": "fit: tube ID to cap lip OD (radial)",
+   "value": 0.2,
+   "ok": true
+  },
+  {
+   "check": "fit: LED top to skirt ID (radial)",
+   "value": 1.14,
+   "ok": true
+  },
+  {
+   "check": "fit: strip in rail slot (per side)",
+   "value": 0.3,
+   "ok": true
+  },
+  {
+   "check": "fit: carrier PCB in guide slot (per side)",
+   "value": 0.3,
+   "ok": true
+  },
+  {
+   "check": "fit: ribbon (4 x 1.27) + 26 AWG feed pair in the 10 mm slot width (mm spare)",
+   "value": 4.92,
+   "ok": true
+  },
+  {
+   "check": "fit: ribbon row + feed row in the 5 mm slot height (mm spare)",
+   "value": 1.9,
+   "ok": true
+  },
+  {
+   "check": "fit: 6-wire start lead in the 10 x 5 slot: width spare / height spare",
+   "value": 1.4,
+   "ok": true
+  },
+  {
+   "check": "fit: end-pad span 9.0 (assumed, outer edge to outer edge) in the 10 mm slot: mm spare per side",
+   "value": 0.5,
+   "ok": true
+  },
+  {
+   "check": "fit: pad zone cut + 0.5..3.0 (assumed) over the slot (from cut + 1.0): solderable pad inside the slot footprint (mm)",
+   "value": 2.0,
+   "ok": true
+  },
+  {
+   "check": "fit: pad-end wire offsets +-3.75 inside the slot's half width minus the ribbon radius (mm spare)",
+   "value": 0.75,
+   "ok": true
+  },
+  {
+   "check": "fit: wall left between the slot edge and the rail root (mm)",
+   "value": 1.3,
+   "ok": true
+  },
+  {
+   "check": "fit: slot bridge span in the upright tube print (mm) <= 12",
+   "value": 10.0,
+   "ok": true
+  },
+  {
+   "check": "fit: end-ring perforation per z band: 8 slots x 10 of the 503 mm circumference (%) <= 25",
+   "value": 15.915,
+   "ok": true
+  },
+  {
+   "check": "fit: set-A bottom ribbon (lowest wire edge) above the 3 mm cap lip (mm)",
+   "value": 1.273,
+   "ok": true
+  },
+  {
+   "check": "fit: jumper slack: ribbon that can be pulled out of the second slot = 2 x 10 + pi x 2.3 (mm)",
+   "value": 27.226,
+   "ok": true
+  },
+  {
+   "check": "fit: jumper fold radius 2.3 vs the ribbon's 2 x OD bend limit (mm spare)",
+   "value": 0.3,
+   "ok": true
+  },
+  {
+   "check": "fit: loop (10 + fold 4.6) up the wall from a set-C bottom slot (z 17.4) to the mid ring at z 121.5 (mm spare)",
+   "value": 87.011,
+   "ok": true
+  },
+  {
+   "check": "fit: under-plate channel height (z 0..6) minus the tallest lane stack (start bundle 2 rows)",
+   "value": 2.25,
+   "ok": true
+  },
+  {
+   "check": "fit: crossing runs at z 4.7 (top 5.45) under the sled plate (z 6.0)",
+   "value": 0.55,
+   "ok": true
+  },
+  {
+   "check": "fit: outer lane r 37.6 + 0.75 to the sled boss r 40.5",
+   "value": 2.15,
+   "ok": true
+  },
+  {
+   "check": "fit: inner lane r 25.6 - 0.75 to the hub r 20",
+   "value": 4.85,
+   "ok": true
+  },
+  {
+   "check": "fit: 6 feed pairs + 6-wire bundle across the 17 mm slot (mm spare)",
+   "value": 0.2,
+   "ok": true
+  },
+  {
+   "check": "fit: sled slot web to the sled screw hole",
+   "value": 2.87,
+   "ok": true
+  },
+  {
+   "check": "fit: DevKit antenna end (z 28.0) above the bottom-row terminal bodies (z 26.2)",
+   "value": 1.8,
+   "ok": true
+  },
+  {
+   "check": "fit: DevKit PCB underside above the carrier (male header spacer, mm)",
+   "value": 2.54,
+   "ok": true
+  },
+  {
+   "check": "retention: top cap <-> tube <-> bottom cap: rod beyond the bottom nylon ring (mm) >= 1",
+   "value": 1.1999999999999997,
+   "ok": true
+  },
+  {
+   "check": "retention: : rod beyond the top nylon ring (mm) >= 1",
+   "value": 1.0999999999999943,
+   "ok": true
+  },
+  {
+   "check": "retention: : floor above the bottom nut (mm) >= 1.5",
+   "value": 2.2,
+   "ok": true
+  },
+  {
+   "check": "retention: : floor under the top nut (mm) >= 1.5",
+   "value": 2.0,
+   "ok": true
+  },
+  {
+   "check": "retention: : nut bearing stress at 150 N/rod (MPa) <= 25",
+   "value": 9.605959179810013,
+   "ok": true
+  },
+  {
+   "check": "retention: : tube end compression at 4 x 150 N (MPa) <= 13",
+   "value": 0.7535745411548115,
+   "ok": true
+  },
+  {
+   "check": "retention: tube <-> caps (radial): lip engagement (mm) >= 2",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "retention: hub core <-> coupling: thread engagement (mm) = flange thickness >= 1.5",
+   "value": 1.98,
+   "ok": true
+  },
+  {
+   "check": "retention: hub core <-> cap plate: screw in insert (mm) >= 4",
+   "value": 6.0,
+   "ok": true
+  },
+  {
+   "check": "retention: : countersink bearing stress on the PETG plate at 300 N per screw (MPa) <= 20",
+   "value": 14.21026277606208,
+   "ok": true
+  },
+  {
+   "check": "retention: : friction torque capacity of the joint vs the 0.03 N m spin-up torque (ratio) >= 10",
+   "value": 216.00000000000003,
+   "ok": true
+  },
+  {
+   "check": "retention: : seat flatness 0.05 (printed top layer) over d22 -> top-of-tube runout (mm) <= 1",
+   "value": 0.5681818181818182,
+   "ok": true
+  },
+  {
+   "check": "retention: coupling <-> motor shaft: set screw above the boss face (mm) >= 1",
+   "value": 4.130000000000001,
+   "ok": true
+  },
+  {
+   "check": "retention: motor <-> L-bracket: thread engagement (mm) >= 3",
+   "value": 4.04,
+   "ok": true
+  },
+  {
+   "check": "retention: L-bracket <-> post: screw in the insert (mm) >= 4",
+   "value": 6.0,
+   "ok": true
+  },
+  {
+   "check": "retention: post <-> deck: root bending stress from 1.2 kg at 34 mm (MPa) <= 5",
+   "value": 0.5563636363636364,
+   "ok": true
+  },
+  {
+   "check": "retention: sled <-> cap plate: screw in insert (mm) >= 4",
+   "value": 5.6,
+   "ok": true
+  },
+  {
+   "check": "retention: PWM board <-> standoffs: screw in insert (mm) >= 3",
+   "value": 4.0,
+   "ok": true
+  },
+  {
+   "check": "retention: pot <-> front flat: wall under the nut (mm) <= 4",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "retention: 12 V leads <-> base: ties >= 1",
+   "value": 1,
+   "ok": true
+  },
+  {
+   "check": "retention: strips <-> tube: adhesive load at 225 rpm (kPa) <= 5",
+   "value": 0.03192795844343821,
+   "ok": true
+  },
+  {
+   "check": "retention: : end-stop z error budget: print 0.1 + cut-line 0.5 (mm) vs row pitch/4 <= 1.38889",
+   "value": 0.6,
+   "ok": true
+  },
+  {
+   "check": "retention: power bank <-> sled: radial load at the 5.3 mm CG offset (N) <= 5",
+   "value": 0.5855327866028781,
+   "ok": true
+  },
+  {
+   "check": "retention: hall sensor <-> bottom cap: pocket depth (mm) >= 0.4",
+   "value": 0.5,
+   "ok": true
+  },
+  {
+   "check": "retention: bottom plate <-> shell: screw in insert (mm) >= 4",
+   "value": 5.0,
+   "ok": true
+  },
+  {
+   "check": "retention: magnets <-> deck: magnet engaged below the deck face (mm) >= 3",
+   "value": 4.5,
+   "ok": true
+  },
+  {
+   "check": "retention: rotor <-> base: rotor cap to deck gap (mm) >= 5",
+   "value": 7.5,
+   "ok": true
+  },
+  {
+   "check": "retention: carrier board <-> sled: bead length / height (mm) >= 20",
+   "value": 50.0,
+   "ok": true
+  },
+  {
+   "check": "retention: ESP32 <-> carrier: soldered pins >= 30",
+   "value": 30,
+   "ok": true
+  },
+  {
+   "check": "retention: strip jumpers / feeds <-> wall: patches >= 46",
+   "value": 46,
+   "ok": true
+  },
+  {
+   "check": "retention: wire <-> strip pad: wire run along the pad before the slot (mm) >= 1",
+   "value": 1.7,
+   "ok": true
+  },
+  {
+   "check": "retention: jumper second end <-> strip: pull-out length (mm) >= 20",
+   "value": 27.225663103256522,
+   "ok": true
+  },
+  {
+   "check": "retention: start leads / feeds / hall <-> sled: ties >= 2",
+   "value": 2,
+   "ok": true
+  },
+  {
+   "check": "retention: wires <-> screw terminals: terminals >= 10",
+   "value": 10,
+   "ok": true
+  },
+  {
+   "check": "retention: pigtail <-> cradle: ties >= 1",
+   "value": 1,
+   "ok": true
+  },
+  {
+   "check": "retention: fuse holder <-> bank top: fixings modelled >= 0",
+   "value": 0,
+   "ok": true
+  },
+  {
+   "check": "retention: strips <-> rails: dabs >= 48",
+   "value": 48,
+   "ok": true
+  },
+  {
+   "check": "retention: hall legs <-> cap: leg top below the sled plate (mm) >= 1",
+   "value": 2.6,
+   "ok": true
+  },
+  {
+   "check": "bend: feed 26 AWG interior min r >= 3.0",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "bend: hall 28 AWG interior min r >= 2.4",
+   "value": 2.4,
+   "ok": true
+  },
+  {
+   "check": "bend: jumper 28r AWG interior min r >= 2.0",
+   "value": 2.0,
+   "ok": true
+  },
+  {
+   "check": "bend: motor 22 AWG interior min r >= 3.4",
+   "value": 6.8,
+   "ok": true
+  },
+  {
+   "check": "bend: pigtail 22 AWG interior min r >= 3.4",
+   "value": 999.0,
+   "ok": true
+  },
+  {
+   "check": "bend: pigtail 22c AWG interior min r >= 5.0",
+   "value": 7.2,
+   "ok": true
+  },
+  {
+   "check": "bend: pot cable AWG interior min r >= 6.0",
+   "value": 12.0,
+   "ok": true
+  },
+  {
+   "check": "bend: start 26 AWG interior min r >= 3.0",
+   "value": 3.0,
+   "ok": true
+  },
+  {
+   "check": "bend: start 28 AWG interior min r >= 2.4",
+   "value": 2.4,
+   "ok": true
+  },
+  {
+   "check": "bend: supply 22 AWG interior min r >= 3.4",
+   "value": 999.0,
+   "ok": true
+  },
+  {
+   "check": "rotor unbalance U (g mm) <= G6.3 target at 225 rpm 247",
+   "value": 55.2,
+   "ok": true
+  },
+  {
+   "check": "rotor inertia (kg m^2 x1e3) <= 4.0",
+   "value": 3.374,
+   "ok": true
+  },
+  {
+   "check": "jumper ribbon cut length (mm) <= 80",
+   "value": 80,
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+* text=auto
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.sh text eol=lf
+*.stl binary
+*.3mf binary
+*.step binary
+*.pova binary
+*.bin binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary

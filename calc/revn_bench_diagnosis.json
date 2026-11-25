@@ -1,0 +1,328 @@
+{
+ "bench": [
+  {
+   "time": "11:44",
+   "setup": "hub journal loose in the 6802",
+   "supply": "12 V via PWM",
+   "current_A": null,
+   "rotor_rpm": null,
+   "note": "hub wobbles, noisy, belt skips; hub CA'd into the 6802 -> much better"
+  },
+  {
+   "time": "12:00",
+   "setup": "tight ring (100.80), bare rotor",
+   "supply": "12 V via PWM, full knob",
+   "current_A": 0.735,
+   "rotor_rpm": null,
+   "note": "no board on the rotor, so no rpm"
+  },
+  {
+   "time": "12:23",
+   "setup": "tight ring + board + battery, 2 magnets",
+   "supply": "12 V via PWM, full knob",
+   "current_A": null,
+   "rotor_rpm": 73,
+   "note": "1.2 pulses/s: hall missing ~3 of 4 passes"
+  },
+  {
+   "time": "12:24",
+   "setup": "tight ring + board + battery",
+   "supply": "12 V via PWM, full knob",
+   "current_A": 0.789,
+   "rotor_rpm": null,
+   "note": "Brian: 'it feels slow'"
+  },
+  {
+   "time": "12:29",
+   "setup": "tight ring + board + battery, 3 magnets",
+   "supply": "12 V via PWM, full knob",
+   "current_A": 0.789,
+   "rotor_rpm": 102,
+   "note": "100.9-103.1 rpm, valid flickers at the 100 rpm gate, 7 rejected, 27 resyncs"
+  },
+  {
+   "time": "12:33",
+   "setup": "same, PWM bypassed",
+   "supply": "13.5 V direct",
+   "current_A": null,
+   "rotor_rpm": 114,
+   "note": "111.3-116.5 rpm (+11 %), one false 2164 rpm, rejected 16->19, resyncs 54->63"
+  },
+  {
+   "time": "12:38",
+   "setup": "base alone (rotor off)",
+   "supply": "12 V direct",
+   "current_A": 0.122,
+   "rotor_rpm": null,
+   "note": "cup screws as fitted"
+  },
+  {
+   "time": "12:39",
+   "setup": "base alone, cup screws loosened",
+   "supply": "12 V direct",
+   "current_A": 0.11,
+   "rotor_rpm": null,
+   "note": ""
+  },
+  {
+   "time": "12:40",
+   "setup": "base alone, cup screws looser",
+   "supply": "12 V direct",
+   "current_A": 0.08,
+   "rotor_rpm": null,
+   "note": "rotor on with screws this loose: belt skips"
+  },
+  {
+   "time": "12:44",
+   "setup": "base alone, cup screws snug",
+   "supply": "12 V direct",
+   "current_A": 0.104,
+   "rotor_rpm": null,
+   "note": ""
+  },
+  {
+   "time": "13:27",
+   "setup": "tight ring, rotor on, belt skipping",
+   "supply": "12 V direct",
+   "current_A": 0.6,
+   "rotor_rpm": 0,
+   "note": "rotor stalled (no new hall pulses), belt jumping teeth"
+  },
+  {
+   "time": "13:34",
+   "setup": "tight ring, belt off, by hand",
+   "supply": "-",
+   "current_A": null,
+   "rotor_rpm": null,
+   "note": "even drag all round, no catch point, does not coast"
+  },
+  {
+   "time": "14:28",
+   "setup": "6820 taken off",
+   "supply": "12 V direct",
+   "current_A": null,
+   "rotor_rpm": null,
+   "note": "'all the load went away, it spun really fast'"
+  },
+  {
+   "time": "14:35",
+   "setup": "old loose ring (99.43), bare rotor",
+   "supply": "12 V direct",
+   "current_A": 0.327,
+   "rotor_rpm": null,
+   "note": "board not fitted, so no rpm"
+  },
+  {
+   "time": "14:54",
+   "setup": "old loose ring + board + battery, 3 magnets",
+   "supply": "12 V direct",
+   "current_A": 0.66,
+   "rotor_rpm": 117,
+   "note": "117.5-119.6 rpm valid, 0 rejected; then 114.8-117.0, 2 rejected; popping / odd sounds"
+  }
+ ],
+ "motor_models": [
+  {
+   "name": "M0 design (listing: 600 rpm, 1.65 A stall)",
+   "n0": 600.0,
+   "istall": 1.65,
+   "i0": 0.1,
+   "I_for_188_12V": 0.6786666666666665,
+   "I_for_188_15V": 1.0661666666666665,
+   "I_for_188_16V": 1.1953333333333334,
+   "I_for_225_12V": 0.48749999999999993
+  },
+  {
+   "name": "M1 tonight's two points only",
+   "n0": 364.2325581395349,
+   "istall": 1.6662000000000001,
+   "i0": 0.1,
+   "I_for_188_12V": 0.04940000000000003,
+   "I_for_188_15V": 0.44094999999999995,
+   "I_for_188_16V": 0.5714666666666666,
+   "I_for_225_12V": -0.26880000000000004
+  },
+  {
+   "name": "M2 best fit, tonight + 11-14 (520 rpm, 1.2 A stall)",
+   "n0": 520.0,
+   "istall": 1.2,
+   "i0": 0.1,
+   "I_for_188_12V": 0.4046153846153846,
+   "I_for_188_15V": 0.6796153846153845,
+   "I_for_188_16V": 0.7712820512820511,
+   "I_for_225_12V": 0.24807692307692306
+  }
+ ],
+ "drag_cases": [
+  {
+   "case": "old loose ring, bare rotor",
+   "current_A": 0.327,
+   "extra_A": 0.22300000000000003,
+   "drag_mNm": [
+    49.41069382432461,
+    81.44525251979579,
+    55.63300824512976
+   ]
+  },
+  {
+   "case": "old loose ring + board + battery",
+   "current_A": 0.66,
+   "extra_A": 0.556,
+   "drag_mNm": [
+    123.19437563374207,
+    203.06529327805586,
+    138.70830755287955
+   ]
+  },
+  {
+   "case": "tight ring, bare rotor",
+   "current_A": 0.735,
+   "extra_A": 0.631,
+   "drag_mNm": [
+    139.81232198721446,
+    230.45719434973606,
+    157.4189605501205
+   ]
+  },
+  {
+   "case": "tight ring + board + battery",
+   "current_A": 0.789,
+   "extra_A": 0.685,
+   "drag_mNm": [
+    151.7772433617146,
+    250.17936312134577,
+    170.89063070813398
+   ]
+  },
+  {
+   "case": "belt-skip stall",
+   "current_A": 0.6,
+   "extra_A": 0.496,
+   "drag_mNm": [
+    109.90001855096415,
+    181.1517724207117,
+    123.73978515508679
+   ]
+  }
+ ],
+ "belt_skip_hub_mNm": [
+  109.90001855096415,
+  181.1517724207117,
+  123.73978515508679
+ ],
+ "brg6820_mNm": {
+  "100": [
+   24.704464923360497,
+   31.508679838104424,
+   36.08030178651766,
+   40.18694224789226
+  ],
+  "150": [
+   31.508679838104424,
+   40.18694224789226,
+   46.01770088849711,
+   51.25541074819549
+  ],
+  "250": [
+   42.80943116133632,
+   54.600197361021536,
+   62.52218780701532,
+   69.63842945325051
+  ]
+ },
+ "ring_ovalise_um_per_N": 3.0277087476679236,
+ "ring_force_to_eat_clearance_N": [
+  3.963393113436996,
+  11.890179340310986
+ ],
+ "spigot_free_um_per_N": 209.60106822157437,
+ "rotor_ring_inplane_um_per_N": 0.43038134391435007,
+ "as_built": {
+  "drop": 3.2,
+  "z": {
+   "crown": -6.300000000000001,
+   "notch_floor": -14.0,
+   "belt": -11.3,
+   "brg_bot": -22.9,
+   "brg_top": -17.9,
+   "cup_bot": -23.5,
+   "neck": [
+    -19.0,
+    -20.2
+   ],
+   "journal_end": -21.5
+  },
+  "pins": {
+   "16": {
+    "tip": -8.0,
+    "engagement": 1.6999999999999993,
+    "below_chamfer": 0.8999999999999992,
+    "floor_clear": 6.0
+   },
+   "18": {
+    "tip": -10.0,
+    "engagement": 3.6999999999999993,
+    "below_chamfer": 2.8999999999999995,
+    "floor_clear": 4.0
+   },
+   "20": {
+    "tip": -12.0,
+    "engagement": 5.699999999999999,
+    "below_chamfer": 4.8999999999999995,
+    "floor_clear": 2.0
+   }
+  },
+  "cup_screws": {
+   "5": {
+    "tip": -26.0,
+    "thread_in_insert": 2.5,
+    "above_hanger": 1.5
+   },
+   "6": {
+    "tip": -27.0,
+    "thread_in_insert": 3.5,
+    "above_hanger": 0.5
+   },
+   "8": {
+    "tip": -29.0,
+    "thread_in_insert": 4.0,
+    "above_hanger": -1.5
+   }
+  }
+ },
+ "hall_G": {
+  "1": {
+   "2": 1816.7563769238895,
+   "3": 1123.9224588802097,
+   "4": 714.8701801083465,
+   "5": 473.0175111390027,
+   "6": 325.5366423035875,
+   "7": 232.08753121856108,
+   "8": 170.60786201212585,
+   "9": 128.75521256890931,
+   "10": 99.38946284081119
+  },
+  "2": {
+   "2": 2289.773888062892,
+   "3": 1449.459101183797,
+   "4": 946.9577113269075,
+   "5": 643.6253731511285,
+   "6": 454.29185487249674,
+   "7": 331.47699405937226,
+   "8": 248.83941905018924,
+   "9": 191.38426584243805,
+   "10": 150.27541027902336
+  },
+  "3": {
+   "2": 2460.381750075018,
+   "3": 1578.2143137527064,
+   "4": 1046.3471741677188,
+   "5": 721.856930189192,
+   "6": 516.9209081460256,
+   "7": 382.3629414975844,
+   "8": 290.72628749335405,
+   "9": 226.2637546897799,
+   "10": 179.620080647507
+  }
+ }
+}

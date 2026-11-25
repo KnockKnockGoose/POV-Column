@@ -1,0 +1,74 @@
+
+====================================================================================================
+1. Camera: refresh = strips per row x rev/s; shutter x refresh must be a whole number
+====================================================================================================
+  30p, shutter 1/30: one full refresh per exposure at  225.0 rpm
+  24p, shutter 1/24: one full refresh per exposure at  180.0 rpm
+  30p, shutter 1/15: one full refresh per exposure at  112.5 rpm
+  30p, shutter 1/20: one full refresh per exposure at  150.0 rpm
+  60p, shutter 1/60: one full refresh per exposure at  450.0 rpm
+
+====================================================================================================
+2. Rotor 5 V load (electrical report 3.1; CAP_MA 2000-2600 today)
+====================================================================================================
+  blank                        0.46 A    2.3 W
+  dog animation                0.89 A    4.5 W
+  dense text (capped 2.0 A)    2.12 A   10.6 W
+  design peak (rev m target)   3.00 A   15.0 W
+
+====================================================================================================
+3. Power path options at 5 V / 3 A peak
+====================================================================================================
+  battery: 199 g + 17.6 g pigtail on the rotor; port 2.4 A (< 3 A target); runtime blank 13.0 h, dog animation 6.7 h, dense text (capped 2.0 A) 2.8 h
+           designed offset 1055 g mm (balanced by the carrier side); every 1 mm the cell CG sits off its case centre, or the bank is reseated differently, = 199 g mm
+  slip ring A: 5 V across the ring (buck in the base): I 3.00 A, 1.00 A per ring (rated 2 A), loop drop  189 mV, contact noise <=  60 mV p-p before the bulk caps / buck
+  slip ring B: 12 V across the ring, buck on the rotor: I 1.39 A, 0.46 A per ring (rated 2 A), loop drop   88 mV, contact noise <=  28 mV p-p before the bulk caps / buck
+  speed: 225 rpm = 90 % of the 250 rpm continuous rating; 1e+07 rev = 741 h at 225 rpm
+  wireless 5 V 2 A module: 1.8 A continuous = 9 W out, 12-15 W in; LED cap would drop to 1.34 A (today 2.0-2.6 A); short of the 3 A peak by 1.2 A
+  DIY brushes at r 75: surface 1.77 m/s (carbon brushes are rated 10+ m/s), drag 60 mN m (1.4 W, vs the rotor's 27 mN m of air drag), uplift 4 N vs the 10.8 N gravity preload
+
+====================================================================================================
+4. Balance budget at 225 rpm
+====================================================================================================
+  rev k (bank on)        1097 g: G6.3  293 g mm, G2.5  116 g mm
+  rev m (base power)      906 g: G6.3  242 g mm, G2.5   96 g mm
+  force per 1000 g mm: 0.555 N at 225 rpm vs 0.173 N at the 125.7 rpm run (x3.20)
+  one M3 x 8 + nut (0.9 g) in the trim flange (r 88) = 79 g mm; bank shift sensitivity 199 g mm per mm = 68 % of the G6.3 budget per mm
+
+====================================================================================================
+5. Top-edge wobble vs rpm (rigid rotor rocking on its support; undamped single mode + gyroscopic stiffening)
+====================================================================================================
+  rocking mode at rest: rev j 7.5 Hz, rev k 39.2 Hz, rev m 41.1 Hz (I_t 0.0183 vs 0.0201 kg m2, CG 83.7 vs 83.2 mm)
+  synchronous critical: rev j 493 rpm, rev k 2631 rpm, rev m 2784 rpm
+  rev j: twice the spin hits the 7.49 Hz mode at 225 rpm; 2x amplification 125.7 rpm x1.5, 180 rpm x2.8, 200 rpm x4.8, 225 rpm x537.2
+  rpm   | rev j elastic U1000/U2000 (mm) | rev k U1000/U2000 | rev m U1000/U2000   (+ rev j play 0.5-1.8 mm radius)
+  100.0 |  0.080 /  0.159            | 0.0023 / 0.0047 | 0.0023 / 0.0047
+  125.7 |  0.129 /  0.258            | 0.0037 / 0.0074 | 0.0037 / 0.0074
+  150.0 |  0.189 /  0.378            | 0.0053 / 0.0105 | 0.0053 / 0.0106
+  180.0 |  0.285 /  0.570            | 0.0076 / 0.0152 | 0.0076 / 0.0153
+  200.0 |  0.365 /  0.730            | 0.0094 / 0.0188 | 0.0094 / 0.0188
+  225.0 |  0.487 /  0.974            | 0.0119 / 0.0238 | 0.0119 / 0.0239
+  250.0 |  0.641 /  1.282            | 0.0147 / 0.0294 | 0.0148 / 0.0295
+
+====================================================================================================
+6. Motor (JGB37-520, 12 V, 600 rpm no-load; ratio 1:10 ASSUMED from listings)
+====================================================================================================
+  direct (rev k Oldham)      gearbox output  225 rpm, torque 28.9 mN m ( 13 % of the ~221 mN m est. stall), PWM duty ~ 43 %, armature  37.5 Hz, shaft power 0.68 W
+  GT2 belt 20T:40T (rev m)   gearbox output  450 rpm, torque 15.2 mN m (  7 % of the ~221 mN m est. stall), PWM duty ~ 81 %, armature  75.0 Hz, shaft power 0.68 W
+  rated torque in listings: 0.15-1.1 kg cm = 15-108 mN m; estimated stall at the output 221 mN m (Kt 19.1 mN m/A)
+  spin-up 0 -> 225 rpm on I_zz 0.0039 kg m2 at 60 mN m net: 1.5 s; stored energy 1.09 J
+  WATCH: direct drive puts the armature at 37.5 Hz, 4 % from rev k's 39.2 Hz rocking mode; the 2:1 belt moves it to 75 Hz
+
+====================================================================================================
+7. GT2 belt, 20T motor : 40T rotor, 6 mm wide
+====================================================================================================
+  closed loop 110 mm (55 T): centre distance  24.2 mm; motor pulley edge (flange r 8) at r 32.2
+  closed loop 112 mm (56 T): centre distance  25.2 mm; motor pulley edge (flange r 8) at r 33.2
+  closed loop 122 mm (61 T): centre distance  30.3 mm; motor pulley edge (flange r 8) at r 38.3
+  closed loop 158 mm (79 T): centre distance  48.6 mm; motor pulley edge (flange r 8) at r 56.6
+  effective pull 2.27 N at 29 mN m; static 4 N per strand -> 8 N on the rotor, at z -17.0 vs bearing centre -14.5: 20 mN m constant (non-rotating) moment vs 300 mN m to unload the bearing
+  tooth-mesh frequency at the rotor: 150 Hz (far above the ~40 Hz rocking mode)
+
+  figure -> <projects>/POV-LED-Column\docs\img\rev_m_wobble_vs_rpm.png
+
+  -> calc/rev_m_calc.json

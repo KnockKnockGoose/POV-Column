@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and local config: never commit these
+.env
+secrets.h
+wifi_secrets.h
+software/firmware/platformio_local.ini
+software/pipeline/pov_config.json
+token*.json
+client_secret*.json
+*_token
+
+# Firmware build output. Images built with your wifi_secrets.h contain your Wi-Fi name and password.
+.pio/
+build/
+software/firmware/dist/
+*.bin
+
+# Generated animations and renders (yours; they are not part of the repository)
+software/out/
+software/content/
+software/pipeline/log.jsonl
+*.pova
+
+# Runtime, logs, caches
+logs/
+*.log
+*_state.json
+*.tmp
+
+# Sliced G-code (printer-specific; published as a release asset) and big media
+*.gcode
+*.gcode.3mf
+*.3mf.bak
+cad/*.step
+*.mp4
+*.mov
+*.wav

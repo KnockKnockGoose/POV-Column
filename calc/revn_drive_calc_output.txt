@@ -1,0 +1,85 @@
+
+== A1 rev m.2 spool: the section that broke (plane of the insert-hole bottoms, z -3.0 .. -3.08)
+   plug diameter / flange diameter at the step                       22.2 / 28 mm       sharp inside corner, no fillet, on a layer line
+   insert holes                                                     4 x d4.0 x 5 mm       bottoms at z -3.0: 0.08 mm above the step
+   wall outside each insert hole                                           1.1 mm       own rule since rev f: >= 2.5 mm
+   ligament, hole bottom to the bore's 45 deg cone                        1.48 mm       
+   net area at the plane                                                   287 mm2      gross 337 - 4 holes 50
+   polar second moment (net)                                          1.88e+04 mm4      
+
+== A2 service loads on that section: none of them can break it
+   torsion, running (29 mN m)                                           0.0172 MPa      strength between layers >= 8 MPa in shear (PET-CF, with the 0.5 knock-down)
+   torsion, motor stall through 2:1 (0.44 N m)                            0.26 MPa      safety factor 31
+   bending from the belt (8 N at 5 mm)                                  0.0475 MPa      safety factor 294
+
+== A3 assembly loads: the inserts and their screws
+   plastic displaced by one insert (d4.2 knurl in a d3.75 printed hole, 4 mm)       11.2 mm3      
+   relief volume under the insert (1 mm of d3.75 hole)                      11 mm3      = 102 % full: no real clearance under the screw tip
+   M3 x 10 reach below the pocket ceiling (10 - 6 mm core floor)             4 mm       = insert length exactly: 0 mm margin once the relief is full
+   M3 axial force at 0.1 / 0.3 / 0.5 N m (K 0.2)                    167 / 500 / 833 N        a hex key reaches 0.5 N m easily
+   tension across the layers if ONE screw bottoms at 0.3 N m              6.97 MPa      on its quarter of the section (72 mm2)
+   ... times Kt 2.5 at the hole-bottom / step corner                      17.4 MPa      vs 14 MPa (PET-CF between layers, x 0.5) -> cracks
+   all four bottoming at 0.3 N m: mean tension                            6.97 MPa      x Kt = 17 MPa
+   all four at 0.5 N m: mean tension                                      11.6 MPa      x Kt = 29 MPa > 27.9 datasheet strength
+   strain to break between layers (PET-CF)                                 0.8 %        no yielding: a crack at one hole runs round the plane
+   hoop strain locked in round an insert on cooling (d alpha 2.1e-5 x 200 K)       0.42 %        in a 1.1 mm wall heated through
+
+== A4 fitting the belt (rev m.2): blind, with no slack
+   belt pitch length at C 30.33 on 20T / 40T                               122 mm       the 122 mm belt
+   loop needed to pass the spool's d28 flange, hanger slid in 2 mm         124 mm       > 122: the flange has to be forced through the belt, unseen, under a 1.1 kg rotor
+
+== B1 rev n torque path: steel pins, in-plane plastic
+   force on ONE pin, running / stall (r 8)                            3.6 / 55 N        4 pins fitted; one is assumed to carry everything
+   pin on the notch wall (d3 x 4.1 mm), running / stall             0.29 / 4.5 MPa      PETG-CF bearing ~ 50 MPa: factor 11 at stall
+   pin bending at the nut face, stall (M3 root d2.39)                      172 MPa      A2-70 screw: 450 MPa yield -> factor 2.6
+   pin shear, stall                                                       12.3 MPa      
+   pin on the hub core's d3.4 hole (6 mm PET-CF floor), stall             3.06 MPa      plus the clamp friction of the nut
+   land between two notches: in-plane shear, stall                        1.67 MPa      within one layer (strong direction, ~32 MPa): factor 19
+   layers that must pass torque to the next layer                            0          teeth z -11.6..-4.6 and notches z -10.8..-3.1 overlap: the same layers
+
+== B2 fastener preload: compression only
+   nut bearing area on the plate (5.5 AF hex - d3.4 hole)                 17.1 mm2      
+   pressure under a nut at 0.3 N m (500 N)                                29.2 MPa      PET-CF creep limit ~ 40 MPa; 1.4 mm of plate + 6 mm of core in compression
+   threaded blind holes / heat-set inserts in the new parts                  0          nothing a screw can bottom in or jack apart
+
+== B3 hub journal (carries no torque): belt and handling
+   belt overhang from the bearing mid-plane                                9.1 mm       single 6802; moment 73 N mm
+   bending stress in the journal from the belt                           0.257 MPa      
+   a 50 N sideways knock on the crown (lever 14 mm, Kt 2)                 4.95 MPa      vs ~15 MPa between layers (PETG-CF, x 0.5): factor 3
+
+== B4 hub bearing 6802-2RS (15 x 24 x 5)
+   radial load (belt)                                                        8 N        static rating C0r ~ 2260 N: factor 282
+   axial load if the rotor is pushed down with the pins on the crown        100 N        <= 0.5 C0r = 1130 N; all in compression down to the deck
+   L10 life at 8 N, 225 rpm                                           9.26e+09 h        not a limit; the seals' grease is
+   friction torque (mu 0.0015 x 8 N x 9.75 mm + seals ~ 1 mN m)           1.12 mN m     vs 29 mN m rotor load
+   stand-in printed bush: mu 0.2 x 8 N x 7.55 mm                          12.1 mN m     +42 % motor torque; PV 0.019 MPa m/s (limit ~0.05 dry)
+
+== B5 drop-in pin drive with the two axes not quite coaxial
+   axes offset 0.2 mm: relative angle +- 1.4 deg, torque ripple at the pins       5.03 mN m     < 29 mN m drag: the driving pin never lifts off; rotor speed ripple +- 0.13 deg
+   axes offset 0.5 mm: relative angle +- 3.6 deg, torque ripple at the pins       12.6 mN m     < 29 mN m drag: the driving pin never lifts off; rotor speed ripple +- 0.33 deg
+   notch play: each side / outer end                                       0.5 mm       covers 0.5 mm of offset; backlash +- 3.6 deg (irrelevant: the hall sensor reads the rotor)
+
+== B6 fitting the belt (rev n): from above, in view
+   loop needed to slide down the hub's lead-in cone (no top flange), hanger slid in 2 mm        119 mm       <= 122: drops on
+   centre distance at which it just slides on                             29.8 mm       hanger travel is 28.33 .. 32.33
+
+== B7 lead take-up: the slip ring hangs under the deck on its rotor leads and is the counterweight
+   why not clamp it (rev m.2 position): slack to hide when the rotor comes down       50.5 mm       the lift needed to get a hand under the rotor; there is 3.8 mm between the boss and the hub's neck to put it in
+   a 30 AWG PTFE lead bends by its stiffness, not its weight, below        101 mm       so 50 mm of slack makes a loop up to 25 mm wide; the motor pulley's flange is 22.3 mm from the axis
+   hanging ring: weight on the leads (10 g ASSUMED) / with 3 x M3 x 10 + 2 nuts in the flange 0.098 / 0.145 N        the leads are always in tension: a lead in tension cannot loop
+   travel between stop B and knot A                                         45 mm       rotor lifts 50.5 mm with the plug in; 40 mm of room under the spigot for a hand
+   ring at rest: flange top / body end / above the cavity floor     -77.5 / -93.7 / 12.3 mm       room for the stator leads to turn
+   ring at full lift: flange top below the deck underside                    5 mm       knot A stops under the neck first; flange to the hanger's edge 2.0 mm
+   rotating lead length below the neck (boss, six leads, knot A)            59 mm       nearest stationary part 4.7 mm (clamp ring opening); keep loose wires 20 mm from the axis
+   pendulum frequency of the hanging ring (68 mm)                          1.9 Hz       = 114 rpm: passed on the way up; at 188 / 225 rpm a 0.5 mm off-centre neck moves the ring 0.29 / 0.17 mm
+   first string frequency of the six taut leads                             41 Hz       far above the 3.75 Hz spin: no whirl
+   wind-up of the 59 mm of leads under 1.0 N mm of drag                  0.652 turn     steady, unwinds at stop; the stator leads resist the same torque
+   torque at which the taut bundle would kink (2 sqrt(EI T))              4.06 N mm     factor 4.1 over the drag; 4.9 N mm with the extra weight
+
+== C assembly steps (drive + slip-ring interface only; shell inserts, collar, bearing and the rest are the same in both)
+   rev m.2: steps / blind steps / heat-set + glue steps             11 / 3 / 2          + 4 steps repeated with tools whenever the rotor comes off
+   rev n: steps / blind steps / heat-set + glue steps                9 / 0 / 0          the last one is the only one repeated: no tools
+   printed parts in the torque path: rev m.2 / rev n                1 (spool, across its layers) / 1 (hub, within its layers)          
+   heat-set inserts in drive parts: rev m.2 / rev n                      4 / 0          
+
+wrote calc/revn_drive_calc.json

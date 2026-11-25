@@ -1,0 +1,128 @@
+
+====================================================================================================
+A. As-built drive stack (clamp ring out: cartridge, 20T and belt 3.2 mm lower) and screw lengths
+====================================================================================================
+  drive pin M3 x 16: tip z  -8.0,  1.7 in the notch,  0.9 below the chamfer,  6.0 above the floor
+  drive pin M3 x 18: tip z -10.0,  3.7 in the notch,  2.9 below the chamfer,  4.0 above the floor
+  drive pin M3 x 20: tip z -12.0,  5.7 in the notch,  4.9 below the chamfer,  2.0 above the floor
+  -> M3 x 20 as built (rule: >= 3.5 below the chamfer, >= 1.0 off the floor).
+  cup v2 screw at 300 deg: M3 x 6, tip z -27.0: 3.5 in the deck insert, 0.5 above the hanger
+  cup v2 screw at  60 deg: M3 x 10, tip z -31.0: 4.0 in the deck insert, 3.5 into the bracket arm (self-tapped)
+  cup v2 screw at 180 deg: M3 x 10, tip z -31.0: 4.0 in the deck insert, 3.5 into the bracket arm (self-tapped)
+
+====================================================================================================
+B. Bearing cup v2: plain bore, stiff disc, counterbored screws
+====================================================================================================
+  bore drawn d24.20; expected print 24.02..24.10 -> diametral clearance on the 24.000/23.991 ring 0.020..0.109
+  target 'thumb push, no rock, then 3 dots of CA': 0.02-0.08. The coupon plate brackets it (d24.05..24.35 in 0.05 steps); cup variants for every coupon.
+  plate bending stiffness vs the rev n cup's 2 mm lobes: (5.1 / 2.0)^3 = 16.6x; no crush ribs, so no interference for the clamp to add to
+  M3 SHCS head on the d3.8 hole: 12.4 mm2; at 0.15 N m -> preload 250 N -> 20 MPa on PETG-CF (yield ~50): snug, OK
+  M3 SHCS head on the d3.8 hole: 12.4 mm2; at 0.30 N m -> preload 500 N -> 40 MPa on PETG-CF (yield ~50): too much: creep
+  friction holding the cup at 0.15 N m: 3 x 250 N x 0.3 = 225 N vs the belt's 8-18 N (plus 3 epoxy dots)
+  0.4 mm pads (diagnosis R2) left out: the as-built hub fixes the bearing 0.6 above the deck, so pads would leave a 0.2 mm seat ledge, and a 0.4 mm relief on
+  a bed face is an unprintable ceiling (bridge strands 0.4 mm off the bed land on it). The stiff disc + clearance bore remove the reason for them.
+
+====================================================================================================
+C. Driving the slip ring's rotor: a wire pair vs a printed mast
+====================================================================================================
+  Two wires twisted between fixed ends: each becomes a helix; torque ~ EA r alpha^3 (alpha = helix angle), strain = alpha^2 / 2.
+  assumed rev m.2/n                      1.0 mN m: alpha  2.7 deg, copper strain 0.11 % (yield ~0.1 %), twist over 6 mm    20 deg
+  Moflon catalog (0.005 N m)             5.0 mN m: alpha  4.6 deg, copper strain 0.32 % (yield ~0.1 %), twist over 6 mm    34 deg
+  A2V CTC012-06S catalog (0.05 N m)     50.0 mN m: alpha  9.9 deg, copper strain 1.48 % (yield ~0.1 %), twist over 6 mm    74 deg
+  Greenhill buckling of a free  6.0 mm pair: M_cr = 2 pi EI / L = 2.1 mN m
+  Greenhill buckling of a free 12.0 mm pair: M_cr = 2 pi EI / L = 1.0 mN m
+  Greenhill buckling of a free 15.0 mm pair: M_cr = 2 pi EI / L = 0.8 mN m
+  -> above ~1 mN m the leads yield or buckle; the catalog drag is 5-50 mN m. A mast keyed in the hub's neck carries the torque; the leads ride inside it.
+  Offset: wires bent by an axis offset e over L see rotating bending each turn: strand strain ~ 0.04 mm / (L^2 / 6e).
+     e 0.3 mm over 10 mm: bend radius  55.6 mm -> strand strain 0.07 % per turn (copper endurance ~0.06-0.09 %)
+     e 0.6 mm over 10 mm: bend radius  27.8 mm -> strand strain 0.14 % per turn (copper endurance ~0.06-0.09 %)
+  -> the stator floats +-0.4 on its pins so the boss stays on the hub's axis and the leads stay straight.
+
+====================================================================================================
+D. Mast: torque path, side load from the anti-rotation pin, socket
+====================================================================================================
+  assumed rev m.2/n                      1.0 mN m: key torsion  0.1 MPa, key/neck bearing   0.5 MPa (1.2 mm neck), anti-rotation side load 0.11 N -> bending at the neck  0.1 MPa (PETG-CF across layers ~20-30)
+  Moflon catalog (0.005 N m)             5.0 mN m: key torsion  0.5 MPa, key/neck bearing   2.6 MPa (1.2 mm neck), anti-rotation side load 0.56 N -> bending at the neck  0.7 MPa (PETG-CF across layers ~20-30)
+  A2V CTC012-06S catalog (0.05 N m)     50.0 mN m: key torsion  5.1 MPa, key/neck bearing  26.0 MPa (1.2 mm neck), anti-rotation side load 5.56 N -> bending at the neck  7.0 MPa (PETG-CF across layers ~20-30)
+  socket CA'd on the d5 x 1.0 boss: 15.7 mm2 x ~5 MPa (CA on a plastic boss, ASSUMED) -> ~196 N mm = 0.20 N m >> 0.05
+  -> fine at 5 mN m; at the worst catalog 50 mN m the 1.2 mm neck is the weak point (26 MPa bearing): measure the drag first (bench step 0).
+
+====================================================================================================
+E. Pogo pins (Mill-Max 0908-X-15-20-75-14-11-0) and the hub-crown contacts
+====================================================================================================
+  + pin 0908-9 on the slug       A 10.92: free tip z  -8.92, face z  -8.12 -> compression 0.80 of 1.40; with +-0.13 pin length and +-0.3 stack: 0.37..1.23
+  - pins 0908-6 on the washer    A  9.40: free tip z  -7.40, face z  -6.60 -> compression 0.80 of 1.40; with +-0.13 pin length and +-0.3 stack: 0.37..1.23
+  spring: 25 g preload, 60 g at 0.70 -> 0.64 N per pin at 0.80; 3 pins 1.91 N up on the rotor (8.7 N weight) and down on the hub
+  current: rotor max 1.4 A (rev m power report); + pin 1.4 / 2.0 A continuous (3 A peak); - pins 0.7 A each; contact 20 mohm max + ~10 mohm brass
+  drop at 1.4 A: + 42 mV, - 21 mV; slip ring 2 + 2 rings at 2 A each; 30 AWG leads ~20 mm: 3.4 mohm per pole
+  offset 0.00: + pin margin on the slug  1.45 mm; - pins on the washer in the worst direction: 2 of 2
+  offset 0.50: + pin margin on the slug  0.95 mm; - pins on the washer in the worst direction: 2 of 2
+  offset 0.85: + pin margin on the slug  0.60 mm; - pins on the washer in the worst direction: 2 of 2
+  offset 1.00: + pin margin on the slug  0.45 mm; - pins on the washer in the worst direction: 1 of 2
+  short check (Fusion, 1.0 offset, 8 directions): + pin to the - washer >= 0.61; - pins to the + slug >= 1.55 (calc/revo_checks.json)
+
+====================================================================================================
+F. Hall sensor: 3 magnets instead of a riser cap
+====================================================================================================
+  gap mm:         2      3      4      5      6      7      8      9     10
+  2 magnets    2290   1449    947    644    454    331    249    191    150  G
+  3 magnets    2460   1578   1046    722    517    382    291    226    180  G
+  as built (field inference): 2 magnets ~7.5 mm -> 286 G (1 pass in 4); 3 magnets ~4.5 mm -> 865 G (every pass);
+  a +2.5 riser cap with 2 magnets would give 5.0 mm -> 644 G. 3 magnets is the stronger field with no print; the model keeps 3
+  (the 3rd stands 3 mm proud: drawn 2.0 to the sensor, nothing else turning within 3 mm). A3144 operate point 70-350 G.
+
+====================================================================================================
+G. Rotor ring: compliant spigot (8 bow-spring skins)
+====================================================================================================
+  skin 0.6 thick, arc 31.1 mm, fixed-fixed beam with a centre load: k = 3.2 N/mm (7 mm effective height) .. 4.6 (10 mm);
+  with the top edge held as well, ~3-9 N/mm per rib
+  printed tips d99.90: radial preload 0.000 -> 0.00..0.00 N per rib; push-on ~ 0.0 N
+  printed tips d100.00: radial preload 0.015 -> 0.05..0.14 N per rib; push-on ~ 0.3 N
+  printed tips d100.10: radial preload 0.065 -> 0.21..0.60 N per rib; push-on ~ 1.4 N
+  printed tips d100.20: radial preload 0.115 -> 0.37..1.06 N per rib; push-on ~ 2.5 N
+  printed tips d100.30: radial preload 0.165 -> 0.53..1.52 N per rib; push-on ~ 3.6 N
+  printed tips d100.40: radial preload 0.215 -> 0.69..1.98 N per rib; push-on ~ 4.7 N
+  0.4 mm oval = +-0.10 radial -> +-0.3..0.9 N between the long and short axes; the 6820's clearance goes at 4-12 N across the ring
+  skin stress at 0.25 radial and the stiff end of the range: 2.3 N -> 21 MPa in the print plane (PET-CF ~70-80): OK
+  drawn tips d100.60 (the 100.80 rigid ring pinched; rigid ribs this size printed ~0.4-0.7 small): expected print ~100.0-100.3 -> 0.5-2.6 N per rib
+
+====================================================================================================
+H. Centring jig: the rev n jig no longer reaches the as-built hub's teeth
+====================================================================================================
+  rev n jig: its d25.4 bore spans z -6.6..-4.6; as built the teeth end at z -7.8 and the crown (lead-in cone r 11.7-12.0) at -6.3
+  -> it sits on the lead-in cone only: radial play 1.00..0.70 mm (the hub can be ~1 mm off-centre)
+  v2: a collar r 12.7..14.6 down to z -10.0 puts the bore on the tooth tips (r 12.48) over z -10.0..-7.8: play 0.22 drawn
+
+====================================================================================================
+I. Checks, mass and balance (Fusion, script 194)
+====================================================================================================
+  as built : 153 rows, 0 FAIL; rotor 883.5 g, U 51.6 g mm (22 % of G6.3 at 225 rpm), rocking 41.4 Hz; hub group 4.81 g on the 6802
+  rev o    : 258 rows, 0 FAIL; rotor 883.6 g, U 51.6 g mm (22 % of G6.3 at 225 rpm), rocking 41.4 Hz; hub group 8.33 g on the 6802
+
+====================================================================================================
+J. Retention and load path (what holds what, against which load)
+====================================================================================================
+  6802 outer ring in cup v2    | clearance bore + 3 CA dots in the grooves; seat ledge      | belt 8-18 N radial, pins' push         | CA dots >> 20 N
+  cup v2 on the deck           | 3 x M3 (snug 0.15 N m) + 3 epoxy dots                      | belt pull 8-18 N                       | friction 225 N
+  hub in the 6802              | CA'd as built                                              | belt + pin push 8-30 N                 | as built
+  rotor drive                  | 4 x M3 x 20 pins in the notches (4.9 engaged)              | rotor drag 30-130 mN m -> 4-16 N per pin | steel pins, 0.5 play
+  slip-ring stator             | flange on the bracket ledge, 3 pins (+-0.4 float)          | drag 5-50 mN m -> 0.6-5.6 N on one pin | pin shear 1.2 MPa max
+  bracket under the deck       | 2 x M3 x 10 through the deck inserts, 3.5 mm self-tapped   | 0.1 N + pin reaction                   | ~400 N pull-out
+  slip-ring rotor              | mast socket CA'd on the d5 boss                            | drag 5-50 mN m                         | ~0.2 N m
+  mast drive                   | obround key in the hub's 4.6 x 3.0 neck                    | drag 5-50 mN m                         | 2.6-26 MPa bearing on 1.2 mm
+  contact head in the hub      | 45 deg cone seat + d11 slip fit, CA                        | pogo 1.9 N down; lift-off friction ~0.2 N | CA >> 10 N
+  brass washer / slug          | recess / well + CA; leads soldered before pressing in      | pogo 0.6-0.8 N each                    | seated on plastic
+  pogo pins in the nut plate   | barrel in d1.70, collar on its step, CA; core ceiling 0 mm above | 0.6-0.9 N push-up                      | CA + step
+  rotor on the 6820            | own weight (8.7 N) on the inner ring; compliant spigot centres it | pogo 1.9 N up                          | net 6.8 N down
+
+====================================================================================================
+K. To buy / from the kits
+====================================================================================================
+  Mill-Max 0908-6-15-20-75-14-11-0 pogo pin (A 9.40)   x4  2 + 2 spares       Digi-Key 1991679
+  Mill-Max 0908-9-15-20-75-14-11-0 pogo pin (A 10.92)  x2  1 + 1 spare        Digi-Key 1991682
+  M4 brass flat washer DIN 125-A, 4.3 x 9 x 0.8        x1  pack (one used)    Amazon / McMaster brass washers
+  M2 brass heat-set insert (INCLY kit)                 x1  have               kit
+  M3 x 10 SHCS                                         x2  have (kit)         kit
+  M3 x 6 SHCS                                          x1  have / bench plan  kit
+  26 AWG silicone wire red + black, ~120 mm            x1  have               kit
+  6802-2RS (new, for a fresh hub if ever needed)       x0  have (10-pack)     

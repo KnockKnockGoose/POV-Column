@@ -1,0 +1,17 @@
+# Core: the animation DSL, the kits, the simulator, the pipeline, the firmware tools, the game, the tests.
+numpy>=1.26
+Pillow>=10
+requests>=2.31
+websocket-client>=1.7
+matplotlib>=3.8
+pytest>=8
+
+# Optional, by feature. Install what you use.
+# Live captions (software/captions): streaming speech recognition and the microphone.
+#   websockets  sounddevice  sherpa-onnx  faster-whisper  scipy  psutil  opencv-python
+# Schematic and wiring figures (software/elec):
+#   schemdraw  markdown
+# The scripts that reshape STLs (cad/make_*.py) and some of calc/:
+#   trimesh  manifold3d  shapely
+# MP4 output from the simulator needs ffmpeg on PATH.
+# The language-model step needs Claude Code installed and signed in: https://claude.com/claude-code

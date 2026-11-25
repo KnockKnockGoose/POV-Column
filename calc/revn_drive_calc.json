@@ -1,0 +1,464 @@
+{
+ "A1 rev m.2 spool: the section that broke (plane of the insert-hole bottoms, z -3.0 .. -3.08)": [
+  {
+   "item": "plug diameter / flange diameter at the step",
+   "value": "22.2 / 28",
+   "unit": "mm",
+   "note": "sharp inside corner, no fillet, on a layer line"
+  },
+  {
+   "item": "insert holes",
+   "value": "4 x d4.0 x 5",
+   "unit": "mm",
+   "note": "bottoms at z -3.0: 0.08 mm above the step"
+  },
+  {
+   "item": "wall outside each insert hole",
+   "value": 1.0999999999999996,
+   "unit": "mm",
+   "note": "own rule since rev f: >= 2.5 mm"
+  },
+  {
+   "item": "ligament, hole bottom to the bore's 45 deg cone",
+   "value": 1.4849242404917495,
+   "unit": "mm",
+   "note": ""
+  },
+  {
+   "item": "net area at the plane",
+   "value": 287.04606412143795,
+   "unit": "mm2",
+   "note": "gross 337 - 4 holes 50"
+  },
+  {
+   "item": "polar second moment (net)",
+   "value": 18761.322190564457,
+   "unit": "mm4",
+   "note": ""
+  }
+ ],
+ "A2 service loads on that section: none of them can break it": [
+  {
+   "item": "torsion, running (29 mN m)",
+   "value": 0.01715763935667027,
+   "unit": "MPa",
+   "note": "strength between layers >= 8 MPa in shear (PET-CF, with the 0.5 knock-down)"
+  },
+  {
+   "item": "torsion, motor stall through 2:1 (0.44 N m)",
+   "value": 0.26032280403223856,
+   "unit": "MPa",
+   "note": "safety factor 31"
+  },
+  {
+   "item": "bending from the belt (8 N at 5 mm)",
+   "value": 0.04752074459061227,
+   "unit": "MPa",
+   "note": "safety factor 294"
+  }
+ ],
+ "A3 assembly loads: the inserts and their screws": [
+  {
+   "item": "plastic displaced by one insert (d4.2 knurl in a d3.75 printed hole, 4 mm)",
+   "value": 11.239047718217487,
+   "unit": "mm3",
+   "note": ""
+  },
+  {
+   "item": "relief volume under the insert (1 mm of d3.75 hole)",
+   "value": 11.044661672776616,
+   "unit": "mm3",
+   "note": "= 102 % full: no real clearance under the screw tip"
+  },
+  {
+   "item": "M3 x 10 reach below the pocket ceiling (10 - 6 mm core floor)",
+   "value": 4.0,
+   "unit": "mm",
+   "note": "= insert length exactly: 0 mm margin once the relief is full"
+  },
+  {
+   "item": "M3 axial force at 0.1 / 0.3 / 0.5 N m (K 0.2)",
+   "value": "167 / 500 / 833",
+   "unit": "N",
+   "note": "a hex key reaches 0.5 N m easily"
+  },
+  {
+   "item": "tension across the layers if ONE screw bottoms at 0.3 N m",
+   "value": 6.967522812484473,
+   "unit": "MPa",
+   "note": "on its quarter of the section (72 mm2)"
+  },
+  {
+   "item": "... times Kt 2.5 at the hole-bottom / step corner",
+   "value": 17.418807031211184,
+   "unit": "MPa",
+   "note": "vs 14 MPa (PET-CF between layers, x 0.5) -> cracks"
+  },
+  {
+   "item": "all four bottoming at 0.3 N m: mean tension",
+   "value": 6.967522812484473,
+   "unit": "MPa",
+   "note": "x Kt = 17 MPa"
+  },
+  {
+   "item": "all four at 0.5 N m: mean tension",
+   "value": 11.612538020807456,
+   "unit": "MPa",
+   "note": "x Kt = 29 MPa > 27.9 datasheet strength"
+  },
+  {
+   "item": "strain to break between layers (PET-CF)",
+   "value": 0.8,
+   "unit": "%",
+   "note": "no yielding: a crack at one hole runs round the plane"
+  },
+  {
+   "item": "hoop strain locked in round an insert on cooling (d alpha 2.1e-5 x 200 K)",
+   "value": 0.42,
+   "unit": "%",
+   "note": "in a 1.1 mm wall heated through"
+  }
+ ],
+ "A4 fitting the belt (rev m.2): blind, with no slack": [
+  {
+   "item": "belt pitch length at C 30.33 on 20T / 40T",
+   "value": 121.99625036125734,
+   "unit": "mm",
+   "note": "the 122 mm belt"
+  },
+  {
+   "item": "loop needed to pass the spool's d28 flange, hanger slid in 2 mm",
+   "value": 124.10299353137161,
+   "unit": "mm",
+   "note": "> 122: the flange has to be forced through the belt, unseen, under a 1.1 kg rotor"
+  }
+ ],
+ "B1 rev n torque path: steel pins, in-plane plastic": [
+  {
+   "item": "force on ONE pin, running / stall (r 8)",
+   "value": "3.6 / 55",
+   "unit": "N",
+   "note": "4 pins fitted; one is assumed to carry everything"
+  },
+  {
+   "item": "pin on the notch wall (d3 x 4.1 mm), running / stall",
+   "value": "0.29 / 4.5",
+   "unit": "MPa",
+   "note": "PETG-CF bearing ~ 50 MPa: factor 11 at stall"
+  },
+  {
+   "item": "pin bending at the nut face, stall (M3 root d2.39)",
+   "value": 172.35281564962264,
+   "unit": "MPa",
+   "note": "A2-70 screw: 450 MPa yield -> factor 2.6"
+  },
+  {
+   "item": "pin shear, stall",
+   "value": 12.259619922696372,
+   "unit": "MPa",
+   "note": ""
+  },
+  {
+   "item": "pin on the hub core's d3.4 hole (6 mm PET-CF floor), stall",
+   "value": 3.0555555555555554,
+   "unit": "MPa",
+   "note": "plus the clamp friction of the nut"
+  },
+  {
+   "item": "land between two notches: in-plane shear, stall",
+   "value": 1.667650739015214,
+   "unit": "MPa",
+   "note": "within one layer (strong direction, ~32 MPa): factor 19"
+  },
+  {
+   "item": "layers that must pass torque to the next layer",
+   "value": 0,
+   "unit": "",
+   "note": "teeth z -11.6..-4.6 and notches z -10.8..-3.1 overlap: the same layers"
+  }
+ ],
+ "B2 fastener preload: compression only": [
+  {
+   "item": "nut bearing area on the plate (5.5 AF hex - d3.4 hole)",
+   "value": 17.11806569560477,
+   "unit": "mm2",
+   "note": ""
+  },
+  {
+   "item": "pressure under a nut at 0.3 N m (500 N)",
+   "value": 29.208907647105235,
+   "unit": "MPa",
+   "note": "PET-CF creep limit ~ 40 MPa; 1.4 mm of plate + 6 mm of core in compression"
+  },
+  {
+   "item": "threaded blind holes / heat-set inserts in the new parts",
+   "value": 0,
+   "unit": "",
+   "note": "nothing a screw can bottom in or jack apart"
+  }
+ ],
+ "B3 hub journal (carries no torque): belt and handling": [
+  {
+   "item": "belt overhang from the bearing mid-plane",
+   "value": 9.1,
+   "unit": "mm",
+   "note": "single 6802; moment 73 N mm"
+  },
+  {
+   "item": "bending stress in the journal from the belt",
+   "value": 0.25715339320618175,
+   "unit": "MPa",
+   "note": ""
+  },
+  {
+   "item": "a 50 N sideways knock on the crown (lever 14 mm, Kt 2)",
+   "value": 4.945257561657343,
+   "unit": "MPa",
+   "note": "vs ~15 MPa between layers (PETG-CF, x 0.5): factor 3"
+  }
+ ],
+ "B4 hub bearing 6802-2RS (15 x 24 x 5)": [
+  {
+   "item": "radial load (belt)",
+   "value": 8.0,
+   "unit": "N",
+   "note": "static rating C0r ~ 2260 N: factor 282"
+  },
+  {
+   "item": "axial load if the rotor is pushed down with the pins on the crown",
+   "value": 100.0,
+   "unit": "N",
+   "note": "<= 0.5 C0r = 1130 N; all in compression down to the deck"
+  },
+  {
+   "item": "L10 life at 8 N, 225 rpm",
+   "value": 9259259259.25926,
+   "unit": "h",
+   "note": "not a limit; the seals' grease is"
+  },
+  {
+   "item": "friction torque (mu 0.0015 x 8 N x 9.75 mm + seals ~ 1 mN m)",
+   "value": 1.117,
+   "unit": "mN m",
+   "note": "vs 29 mN m rotor load"
+  },
+  {
+   "item": "stand-in printed bush: mu 0.2 x 8 N x 7.55 mm",
+   "value": 12.08,
+   "unit": "mN m",
+   "note": "+42 % motor torque; PV 0.019 MPa m/s (limit ~0.05 dry)"
+  }
+ ],
+ "B5 drop-in pin drive with the two axes not quite coaxial": [
+  {
+   "item": "axes offset 0.2 mm: relative angle +- 1.4 deg, torque ripple at the pins",
+   "value": 5.033653644204994,
+   "unit": "mN m",
+   "note": "< 29 mN m drag: the driving pin never lifts off; rotor speed ripple +- 0.13 deg"
+  },
+  {
+   "item": "axes offset 0.5 mm: relative angle +- 3.6 deg, torque ripple at the pins",
+   "value": 12.584134110512485,
+   "unit": "mN m",
+   "note": "< 29 mN m drag: the driving pin never lifts off; rotor speed ripple +- 0.33 deg"
+  },
+  {
+   "item": "notch play: each side / outer end",
+   "value": 0.5,
+   "unit": "mm",
+   "note": "covers 0.5 mm of offset; backlash +- 3.6 deg (irrelevant: the hall sensor reads the rotor)"
+  }
+ ],
+ "B6 fitting the belt (rev n): from above, in view": [
+  {
+   "item": "loop needed to slide down the hub's lead-in cone (no top flange), hanger slid in 2 mm",
+   "value": 119.06852745251199,
+   "unit": "mm",
+   "note": "<= 122: drops on"
+  },
+  {
+   "item": "centre distance at which it just slides on",
+   "value": 29.83,
+   "unit": "mm",
+   "note": "hanger travel is 28.33 .. 32.33"
+  }
+ ],
+ "B7 lead take-up: the slip ring hangs under the deck on its rotor leads and is the counterweight": [
+  {
+   "item": "why not clamp it (rev m.2 position): slack to hide when the rotor comes down",
+   "value": 50.5,
+   "unit": "mm",
+   "note": "the lift needed to get a hand under the rotor; there is 3.8 mm between the boss and the hub's neck to put it in"
+  },
+  {
+   "item": "a 30 AWG PTFE lead bends by its stiffness, not its weight, below",
+   "value": 100.64147601466418,
+   "unit": "mm",
+   "note": "so 50 mm of slack makes a loop up to 25 mm wide; the motor pulley's flange is 22.3 mm from the axis"
+  },
+  {
+   "item": "hanging ring: weight on the leads (10 g ASSUMED) / with 3 x M3 x 10 + 2 nuts in the flange",
+   "value": "0.098 / 0.145",
+   "unit": "N",
+   "note": "the leads are always in tension: a lead in tension cannot loop"
+  },
+  {
+   "item": "travel between stop B and knot A",
+   "value": 45.0,
+   "unit": "mm",
+   "note": "rotor lifts 50.5 mm with the plug in; 40 mm of room under the spigot for a hand"
+  },
+  {
+   "item": "ring at rest: flange top / body end / above the cavity floor",
+   "value": "-77.5 / -93.7 / 12.3",
+   "unit": "mm",
+   "note": "room for the stator leads to turn"
+  },
+  {
+   "item": "ring at full lift: flange top below the deck underside",
+   "value": 5.0,
+   "unit": "mm",
+   "note": "knot A stops under the neck first; flange to the hanger's edge 2.0 mm"
+  },
+  {
+   "item": "rotating lead length below the neck (boss, six leads, knot A)",
+   "value": 59.0,
+   "unit": "mm",
+   "note": "nearest stationary part 4.7 mm (clamp ring opening); keep loose wires 20 mm from the axis"
+  },
+  {
+   "item": "pendulum frequency of the hanging ring (68 mm)",
+   "value": 1.904624425620206,
+   "unit": "Hz",
+   "note": "= 114 rpm: passed on the way up; at 188 / 225 rpm a 0.5 mm off-centre neck moves the ring 0.29 / 0.17 mm"
+  },
+  {
+   "item": "first string frequency of the six taut leads",
+   "value": 40.95697293955756,
+   "unit": "Hz",
+   "note": "far above the 3.75 Hz spin: no whirl"
+  },
+  {
+   "item": "wind-up of the 59 mm of leads under 1.0 N mm of drag",
+   "value": 0.6520931696126268,
+   "unit": "turn",
+   "note": "steady, unwinds at stop; the stator leads resist the same torque"
+  },
+  {
+   "item": "torque at which the taut bundle would kink (2 sqrt(EI T))",
+   "value": 4.059655157768946,
+   "unit": "N mm",
+   "note": "factor 4.1 over the drag; 4.9 N mm with the extra weight"
+  }
+ ],
+ "C assembly steps (drive + slip-ring interface only; shell inserts, collar, bearing and the rest are the same in both)": [
+  {
+   "item": "rev m.2: steps / blind steps / heat-set + glue steps",
+   "value": "11 / 3 / 2",
+   "unit": "",
+   "note": "+ 4 steps repeated with tools whenever the rotor comes off"
+  },
+  {
+   "item": "rev n: steps / blind steps / heat-set + glue steps",
+   "value": "9 / 0 / 0",
+   "unit": "",
+   "note": "the last one is the only one repeated: no tools"
+  },
+  {
+   "item": "printed parts in the torque path: rev m.2 / rev n",
+   "value": "1 (spool, across its layers) / 1 (hub, within its layers)",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "item": "heat-set inserts in drive parts: rev m.2 / rev n",
+   "value": "4 / 0",
+   "unit": "",
+   "note": ""
+  }
+ ],
+ "steps_revm2": [
+  [
+   "heat-set 4 inserts into the spool's plug",
+   "insert; 1.1 mm walls"
+  ],
+  [
+   "CA the lead guide into the spool (2 keys)",
+   "glue"
+  ],
+  [
+   "slip ring + clamp ring on the deck, 3 screws",
+   ""
+  ],
+  [
+   "hanger + motor under the deck, 4 + 4 screws",
+   "from below"
+  ],
+  [
+   "20T pulley on the shaft; set its height to a spool that is on the rotor, not here",
+   "blind"
+  ],
+  [
+   "thread 6 leads as a flat row through the 4.6 x 1.6 slot, then the spool, then the core's d7 hole",
+   "fiddly; rotor tied to the base from here on"
+  ],
+  [
+   "spool into the core pocket, 4 x M3 x 10 from the core top",
+   "sled out; rotor held over the base on 225 mm leads"
+  ],
+  [
+   "loop the belt round the motor pulley and the spool while lowering the rotor",
+   "blind; the belt has no slack"
+  ],
+  [
+   "push the rotor's spigot into the bearing",
+   ""
+  ],
+  [
+   "base on its side, bottom plate off: pull the motor out, tighten 4 hanger screws",
+   "blind: rotor on, belt out of sight"
+  ],
+  [
+   "leads up the channel, slack loop, land on the buck IN",
+   "top cap off"
+  ]
+ ],
+ "steps_revn": [
+  [
+   "solder 2 wires to the XH header clinched in the nut plate",
+   "bench, once"
+  ],
+  [
+   "nut plate (4 nuts) into the core pocket, 4 x M3 x 16 from the core top = the pins",
+   "bench, once"
+  ],
+  [
+   "pigtail up the channel to the buck IN",
+   "once"
+  ],
+  [
+   "press the 6802 into the cup, the hub into the 6802 (by hand)",
+   "bench"
+  ],
+  [
+   "slip ring: knot A in its 6 rotor leads, then from below the deck push the leads up through the deck hole and the clamp ring",
+   "in view from below; the ring hangs there"
+  ],
+  [
+   "thread the leads up through the cup + hub, set it on the clamp ring, 3 x M3 x 8 tightened with the jig in the bearing bore",
+   "in view, from above; a 4.6 x 3.0 funnel-fed hole"
+  ],
+  [
+   "pull the leads up to the knot; zip tie (stop B) at the 32 mm mark, cut at 46 mm, crimp 2 XH contacts (3 + 3), click into the plug",
+   "bench tool, once"
+  ],
+  [
+   "belt over the motor pulley, down the hub's cone; pull the motor out, tighten 4 hanger screws",
+   "rotor off, belt in view"
+  ],
+  [
+   "plug in, lower the rotor, turn up to a quarter turn until the pins drop, push home",
+   "every time: no tools; the leads stay taut, nothing to tuck in"
+  ]
+ ]
+}

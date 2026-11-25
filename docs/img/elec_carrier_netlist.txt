@@ -1,0 +1,151 @@
+Carrier board build list (2026-11-04 rev i (26 x 31 holes, counted)): every hole as its PRINTED LABEL (column letter + row number) and its grid coordinates (c, r),
+c = 0..25 = A..Z across, r = 0..30 = row number - 1; see elec_carrier_layout.png.
+Board: UNCUT 70 x 90 mm Rindion double-sided perfboard (calipered), 26 x 31 holes (counted, measurements #31), margins 3.25 / 3.25 across,
+7.5 mm from the row-1 edge to row 1 and 5.5 mm from the row-31 edge to row 31.
+ORIENTATION: hole A1 at the BOTTOM LEFT with the COMPONENT SIDE facing you; the row-1 end goes DOWN into the sled; USB end of the ESP32 up.
+(From the solder side A1 is at the bottom RIGHT and the letters run Z..A from left to right.)
+Rev i = the rev h layout hole for hole with every ROW - 2 (columns unchanged): columns C..X and rows 1..29 are used; A, B, Y, Z and rows 30-31 are spare.
+Component side faces -y (away from the bank); all wires on the solder side; hole-to-net check passed in elec_carrier.py.
+RULE: the sled's card guides grip the outer 1.5 mm of each 90 mm edge from the bottom up to z 56.4 (beside rows 1-16); no hole is in that strip
+      (columns A / Z are 3.25 mm from the edges); keep solder and parts off the edges anyway.
+RULE: nothing taller than 1.5 mm under the ESP32 board (columns I..S region, 14.2 mm either side of column N, z 28..79) or in the USB plug's path
+      above it (5.5 mm either side of column N, z 79..99).
+
+PARTS
+  U2 ESP32 DOIT DevKit V1 (30-pin), SOLDERED DIRECT, USB end up: left column I (c=8) rows 8..22 (bottom IO23 ... top 3V3); right column S (c=18) rows 8..22 (bottom EN ... top VIN)
+       L: I8 (8,7) IO23, I9 (8,8) IO22, I10 (8,9) TX0, I11 (8,10) RX0, I12 (8,11) IO21, I13 (8,12) IO19, I14 (8,13) IO18, I15 (8,14) IO5, I16 (8,15) IO17, I17 (8,16) IO16, I18 (8,17) IO4, I19 (8,18) IO2, I20 (8,19) IO15, I21 (8,20) GND, I22 (8,21) 3V3
+       R: S8 (18,7) EN, S9 (18,8) VP, S10 (18,9) VN, S11 (18,10) IO34, S12 (18,11) IO35, S13 (18,12) IO32, S14 (18,13) IO33, S15 (18,14) IO25, S16 (18,15) IO26, S17 (18,16) IO27, S18 (18,17) IO14, S19 (18,18) IO12, S20 (18,19) IO13, S21 (18,20) GND, S22 (18,21) VIN
+  U1 74AHCT125, notch UP, pin 1 top-LEFT at D21 (3,20): pins 1-7 down column D to D15 (3,14); pins 8-14 up column G from G15 (6,14) to G21 (6,20)
+       pin  1 1OE  D21 (3,20) net GND
+       pin  2 1A   D20 (3,19) net IO18
+       pin  3 1Y   D19 (3,18) net Y1
+       pin  4 2OE  D18 (3,17) net GND
+       pin  5 2A   D17 (3,16) net IO23
+       pin  6 2Y   D16 (3,15) net Y2
+       pin  7 GND  D15 (3,14) net GND
+       pin  8 3Y   G15 (6,14) net Y3
+       pin  9 3A   G16 (6,15) net IO14
+       pin 10 3OE  G17 (6,16) net GND
+       pin 11 4Y   G18 (6,17) net Y4
+       pin 12 4A   G19 (6,18) net IO13
+       pin 13 4OE  G20 (6,19) net GND
+       pin 14 VCC  G21 (6,20) net 5V_A
+  R5-R8 10k: solder side, across pins 1-2 (D21-D20), 4-5 (D18-D17), 9-10 (G16-G17), 12-13 (G19-G20)
+  J1   J1 5V in (pigtail, 5 mm)               term   holes D26 (3,25) 5V_A, D28 (3,27) GND
+  J12  J12 bus-B in (optional, 5 mm)          term   holes W26 (22,25) 5V_B, W28 (22,27) GND
+  J3   J3 chain 0 (6P, wires in from below)   t254h  holes D3 (3,2) 5V_A, E3 (4,2) GND, F3 (5,2) CLK0, G3 (6,2) GND, H3 (7,2) DATA0, I3 (8,2) GND
+  J5   J5 hall (3P)                           t254h  holes K3 (10,2) HALL, L3 (11,2) GND, M3 (12,2) 5V_A
+  J4   J4 chain 1 (6P, wires in from below)   t254h  holes S3 (18,2) 5V_B, T3 (19,2) GND, U3 (20,2) CLK1, V3 (21,2) GND, W3 (22,2) DATA1, X3 (23,2) GND
+  J9   J9 s15 (B)                             t254v  holes W5 (22,4) 5V_B, W6 (22,5) GND
+  J10  J10 s18 (B)                            t254v  holes W8 (22,7) 5V_B, W9 (22,8) GND
+  J11  J11 s21 (B)                            t254v  holes W11 (22,10) 5V_B, W12 (22,11) GND
+  J6   J6 s3 (A)                              t254v  holes W14 (22,13) 5V_A, W15 (22,14) GND
+  J7   J7 s6 (A)                              t254v  holes W17 (22,16) 5V_A, W18 (22,17) GND
+  J8   J8 s9 (A)                              t254v  holes W20 (22,19) 5V_A, W21 (22,20) GND
+  C1   C1 1000u + at top                      elco   holes F8 (5,7) 5V_A, F6 (5,5) GND
+  C2   C2 1000u + at BOTTOM                   elco   holes S27 (18,26) 5V_B, S29 (18,28) GND
+  C3   C3 100n                                small  holes G23 (6,22) 5V_A, E23 (4,22) GND
+  C4   C4 1n                                  small  holes J26 (9,25) HALL, J28 (9,27) GND
+  C5   C5 100n                                small  holes O3 (14,2) 5V_A, O1 (14,0) GND
+  R1   R1 68                                  axial  holes D12 (3,11) Y1, D10 (3,9) CLK0
+  R2   R2 68                                  axial  holes E12 (4,11) Y2, E10 (4,9) DATA0
+  R3   R3 68                                  axial  holes F12 (5,11) Y3, F10 (5,9) CLK1
+  R4   R4 68                                  axial  holes G12 (6,11) Y4, G10 (6,9) DATA1
+  R9   R9 10k                                 axial  holes H26 (7,25) HALL, H28 (7,27) 3V3
+  TP   test points TP1, TP3, TP2              tp     holes G25 (6,24) 5V_A, J29 (9,28) GND, U25 (20,24) 5V_B
+
+WIRES (solder side; ends are holes, fractional (c,r) points are the lane the insulated wire follows between them)
+  [GND] 22 AWG GND ring, bare tinned 22 AWG, open: along row 2 from D2 to X2, up column X to X29, along row 29 to C29, down column C to C17 (the card guides grip nothing: columns A / Z are 3.25 mm from the edges; A, B, Y, Z are spare)  [BARE WIRE]
+      D2 (3,1) -> X2 (23,1)
+      X2 (23,1) -> X29 (23,28)
+      X29 (23,28) -> C29 (2,28)
+      C29 (2,28) -> C17 (2,16)
+  [GND] 26 AWG GND taps to the ring: J1.2, C1- (onto J3's GND pin 2), C4, C5, the J3 / J5 / J4 GND pins, the feeds' GND pins, J12.2 (J4 pin 6 X2 and C2- S29 sit ON the ring: no tap)
+      D28 (3,27) -> C28 (2,27)
+      F6 (5,5) -> (4.6,4.6) -> (4.6,2.4) -> E3 (4,2)
+      J28 (9,27) -> J29 (9,28)
+      O1 (14,0) -> O2 (14,1)
+      E3 (4,2) -> E2 (4,1)
+      G3 (6,2) -> G2 (6,1)
+      I3 (8,2) -> I2 (8,1)
+      L3 (11,2) -> L2 (11,1)
+      T3 (19,2) -> T2 (19,1)
+      V3 (21,2) -> V2 (21,1)
+      W6 (22,5) -> X6 (23,5)
+      W9 (22,8) -> X9 (23,8)
+      W12 (22,11) -> X12 (23,11)
+      W15 (22,14) -> X15 (23,14)
+      W18 (22,17) -> X18 (23,17)
+      W21 (22,20) -> X21 (23,20)
+      W28 (22,27) -> X28 (23,27)
+  [GND] 26 AWG GND: ESP32 GND pins -> left one I21 up to the top ring I29 (lane c 8.6), right one S21 across to the right ring X22 (row lane 20.6)
+      I21 (8,20) -> (8.6,20.4) -> (8.6,27.6) -> I29 (8,28)
+      S21 (18,20) -> (18.4,20.6) -> (22.6,20.6) -> X22 (23,21)
+  [GND] 26 AWG GND: U1 pin 7 D15 -> bottom ring D2 (lane c 2.5); 1OE D21, 2OE D18 -> left ring; 3OE G17 -> J3's GND pin 6 I3 (lane c 7.0); 4OE G20 and C3- E23 -> left ring C23
+      D15 (3,14) -> (2.5,13.6) -> (2.5,1.4) -> D2 (3,1)
+      D21 (3,20) -> C21 (2,20)
+      D18 (3,17) -> C18 (2,17)
+      G17 (6,16) -> (7,15.6) -> (7,3.4) -> (7.6,2.4) -> I3 (8,2)
+      G20 (6,19) -> (6.4,19) -> (6.4,21.6) -> (2.4,21.6) -> C23 (2,22)
+      E23 (4,22) -> C23 (2,22)
+  [5V_A] 22 AWG 5V_A entry (rev d, no switch): J1.1 D26 -> the left end of the bus-A rail E24, one short insulated 22 AWG tap
+      D26 (3,25) -> (3.2,24.2) -> (3.7,23.4) -> E24 (4,23)
+  [5V_A] 22 AWG 5V_A bus, bare 22 AWG: column V from V13 up to V24, then the top rail along row 24 to E24  [BARE WIRE]
+      V13 (21,12) -> V24 (21,23) -> E24 (4,23)
+  [5V_A] 22 AWG 5V_A taps: J6-J8, the ESP32 VIN pin S22, TP1 G25; U1 VCC pin 14 G21 -> C3 G23 -> rail
+      W14 (22,13) -> V14 (21,13)
+      W17 (22,16) -> V17 (21,16)
+      W20 (22,19) -> V20 (21,19)
+      S22 (18,21) -> S24 (18,23)
+      G25 (6,24) -> G24 (6,23)
+      G21 (6,20) -> G23 (6,22)
+      G23 (6,22) -> G24 (6,23)
+  [5V_A] 22 AWG 5V_A down the left (insulated 22 AWG): rail E24 -> C1+ F8 (lane c 4.5); C1+ -> J3.1 D3 (lane c 3.4); rail N24 -> J5.3 M3 (lane c 12.4); J5.3 -> C5 O3
+      E24 (4,23) -> (4.5,22.6) -> (4.5,7.4) -> F8 (5,7)
+      F8 (5,7) -> (3.4,6.6) -> (3.4,2.4) -> D3 (3,2)
+      N24 (13,23) -> (12.4,22.6) -> (12.4,2.4) -> M3 (12,2)
+      M3 (12,2) -> O3 (14,2)
+  [5V_B] 22 AWG 5V_B bus, bare 22 AWG: column V from V4 up to V11; LK1 = insulated link V11-V13, leave V12 EMPTY  [BARE WIRE]
+      V4 (21,3) -> V11 (21,10)
+  [LK1] 22 AWG LK1 link, bus B V11 to bus A V13 over the empty V12 (snip for two pigtails)
+      V11 (21,10) -> (20.6,10.5) -> (20.6,11.5) -> V13 (21,12)
+  [5V_B] 22 AWG 5V_B taps: J9-J11, J4.1 S3 (row lane 2.6 under the bus); riser from V9 (lane c 19.8) to the junction hole U25 = TP2, then C2+ S27 and J12.1 W26
+      W5 (22,4) -> V5 (21,4)
+      W8 (22,7) -> V8 (21,7)
+      W11 (22,10) -> V11 (21,10)
+      V4 (21,3) -> (21,2.6) -> (18.4,2.6) -> S3 (18,2)
+      V9 (21,8) -> (19.8,8.6) -> (19.8,23.6) -> U25 (20,24)
+      U25 (20,24) -> (18.4,24.4) -> (18.4,25.6) -> S27 (18,26)
+      U25 (20,24) -> (22,24.4) -> W26 (22,25)
+  [IO18] 28 AWG IO18 CLK0 I14 -> U1 pin 2 (1A) D20: row lane 13.4 under U1's bottom edge and up the left (lane c 2.8)
+      I14 (8,13) -> (7.5,13.4) -> (2.8,13.4) -> (2.8,19) -> D20 (3,19)
+  [IO23] 28 AWG IO23 DATA0 I8 -> U1 pin 5 (2A) D17: lane c 7.6 up to row lane 12.8, lane c 2.4
+      I8 (8,7) -> (7.6,7.2) -> (7.6,12.8) -> (2.4,12.8) -> (2.4,16) -> D17 (3,16)
+  [IO14] 28 AWG IO14 CLK1 S18 -> U1 pin 9 (3A) G16, under the ESP32 (row lane 12.4), lane c 6.6
+      S18 (18,17) -> (17.5,17) -> (17.5,12.4) -> (6.6,12.4) -> (6.6,15) -> G16 (6,15)
+  [IO13] 28 AWG IO13 DATA1 S20 -> U1 pin 12 (4A) G19, under the ESP32 (row lane 12.2), lane c 6.8
+      S20 (18,19) -> (17.3,19) -> (17.3,12.2) -> (6.8,12.2) -> (6.8,18) -> G19 (6,18)
+  [Y1] 28 AWG U1 1Y pin 3 D19 -> R1 top D12 (lane c 3.5, under the chip)
+      D19 (3,18) -> (3.5,17.6) -> (3.5,11.4) -> D12 (3,11)
+  [Y2] 28 AWG U1 2Y pin 6 D16 -> R2 top E12 (lane c 4.0)
+      D16 (3,15) -> (4,14.6) -> (4,11.4) -> E12 (4,11)
+  [Y3] 28 AWG U1 3Y pin 8 G15 -> R3 top F12 (lane c 5.0)
+      G15 (6,14) -> (5,13.6) -> F12 (5,11)
+  [Y4] 28 AWG U1 4Y pin 11 G18 -> R4 top G12 (lane c 5.5, under the chip)
+      G18 (6,17) -> (5.5,16.6) -> (5.5,11.4) -> G12 (6,11)
+  [CLK0] 28 AWG R1 bottom D10 -> J3.3 CLK0 F3 (row lane 8.6, lane c 5.6, from above)
+      D10 (3,9) -> (3,8.6) -> (5.6,8.6) -> (5.6,2.6) -> F3 (5,2)
+  [DATA0] 28 AWG R2 bottom E10 -> J3.5 DATA0 H3 (row lane 8.2, lane c 6.4, from above)
+      E10 (4,9) -> (4,8.2) -> (6.4,8.2) -> (6.4,2.6) -> H3 (7,2)
+  [CLK1] 28 AWG R3 bottom F10 -> J4.3 CLK1 U3 (row lane 7.8, lane c 8.6 down past the antenna end, row lane 0.7 under the GND ring, into pin 3 from below)
+      F10 (5,9) -> (5,7.8) -> (8.6,7.8) -> (8.6,0.7) -> (20,0.7) -> U3 (20,2)
+  [DATA1] 28 AWG R4 bottom G10 -> J4.5 DATA1 W3 (row lane 7.4, lane c 9.4, row lane 0.2, into pin 5 from below)
+      G10 (6,9) -> (6,7.4) -> (9.4,7.4) -> (9.4,0.2) -> (22,0.2) -> W3 (22,2)
+  [HALL] 28 AWG hall: J5.1 OUT K3 -> lane c 10.4 up to row lane 24.6 -> R9 bottom H26; R9 -> C4 J26; C4 -> row lane 25.4 -> lane c 16.6 -> IO27 S17
+      K3 (10,2) -> (10.4,2.4) -> (10.4,24.6) -> (7.4,24.6) -> H26 (7,25)
+      H26 (7,25) -> J26 (9,25)
+      J26 (9,25) -> (9.4,25.4) -> (16.6,25.4) -> (16.6,16.4) -> S17 (18,16)
+  [3V3] 28 AWG 3V3: ESP32 3V3 pin I22 (top of the left header) -> R9 top H28 (lane c 7.6)
+      I22 (8,21) -> (7.6,21.4) -> (7.6,26.6) -> H28 (7,27)
+
+Holes with more than two wire ends (solder them in one go): U25 (20,24) x3
